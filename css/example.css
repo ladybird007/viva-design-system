@@ -16,6 +16,9 @@
   font-size: 60px;
   font-weight: 800;
 }
+.example-header p {
+  max-width: 40%;
+}
 
 /***** content *****/
 .example-content {
@@ -32,6 +35,9 @@
 .example-headline h2 {
   font-size: 40px;
   font-weight: 800;
+}
+.example-headline h2 + * {
+  margin-top: var(--spacing-s);
 }
 
 /****** shadow *****/
@@ -59,4 +65,41 @@
 .example-caption span {
   font-size: 16px;
   color: #5A5A5A;
+}
+
+/****** nav list *****/
+.example-nav-links {
+  font-size: 18px;
+}
+.example-nav-links li {
+  padding: var(--spacing-xs) 0;
+}
+
+/****** alerts *****/
+.example-alerts-wrap {
+  margin-top: var(--spacing-xxl);
+  padding: var(--spacing-l) var(--spacing-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+
+/****** HTML ******/
+.example-html {
+  background-color: #eee;
+}
+.example-html-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-m);
+  border-bottom: 1px solid gray;
+}
+.example-html pre {
+  white-space: pre-wrap;
+  padding: var(--spacing-m);
+}
+.example-html pre code {
+  font-size: 16px;
+  font-family: monospace;
 }

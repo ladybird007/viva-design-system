@@ -1,0 +1,25 @@
+.shadow-xl {
+  box-shadow: 0 0 20px rgba(21, 21, 21, 0.05), 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.shadow-l {
+  box-shadow: 0 1px 4px rgba(21, 21, 21, 0.02), 0 8px 12px rgba(0, 0, 0, 0.08);
+}
+.shadow-m {
+  box-shadow: 0 1px 2px rgba(21, 21, 21, 0.02), 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+.shadow-s {
+  box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08);
+}
+
+.shadow-xl:focus,
+.shadow-l:focus, 
+.shadow-m:focus,
+.shadow-s:focus,
+.shadow-xl:hover,
+.shadow-l:hover, 
+.shadow-m:hover,
+.shadow-s:hover,
+.shadow-focus {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}

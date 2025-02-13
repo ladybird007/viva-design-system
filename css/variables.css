@@ -1,0 +1,17 @@
+:root {
+  --teal: #0A5B58;
+
+  --white: #fff;
+  --black: #000;
+
+  --spacing-xs: 8px;
+  --spacing-s: 16px; 
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+
+  --shadow-focus: 0 0 0 2px #8BD8D5;
+
+  --border-radius-xs: 8px;
+}

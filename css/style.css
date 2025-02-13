@@ -1,22 +1,8 @@
+@import url(../css/variables.css);
 @import url(../css/reset.css);
 @import url(../css/grid.css);
+@import url(../css/shadows.css);
 @import url(../css/example.css);
-
-:root {
-  --teal: #0A5B58;
-
-  --white: #fff;
-  --black: #000;
-
-  --spacing-xs: 8px;
-  --spacing-s: 16px; 
-  --spacing-m: 24px;
-  --spacing-l: 32px;
-  --spacing-xl: 48px;
-  --spacing-xxl: 64px;
-
-  --shadow-focus: 0 0 0 2px #8BD8D5;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -37,30 +23,3 @@
 .rounded {
   border-radius: var(--spacing-xs);
 } 
-
-/***** Shadows *****/
-.shadow-xl {
-  box-shadow: 0 0 20px rgba(21, 21, 21, 0.05), 0 10px 20px rgba(0, 0, 0, 0.12);
-}
-.shadow-l {
-  box-shadow: 0 1px 4px rgba(21, 21, 21, 0.02), 0 8px 12px rgba(0, 0, 0, 0.08);
-}
-.shadow-m {
-  box-shadow: 0 1px 2px rgba(21, 21, 21, 0.02), 0 4px 8px rgba(0, 0, 0, 0.08);
-}
-.shadow-s {
-  box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08);
-}
-
-.shadow-xl:focus,
-.shadow-l:focus, 
-.shadow-m:focus,
-.shadow-s:focus,
-.shadow-xl:hover,
-.shadow-l:hover, 
-.shadow-m:hover,
-.shadow-s:hover,
-.shadow-focus {
-  outline: none;
-  box-shadow: var(--shadow-focus);
-}
