@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+}
