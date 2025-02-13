@@ -246,12 +246,6 @@
 .rounded {
   border-radius: var(--spacing-xs);
 } 
-.rounded *:first-child {
-  border-radius: var(--spacing-xs) var(--spacing-xs) 0 0;
-}
-.rounded *:last-child {
-  border-radius: 0 0 var(--spacing-xs) var(--spacing-xs);
-}
 
 
 /***** Copy-btn *****/
