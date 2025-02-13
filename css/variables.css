@@ -1,5 +1,69 @@
 :root {
   --teal: #0A5B58;
+  --teal-2: #02786E;
+  --teal-3: #66C7C3;
+  --teal-4: #C2EBE8;
+
+  --dark-teal: #084946;
+  --dark-teal-2: #042927;
+  --dark-teal-3: #8CC7C3;
+  --dark-teal-4: #CFDBDA;
+
+  --cadet: #3DB1AD;
+  --cadet-2: #026E78;
+  --cadet-3: #8BD8D5;
+  --cadet-4: #D8F0F0;
+
+  --med-gray: #6C757D;
+  --med-gray-2: #343434;
+  --med-gray-3: #A3A6A9;
+
+  --gray: #C7C8CA;
+  --gray-2: #E4E4E4;
+  --gray-3: #F3F3F3;
+
+  --green: #00704A;
+  --green-2: #10AC77;
+  --green-3: #72CFAF;
+  --green-4: #D1F2E7;
+
+  --dark-green: #005736;
+  --dark-green-2: #002A1A;
+  --dark-green-3: #6FAC95;
+  --dark-green-4: #CCDED8;
+
+  --light-grass: #B5DEC8;
+  --light-grass-2: #97CB97;
+  --light-grass-3: #D4EFD4;
+  --light-grass-4: #F5FBF5;
+
+  --med-grass: #8DAE81;
+  --med-grass-2: #BAD4B4;
+  --med-grass-3: #D1E0CC;
+  --med-grass-4: #E7F0E5;
+
+  --dark-grass: #3C763D;
+  --dark-grass-2: #A6C6A9;
+  --dark-grass-3: #C4DAC4;
+  --dark-grass-4: #E1EBE1;
+
+  --purple: #987EC1;
+  --purple-2: #5C4580;
+  --purple-3: #CEC1EA;
+  --purple-4: #EFE9FC;
+
+  --yellow: #FFCC3B;
+  --yellow-2: #D3A42D;
+  --yellow-3: #FFF2B5;
+
+  --orange: #E76F1F;
+  --orange-2: #A65523;
+  --orange-3: #EFC0A0;
+
+  --red: #9B3F34;
+  --red-2: #622128;
+  --red-3: #BD625E;
+  --red-4: #F59FC0;
 
   --white: #fff;
   --black: #000;
