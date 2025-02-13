@@ -23,3 +23,9 @@
 .rounded {
   border-radius: var(--spacing-xs);
 } 
+
+
+/***** Copy-btn *****/
+.copy-btn {
+  cursor: pointer;
+}
