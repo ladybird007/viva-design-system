@@ -179,9 +179,39 @@
   box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08);
 }
 
-/***** Copy-btn *****/
-.copy-btn {
+/***** Copy-btn/code tag *****/
+.copy-btn,
+code {
   cursor: pointer;
+  position: relative;
+}
+.copy-btn:before,
+code:before {
+  content: 'Copy to clipboard';
+  position: absolute;
+  bottom: calc(100% + var(--spacing-xs));
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  background-color: var(--black);
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-xs);
+  white-space: nowrap;
+  display: none;
+}
+.copy-btn.copied:before,
+code.copied:before {
+  content: 'Copied';
+}
+.copy-btn:hover:before,
+code:hover:before {
+  display: block;
+}
+.example-html-body code {
+  cursor: initial;
+}
+.example-html-body code:before {
+  display: none;
 }
 
 /***** Grid *****/
