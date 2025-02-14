@@ -74,6 +74,11 @@
   --spacing-l: 32px;
   --spacing-xl: 48px;
   --spacing-xxl: 64px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 96px;
+  --spacing-5xl: 128px;
+  --spacing-6xl: 160px;
+  --spacing-7xl: 192px;
 
   --shadow-focus: 0 0 0 2px #8BD8D5;
 

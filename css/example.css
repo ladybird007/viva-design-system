@@ -18,6 +18,7 @@
 }
 .example-header p {
   max-width: 40%;
+  font-size: 18px;
 }
 
 .example-header .container,
@@ -180,4 +181,73 @@
 /***** Copy-btn *****/
 .copy-btn {
   cursor: pointer;
+}
+
+/***** Grid *****/
+.example-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+  padding: var(--spacing-m) 0;
+}
+.example-spacing-item,
+.example-spacing-item-inner {
+  display: flex;
+  align-items: center
+}
+.example-spacing-class {
+  max-width: 178px;
+  width: 40%;
+}
+.example-spacing-box {
+  background-color: #9747FF;
+  margin-right: var(--spacing-xl);
+  flex-shrink: 0;
+}
+.example-spacing-xs {
+  height: var(--spacing-xs);
+  width: var(--spacing-xs);
+}
+.example-spacing-s {
+  height: var(--spacing-s);
+  width: var(--spacing-s);
+} 
+.example-spacing-m {
+  height: var(--spacing-m);
+  width: var(--spacing-m);
+}
+.example-spacing-l {
+  height: var(--spacing-l);
+  width: var(--spacing-l);
+}
+.example-spacing-xl {
+  height: var(--spacing-xl);
+  width: var(--spacing-xl);
+}
+.example-spacing-xxl {
+  height: var(--spacing-xxl);
+  width: var(--spacing-xxl);
+}
+.example-spacing-3xl {
+  height: var(--spacing-3xl);
+  width: var(--spacing-3xl);
+} 
+.example-spacing-4xl {
+  height: var(--spacing-4xl);
+  width: var(--spacing-4xl);
+}
+.example-spacing-5xl {
+  height: var(--spacing-5xl);
+  width: var(--spacing-5xl);
+}
+.example-spacing-6xl {
+  height: var(--spacing-6xl);
+  width: var(--spacing-6xl);
+} 
+.example-spacing-7xl {
+  height: var(--spacing-7xl);
+  width: var(--spacing-7xl);
+}
+.example-spacing-not-used .example-spacing-box {
+  opacity: 0.3;
 }
