@@ -42,7 +42,7 @@ div[class*="alert-"]:before {
   border-color: var(--alert-info-border);
 }
 .alert-info:before {
-  background-image: url(icon/info.svg);
+  background-image: url(icons/info.svg);
 }
 
 .alert-success {
@@ -51,7 +51,7 @@ div[class*="alert-"]:before {
   border-color: var(--alert-success-border);
 }
 .alert-success:before {
-  background-image: url(icon/success.svg);
+  background-image: url(icons/success.svg);
 }
 
 .alert-warning {
@@ -62,7 +62,7 @@ div[class*="alert-"]:before {
 .alert-warning:before {
   width: 23px;
   height: 23px;
-  background-image: url(icon/warning.svg);
+  background-image: url(icons/warning.svg);
 }
 
 .alert-danger {
@@ -71,7 +71,7 @@ div[class*="alert-"]:before {
   border-color: var(--alert-danger-border);
 }
 .alert-danger:before {
-  background-image: url(icon/danger.svg);
+  background-image: url(icons/danger.svg);
 }
 
 .alert-longform p + p {

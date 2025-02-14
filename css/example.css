@@ -46,6 +46,7 @@
 
 .example-headline {
   padding-bottom: 20px;
+  margin-bottom: var(--spacing-xl);
   border-bottom: 1px solid var(--black);
 }
 .example-headline h2 {
@@ -62,7 +63,6 @@
 
 /****** shadow *****/
 .example-box-shadows {
-  padding-top: var(--spacing-xxl);
   display: flex;
   justify-content: space-between;
 }
@@ -151,7 +151,6 @@
   align-items: start;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  padding-top: var(--spacing-l);
   gap: var(--spacing-l);
   row-gap: var(--spacing-l);
 }
@@ -233,7 +232,7 @@ code:hover:before {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-m);
-  padding: var(--spacing-m) 0;
+  padding-bottom: var(--spacing-m);
 }
 .example-spacing-item,
 .example-spacing-item-inner {

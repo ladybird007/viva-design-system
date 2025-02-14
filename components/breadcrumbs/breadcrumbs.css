@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+.breadcrumbs a,
+.breadcrumbs span {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 14px;
+}
+.breadcrumbs a {
+  color: var(--med-gray-2);
+  text-decoration: none;
+}
+.breadcrumbs span {
+  font-weight: 600;
+  color: var(--teal);
+}
+.breadcrumbs span:before {
+  content: '';
+  width: var(--spacing-s);
+  height: var(--spacing-s);
+  background: url(icons/arrow.svg) no-repeat 50% 50%;
+}
