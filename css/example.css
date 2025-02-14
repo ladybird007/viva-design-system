@@ -54,6 +54,13 @@
 .example-box-shadow-wrap {
   width: 237px;
 }
+.example-box-shadow-wrap .example-code {
+  margin-top: var(--spacing-s);
+  padding: var(--spacing-xs);
+  background-color: var(--white);
+  border-radius: var(--border-radius-xs);
+  text-align: center;
+}
 .example-box-shadow {
   width: 237px;
   height: 237px;
@@ -168,4 +175,9 @@
   color: var(--black);
   border-radius: var(--border-radius-xs) !important;
   box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08);
+}
+
+/***** Copy-btn *****/
+.copy-btn {
+  cursor: pointer;
 }

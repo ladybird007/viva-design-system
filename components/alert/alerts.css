@@ -1,31 +1,3 @@
-:root {
-  --alert-font-size: 16px;
-
-  --alert-info: #48A3FC;
-  --alert-info-bg: #F0F7FF;
-  --alert-info-text: #31708F;
-  --alert-info-border: rgba(49,112,143,0.15);
-
-  --alert-success: #12B76A;
-  --alert-success-bg: #ECFDF3;
-  --alert-success-text: #3C763D;
-  --alert-success-border: rgba(60,118,61,0.15);
-
-  --alert-warning: #FFAA00;
-  --alert-warning-bg: #FFF7E6;
-  --alert-warning-text: #8C5E00;
-  --alert-warning-border: rgba(138,109,59,0.15);
-
-  --alert-danger: #D92D20;
-  --alert-danger-bg: #FEF4F4;
-  --alert-danger-text: #6C1610;
-  --alert-danger-border: rgba(108,22,16,0.16);
-
-  --alert-general-bg: #FCF9F0;
-  --alert-general-text: #343A40;
-  --alert-general-border: rgba(108,117,125,0.15);
-}
-
 .alert {
   padding: 18px 26px;
   display: flex;
