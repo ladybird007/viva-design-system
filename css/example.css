@@ -169,7 +169,8 @@
   gap: var(--spacing-m)
 }
 
-.example-colors code {
+.example-colors code,
+.example-spacing code {
   margin-top: var(--spacing-s);
   padding: var(--spacing-xs);
   background-color: var(--white);
@@ -198,6 +199,10 @@
 .example-spacing-class {
   max-width: 178px;
   width: 40%;
+}
+.example-spacing-item-inner {
+  min-height: 64px;
+  margin-right: var(--spacing-xl);
 }
 .example-spacing-box {
   background-color: #9747FF;
