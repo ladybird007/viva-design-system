@@ -68,22 +68,6 @@
   --white: #fff;
   --black: #000;
 
-  --spacing-xs: 8px;
-  --spacing-s: 16px; 
-  --spacing-m: 24px;
-  --spacing-l: 32px;
-  --spacing-xl: 48px;
-  --spacing-xxl: 64px;
-  --spacing-3xl: 80px;
-  --spacing-4xl: 96px;
-  --spacing-5xl: 128px;
-  --spacing-6xl: 160px;
-  --spacing-7xl: 192px;
-
-  --shadow-focus: 0 0 0 2px #8BD8D5;
-
-  --border-radius-xs: 8px;
-
   --alert-font-size: 16px;
 
   --alert-info: #48A3FC;
@@ -114,4 +98,42 @@
   --alert-disabled-gray: #6F7176;
   --alert-disabled-light-gray: #B6BCC3;
   --alert-disabled-pale-gray: #F3F3F3;
+
+  --spacing-xs: 8px;
+  --spacing-s: 16px; 
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 96px;
+  --spacing-5xl: 128px;
+  --spacing-6xl: 160px;
+  --spacing-7xl: 192px;
+
+  --shadow-focus: 0 0 0 2px #8BD8D5;
+
+  --border-radius-xs: 8px;
+
+  
 }
+@media (max-width: 1024px) {
+  :root {
+    --gap: 24px;
+  }
+} 
+@media (max-width: 768px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+@media (min-width: 769px) {
+  :root {
+    --gutter: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --gap: 32px;
+  }
+} 
