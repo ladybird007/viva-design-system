@@ -2,6 +2,10 @@
 @import url(../css/variables.css);
 @import url(../css/typography.css);
 @import url(../css/colors.css);
+@import url(../components/accordion/accordion.css);
+@import url(../components/alert/alerts.css);
+@import url(../components/badges/badges.css);
+@import url(../components/breadcrumbs/breadcrumbs.css);
 @import url(../css/grid.css);
 @import url(../css/shadows.css);
 @import url(../css/example.css);

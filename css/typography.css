@@ -13,3 +13,12 @@
 .text-red {
   color: var(--alert-danger);
 }
+
+.internal-link,
+.external-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--teal);
+  display: inline-flex;
+  gap: 10px;
+}

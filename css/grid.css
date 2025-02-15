@@ -7,8 +7,17 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--gutter);
+}
+div[class*="row-cols-"] {
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center
 }
 
 .col {

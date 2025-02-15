@@ -1,0 +1,97 @@
+.accordion-item {
+  border-bottom: 2px solid var(--teal);
+}
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-s);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--teal);
+}
+.accordion-header i {
+  position-anchor: relative;
+  width: 28px;
+  height: 28px;
+  margin-left: var(--spacing-s);
+  border: 1px solid red;
+}
+.accordion-content {
+  font-size: 16px;
+}
+.accordion-content,
+.accordion-sub-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+}
+.accordion-content a {
+  font-weight: 700;
+  color: var(--teal);
+  text-decoration: none;
+}
+.accordion hr {
+  width: 100%;
+  border-bottom: 1px solid var(--gray);
+  margin: 0;
+}
+.accordion-content h4 {
+  padding-bottom: var(--spacing-s);
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--teal);
+  border-bottom: 1px solid var(--black);
+}
+.accordion-sub-content > * {
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+}
+.accordion-sub-content .accordion-sub-content {
+  padding-top: var(--spacing-s);
+  padding-bottom: 0;
+}
+.accordion-sub-content .accordion-sub-content > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+}
+.custom-checkbox-icon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--teal);
+  border-radius: var(--border-radius-xxs);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.custom-checkbox input {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.custom-checkbox input:checked + .custom-checkbox-icon {
+  background-color: var(--teal-pale);
+}
+
+.js-dropdown-btn {
+  cursor: pointer;
+}
+.js-dropdown-content {
+  display: none;
+  transition-timing-function: linear;
+}
+.js-dropdown-btn.opened .js-dropdown-icon {
+  transform: rotate(180deg);
+}
