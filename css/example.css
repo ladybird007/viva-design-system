@@ -43,6 +43,9 @@
   padding-bottom: 80px;
   background-color: #EEEEEE;
 }
+.example-content.bg-white {
+  background-color: var(--white);
+}
 
 .example-headline {
   padding-bottom: 20px;
@@ -359,4 +362,30 @@ code:hover:before {
 .breadcrumbs .example-breadcrumbs-focus {
   color: var(--cadet);
   border-color: var(--cadet-light);
+}
+
+/***** Badges *****/
+.example-badges-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
+}
+.example-badges-row:first-child {
+  font-weight: 700;
+}
+.example-badges-row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-m);
+}
+.example-badges-row div:nth-child(1),
+.example-badges-row div:nth-child(2) {
+  width: 127px;
+}
+.example-badges-row div:nth-child(3) {
+  width: 76px;
+}
+.example-badges-row div:nth-child(4) {
+  width: 60px;
 }

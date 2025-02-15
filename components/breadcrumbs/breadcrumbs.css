@@ -17,7 +17,7 @@
   background: url(icons/arrow.svg) no-repeat 50% 50%;
 }
 .breadcrumbs a {
-  color: var(--med-gray-2);
+  color: var(--med-gray-dark);
   text-decoration: none;
   border: 1px solid transparent;
 }

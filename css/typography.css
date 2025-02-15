@@ -1,0 +1,15 @@
+.text-black {
+  color: var(--black);
+}
+.text-teal {
+  color: var(--teal);
+}
+.text-teal-dark {
+  color: var(--teal-dark);
+}
+.text-med-gray  {
+  color: var(--med-gray);
+}
+.text-red {
+  color: var(--alert-danger);
+}

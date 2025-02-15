@@ -1,0 +1,61 @@
+.badge {
+  display: inline-flex;
+  gap: calc(var(--spacing-xs) / 2);
+  align-items: center;
+  padding: 2px var(--spacing-xs);
+  border-radius: var(--border-radius-s);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.badge i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid red;
+}
+.badge-gray {
+  background-color: var(--gray-light);
+  color: var(--med-gray-dark);
+}
+.badge-primary {
+  background-color: var(--cadet-pale);
+  color: var(--teal);
+}
+.badge-primary i {
+  color: var(--teal-dark);
+}
+.badge-red {
+  background-color: var(--alert-danger-bg);
+  color: var(--alert-danger-text);
+}
+.badge-red i {
+  color: var(--alert-danger);
+}
+.badge-orange {
+  background-color: var(--alert-warning-bg);
+  color: var(--alert-warning-text);
+}
+.badge-orange i {
+  color: var(--alert-warning);
+}
+.badge-green {
+  background-color: var(--alert-success-bg);
+  color: var(--alert-success-text);
+}
+.badge-green i {
+  color: var(--alert-success);
+}
+.badge-blue {
+  background-color: var(--alert-info-bg);
+  color: var(--alert-info-text);
+}
+.badge-blue i {
+  color: var(--alert-info);
+}
+.badge-purple {
+  background-color: var(--purple-pale);
+  color: var(--purple-dark);
+}
+.badge-purple i {
+  color: var(--purple);
+} 
