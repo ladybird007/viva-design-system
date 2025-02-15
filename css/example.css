@@ -38,7 +38,7 @@
 
 /***** content *****/
 .example-content {
-  min-height: calc(100% - 174px);
+  min-height: calc(100vh - 174px);
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #EEEEEE;
@@ -114,6 +114,9 @@
 /****** HTML ******/
 .example-html {
   background-color: #eee;
+}
+.example-html.bg-white {
+  background-color: var(--white);
 }
 .example-html-head {
   display: flex;
@@ -347,4 +350,13 @@ code:hover:before {
 }
 .example-grid .example-container-xs .row.row-cols-2 > .col {
   width: calc(100% / 2 - var(--spacing-s) / 2);
+}
+
+/***** Breadcrumb *****/
+.breadcrumbs .example-breadcrumbs-hover {
+  color: var(--cadet);
+}
+.breadcrumbs .example-breadcrumbs-focus {
+  color: var(--cadet);
+  border-color: var(--cadet-light);
 }

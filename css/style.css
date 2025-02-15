@@ -15,6 +15,11 @@
   transition: all 0.3s;
 }
 
+html,
+body {
+  min-height: 100vh;
+}
+
 /***** Rounded *****/
 .rounded {
   border-radius: var(--spacing-xs);

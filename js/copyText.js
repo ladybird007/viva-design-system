@@ -1,5 +1,10 @@
 function copyText(el) {
-  const copyText = document.getElementById("copy-content").textContent;
+  const copyText = el.closest('.example-html').children[1].children[0].textContent;
+  const copiedClassBtn = document.querySelectorAll('.copy-btn');
+
+  copiedClassBtn.forEach((btn) => {
+    btn.classList.remove('copied');
+  });
   navigator.clipboard.writeText(copyText);
   el.classList.add('copied');
 }
@@ -13,5 +18,4 @@ copyBtns.forEach((btn) => {
     btn.classList.add('copied');
   });
 });
-
 

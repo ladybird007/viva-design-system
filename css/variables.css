@@ -10,9 +10,9 @@
   --dark-teal-4: #CFDBDA;
 
   --cadet: #3DB1AD;
-  --cadet-2: #026E78;
-  --cadet-3: #8BD8D5;
-  --cadet-4: #D8F0F0;
+  --cadet-dark: #026E78;
+  --cadet-light: #8BD8D5;
+  --cadet-pale: #D8F0F0;
 
   --med-gray: #6C757D;
   --med-gray-2: #343434;
@@ -113,6 +113,7 @@
 
   --shadow-focus: 0 0 0 2px #8BD8D5;
 
+  --border-radius-xxs: 4px;
   --border-radius-xs: 8px;
 
   

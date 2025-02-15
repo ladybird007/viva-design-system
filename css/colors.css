@@ -40,16 +40,16 @@
   background-color: var(--cadet);
   color: var(--black);
 }
-.bg-cadet-2 {
-  background-color: var(--cadet-2);
+.bg-cadet-dark {
+  background-color: var(--cadet-dark);
   color: var(--white);
 } 
-.bg-cadet-3 {
-  background-color: var(--cadet-3);
+.bg-cadet-light {
+  background-color: var(--cadet-light);
   color: var(--black);
 } 
-.bg-cadet-4 {
-  background-color: var(--cadet-4);
+.bg-cadet-pale {
+  background-color: var(--cadet-pale);
   color: var(--black);
 }
 

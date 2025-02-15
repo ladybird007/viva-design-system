@@ -1,26 +1,50 @@
-.breadcrumbs {
+.breadcrumbs ul {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-xs);
 }
+.breadcrumbs li,
 .breadcrumbs a,
 .breadcrumbs span {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  font-size: 14px;
+}
+.breadcrumbs li + li:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: url(icons/arrow.svg) no-repeat 50% 50%;
 }
 .breadcrumbs a {
   color: var(--med-gray-2);
   text-decoration: none;
+  border: 1px solid transparent;
 }
 .breadcrumbs span {
   font-weight: 600;
   color: var(--teal);
 }
-.breadcrumbs span:before {
-  content: '';
-  width: var(--spacing-s);
-  height: var(--spacing-s);
-  background: url(icons/arrow.svg) no-repeat 50% 50%;
+.breadcrumbs svg {
+  margin-left: 2px;
+  margin-right: 2px;
 }
+.breadcrumbs a,
+.breadcrumbs span {
+  font-size: 14px;
+  border-radius: var(--border-radius-xxs);
+  line-height: 20px;
+  padding: calc(var(--spacing-xs) / 2);
+}
+.breadcrumbs a:hover {
+  color: var(--cadet);
+}
+.breadcrumbs a:focus {
+  outline: none;
+  border-color: var(--cadet-light);
+  color: var(--cadet);
+}
+.breadcrumbs a:hover svg path {
+  fill: var(--cadet);
+}
+
