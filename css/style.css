@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url(../css/reset.css);
 @import url(../css/variables.css);
 @import url(../css/typography.css);
+@import url(../css/fonts.css);
 @import url(../css/colors.css);
 @import url(../components/accordion/accordion.css);
 @import url(../components/alert/alerts.css);
@@ -16,16 +19,93 @@
   }
 }
 
-* {
+a,
+button {
   transition: all 0.3s;
 }
 
 html,
 body {
   min-height: 100vh;
+  font-family: "Work Sans", serif;
 }
 
 /***** Rounded *****/
 .rounded {
   border-radius: var(--spacing-xs);
+}
+
+/***** Links ******/
+.internal-link,
+.exernal-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--teal-dark);
+}
+
+.internal-link:after,
+.external-link:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.internal-link:after {
+  background-image: url(../icons/internal.svg);
+}
+.external-link:after {
+  background-image: url(../icons/external.svg)
+}
+
+
+/****** Forms ******/
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  cursor: pointer;
+  font-weight: 500;
+}
+.custom-checkbox-icon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--teal);
+  border-radius: var(--border-radius-xxs);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.custom-checkbox input {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.custom-checkbox input:checked + .custom-checkbox-icon {
+  background-color: var(--teal-pale);
+}
+
+
+/***** Dropdown ******/
+.js-dropdown-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.js-dropdown-content {
+  display: none;
+  transition-timing-function: linear;
+}
+.js-dropdown-icon {
+  color: var(--teal);
+  position: relative;
+  margin-left: var(--spacing-s);
+  transition: all 0.5s;
+}
+.js-dropdown-btn.opened .js-dropdown-icon {
+  transform: rotate(180deg);
 }

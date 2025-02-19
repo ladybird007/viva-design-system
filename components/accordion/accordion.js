@@ -8,11 +8,11 @@
         $(this).removeClass('opened')
       } else {
         if($(this).hasClass('accordion-header')) {
-          $('.js-dropdown-btn').removeClass();
-          $('.js-dropdown-content').slideUp(800);
+          $('.js-dropdown-btn').removeClass('opened');
+          $('.js-dropdown-content').slideUp('slow');
         }
         $(this).addClass('opened');
-        $(this).next().stop(true,true).slideDown();
+        $(this).next().stop(true,true).slideDown('slow');
       }
       
     })

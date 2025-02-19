@@ -25,9 +25,10 @@
   font-weight: 600;
   color: var(--teal);
 }
-.breadcrumbs svg {
+.breadcrumbs i {
   margin-left: 2px;
   margin-right: 2px;
+  font-size: 0.8em;
 }
 .breadcrumbs a,
 .breadcrumbs span {

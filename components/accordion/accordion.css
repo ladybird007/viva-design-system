@@ -2,20 +2,10 @@
   border-bottom: 2px solid var(--teal);
 }
 .accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: var(--spacing-s);
   font-size: 28px;
   font-weight: 700;
   color: var(--teal);
-}
-.accordion-header i {
-  position-anchor: relative;
-  width: 28px;
-  height: 28px;
-  margin-left: var(--spacing-s);
-  border: 1px solid red;
 }
 .accordion-content {
   font-size: 16px;
@@ -59,39 +49,4 @@
 .accordion-sub-content .accordion-sub-content > * {
   padding-left: 0;
   padding-right: 0;
-}
-
-.custom-checkbox {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  cursor: pointer;
-}
-.custom-checkbox-icon {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--teal);
-  border-radius: var(--border-radius-xxs);
-  background-color: var(--white);
-  cursor: pointer;
-}
-.custom-checkbox input {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-}
-.custom-checkbox input:checked + .custom-checkbox-icon {
-  background-color: var(--teal-pale);
-}
-
-.js-dropdown-btn {
-  cursor: pointer;
-}
-.js-dropdown-content {
-  display: none;
-  transition-timing-function: linear;
-}
-.js-dropdown-btn.opened .js-dropdown-icon {
-  transform: rotate(180deg);
 }

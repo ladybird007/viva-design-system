@@ -2,16 +2,14 @@
   display: inline-flex;
   gap: calc(var(--spacing-xs) / 2);
   align-items: center;
-  padding: 2px var(--spacing-xs);
+  padding: 1px var(--spacing-xs);
   border-radius: var(--border-radius-s);
   font-size: 12px;
   font-weight: 500;
   line-height: 20px;
 }
 .badge i {
-  width: 12px;
-  height: 12px;
-  border: 1px solid red;
+  line-height: 1;
 }
 .badge-gray {
   background-color: var(--gray-light);
