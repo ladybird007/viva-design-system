@@ -105,6 +105,9 @@
 /****** nav list *****/
 .example-nav-links {
   font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .example-nav-links li {
   padding: var(--spacing-xs) 0;
@@ -394,3 +397,69 @@ code:hover:before {
 .example-badges-row div:nth-child(4) {
   width: 60px;
 }
+
+/***** Typography *****/
+
+.example-typography-item {
+  display: flex;
+
+  padding-bottom: 50px;
+  border-bottom: 2px solid #BCC3CD;
+}
+.example-typography-item + .example-typography-item {
+  padding-top: 50px;
+}
+.example-typography-item > div {
+  margin-top: var(--spacing-m);
+}
+.example-typography-item > div:first-child {
+  width: 400px;
+  flex-shrink: 0;
+  padding-right: var(--spacing-l);
+}
+
+.example-typography-tablet ul, 
+.example-typography-tablet ol {
+  line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+  .example-typography-item {
+    flex-direction: column-reverse;
+  }
+  .example-typography-item > div:last-child {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1216px) {
+  .example-typography-tablet h1 {
+    font-size: 40px;
+  }
+  .example-typography-tablet h2 {
+    font-size: 28px;
+  }
+  .example-typography-tablet h3 {
+    font-size: 22px;
+  }
+  .example-typography-tablet h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 769px) {
+  .example-typography-mobile h1 {
+    font-size: 32px;
+  }
+  .example-typography-mobile h2 {
+    font-size: 24px;
+  }
+  .example-typography-mobile h3 {
+    font-size: 18px;
+  }
+  .example-typography-mobile h4 {
+    font-size: 16px;
+  }
+}
+

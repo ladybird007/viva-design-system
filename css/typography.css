@@ -1,3 +1,107 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Work Sans", serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+h1 {
+  letter-spacing: -1px;
+}
+h1.brand-heading {
+  font-family: "Fraunces", serif;
+}
+h2,
+h3,
+h4 {
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1215px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  ul, 
+  ol {
+    line-height: 1.8;
+  }
+}
+@media (min-width: 1216px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+
+.small-caps {
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+
+.small,
+small {
+  font-size: 14px;  
+}
+
+
+ul, ol {
+	margin: 0;
+}
+
+.quote,
+blockquote {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h4.card-headline,
+.card h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: -0.25px
+}
+
+.disclaimer {
+  line-height: 1.2;
+}
+
+
 .text-black {
   color: var(--black);
 }
@@ -20,5 +124,23 @@
   text-decoration: none;
   color: var(--teal);
   display: inline-flex;
+  align-items: center;
   gap: 10px;
 }
+
+.internal-link:after,
+.external-link:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.internal-link:after {
+  background-image: url(../icons/internal.svg);
+}
+.external-link:after {
+  background-image: url(../icons/external.svg)
+}
+

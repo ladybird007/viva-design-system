@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 @import url(../css/reset.css);
 @import url(../css/variables.css);
 @import url(../css/typography.css);
 @import url(../css/fontAwesome.css);
+@import url(../css/typography.css);
 @import url(../css/colors.css);
 @import url(../components/accordion/accordion.css);
 @import url(../components/alert/alerts.css);
@@ -28,36 +30,14 @@ html,
 body {
   min-height: 100vh;
   font-family: "Work Sans", serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 /***** Rounded *****/
 .rounded {
   border-radius: var(--spacing-xs);
-}
-
-/***** Links ******/
-.internal-link,
-.exernal-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--teal-dark);
-}
-
-.internal-link:after,
-.external-link:after {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-.internal-link:after {
-  background-image: url(../icons/internal.svg);
-}
-.external-link:after {
-  background-image: url(../icons/external.svg)
 }
 
 
