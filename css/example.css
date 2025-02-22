@@ -77,12 +77,15 @@
 .example-box-shadow-wrap {
   width: 237px;
 }
-.example-box-shadow-wrap .example-code {
+.example-box-shadow-wrap code {
   margin-top: var(--spacing-s);
   padding: var(--spacing-xs);
   background-color: var(--white);
   border-radius: var(--border-radius-xs);
+  box-shadow: var(--shadow-s);
   text-align: center;
+  display: inline-block;
+  text-align: left;
 }
 .example-box-shadow {
   width: 237px;
@@ -203,7 +206,7 @@
   background-color: var(--white);
   color: var(--black);
   border-radius: var(--border-radius-xs) !important;
-  box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08);
+  box-shadow: var(--shadow-s);
 }
 
 /***** Copy-btn/code tag *****/
@@ -423,7 +426,7 @@ code:hover:before {
   background-color: var(--white);
   color: var(--black);
   border-radius: var(--border-radius-xs) !important;
-  box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21, 21, 21, 0.08);
+  box-shadow: var(--shadow-s);
   line-height: 2;
   display: inline-block;
 }
