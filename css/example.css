@@ -417,9 +417,20 @@ code:hover:before {
   flex-shrink: 0;
   padding-right: var(--spacing-l);
 }
-
+.example-typography-item code {
+  margin-top: var(--spacing-s);
+  padding: var(--spacing-xs);
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: var(--border-radius-xs) !important;
+  box-shadow: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21, 21, 21, 0.08);
+  line-height: 2;
+  display: inline-block;
+}
 .example-typography-tablet ul, 
-.example-typography-tablet ol {
+.example-typography-tablet ol,
+.example-typography-mobile ul, 
+.example-typography-mobile ol {
   line-height: 1.8;
 }
 

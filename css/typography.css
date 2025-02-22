@@ -31,6 +31,10 @@ h4 {
   h4 {
     font-size: 16px;
   }
+  ul, 
+  ol {
+    line-height: 1.8;
+  }
 }
 @media (min-width: 769px) and (max-width: 1215px) {
   h1 {
@@ -116,6 +120,12 @@ h4.card-headline,
 }
 .text-red {
   color: var(--alert-danger);
+}
+.text-semibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
 }
 
 .internal-link,
