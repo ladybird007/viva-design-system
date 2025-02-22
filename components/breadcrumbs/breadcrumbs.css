@@ -8,7 +8,7 @@
 .breadcrumbs span {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: calc(var(--spacing-xs) - 2px);
 }
 .breadcrumbs li + li:before {
   content: '';
@@ -26,8 +26,6 @@
   color: var(--teal);
 }
 .breadcrumbs i {
-  margin-left: 2px;
-  margin-right: 2px;
   font-size: 0.8em;
 }
 .breadcrumbs a,
@@ -35,7 +33,7 @@
   font-size: 14px;
   border-radius: var(--border-radius-xxs);
   line-height: 20px;
-  padding: calc(var(--spacing-xs) / 2);
+  padding: calc(var(--spacing-xs) / 2) calc(var(--spacing-xs) - 2px);
 }
 .breadcrumbs a:hover {
   color: var(--cadet);
