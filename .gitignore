@@ -9,6 +9,7 @@ node_modules
 /.svelte-kit
 /build
 /node_modules
+/VivaDesignSystem
 
 # OS
 .DS_Store
