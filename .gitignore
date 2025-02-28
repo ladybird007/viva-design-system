@@ -10,6 +10,7 @@ node_modules
 /build
 /node_modules
 /VivaDesignSystem
+/VivaDesignSystem.zip
 
 # OS
 .DS_Store
