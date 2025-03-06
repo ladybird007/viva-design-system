@@ -5936,6 +5936,15 @@
 .fa-level-up-alt {
   --fa: "\f3bf"; }
 
+.fa-circle-small {
+  --fa: "\e122"; }
+
+.fa-window {
+  --fa: "\f40e"; }
+
+.fa-square-question {
+  --fa: "\f2fd"; }
+
 
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';

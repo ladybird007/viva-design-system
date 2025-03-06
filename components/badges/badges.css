@@ -1,6 +1,6 @@
 .badge {
   display: inline-flex;
-  gap: calc(var(--spacing-xs) / 2);
+  gap: 6px;
   align-items: center;
   padding: 1px var(--spacing-xs);
   border-radius: var(--border-radius-s);
