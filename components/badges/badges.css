@@ -23,29 +23,29 @@
   color: var(--teal-dark);
 }
 .badge-red {
-  background-color: var(--alert-danger-bg);
-  color: var(--alert-danger-text);
+  background-color: var(--alert-danger-pale);
+  color: var(--alert-danger-dark);
 }
 .badge-red i {
   color: var(--alert-danger);
 }
 .badge-orange {
-  background-color: var(--alert-warning-bg);
-  color: var(--alert-warning-text);
+  background-color: var(--alert-warning-pale);
+  color: var(--alert-warning-dark);
 }
 .badge-orange i {
   color: var(--alert-warning);
 }
 .badge-green {
-  background-color: var(--alert-success-bg);
-  color: var(--alert-success-text);
+  background-color: var(--alert-success-pale);
+  color: var(--alert-success-dark);
 }
 .badge-green i {
   color: var(--alert-success);
 }
 .badge-blue {
-  background-color: var(--alert-info-bg);
-  color: var(--alert-info-text);
+  background-color: var(--alert-info-pale);
+  color: var(--alert-info-dark);
 }
 .badge-blue i {
   color: var(--alert-info);

@@ -229,12 +229,12 @@
   color: var(--black);
 }
 .bg-alert-info-dark {
-  background-color: var(--alert-info-text);
+  background-color: var(--alert-info-dark);
   color: var(--white);
 }
 .bg-alert-info-light {
-  background-color: var(--alert-info-bg);
-  color: var(--alert-info-text);
+  background-color: var(--alert-info-pale);
+  color: var(--alert-info-dark);
 }
 
 .bg-alert-danger {
@@ -242,12 +242,12 @@
   color: var(--white);
 }
 .bg-alert-danger-dark {
-  background-color: var(--alert-danger-text);
+  background-color: var(--alert-danger-dark);
   color: var(--white);
 }
 .bg-alert-danger-light {
-  background-color: var(--alert-danger-bg);
-  color: var(--alert-danger-text);
+  background-color: var(--alert-danger-pale);
+  color: var(--alert-danger-dark);
 }
 
 .bg-alert-warning {
@@ -255,12 +255,12 @@
   color: var(--black);
 }
 .bg-alert-warning-dark {
-  background-color: var(--alert-warning-text);
+  background-color: var(--alert-warning-dark);
   color: var(--white);
 }
 .bg-alert-warning-light {
-  background-color: var(--alert-warning-bg);
-  color: var(--alert-warning-text);
+  background-color: var(--alert-warning-pale);
+  color: var(--alert-warning-dark);
 }
 
 .bg-alert-success {
@@ -268,27 +268,27 @@
   color: var(--black);
 }
 .bg-alert-success-dark {
-  background-color: var(--alert-success-text);
+  background-color: var(--alert-success-dark);
   color: var(--white);
 }
 .bg-alert-success-light {
-  background-color: var(--alert-success-bg);
-  color: var(--alert-success-text);
+  background-color: var(--alert-success-pale);
+  color: var(--alert-success-dark);
 }
 
+.bg-alert-disabled-dark {
+  background-color: var(--alert-disabled-dark);
+  color: var(--white);
+}
 .bg-alert-disabled {
   background-color: var(--alert-disabled);
   color: var(--white);
 }
-.bg-alert-disabled-gray {
-  background-color: var(--alert-disabled-gray);
-  color: var(--white);
-}
-.bg-alert-disabled-light-gray {
-  background-color: var(--alert-disabled-light-gray);
+.bg-alert-disabled-light {
+  background-color: var(--alert-disabled-light);
   color: var(--alert-disabled);
 }
-.bg-alert-disabled-pale-gray {
-  background-color: var(--alert-disabled-pale-gray);
+.bg-alert-disabled-pale {
+  background-color: var(--alert-disabled-pale);
   color: var(--alert-disabled);
 }
