@@ -17,7 +17,7 @@
   font-weight: 800;
 }
 .example-header p {
-  max-width: 40%;
+  max-width: 55%;
   font-size: 18px;
 }
 
@@ -244,7 +244,7 @@ code:hover:before {
   display: none;
 }
 
-/***** Grid *****/
+/***** Spacing *****/
 .example-spacing {
   display: flex;
   flex-direction: column;
@@ -338,32 +338,55 @@ code:hover:before {
   margin-top: var(--spacing-xxl);
 }
 .example-grid .example-container-m {
-  max-width: 960px;
+  max-width: calc(960px + 2 * var(--gap));
 }
 .example-grid .example-container-s {
-  max-width: 721px;
+  max-width: calc(721px + 2 * var(--gap));
 }
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
   .example-grid .example-container-s .row.row-cols-12 > .col {
     width: calc(100% / 6 - var(--gutter) / 6 * 5);
   }
 }
+
+@media (min-width: 1200px) {
+  .example-grid .example-container-xl {
+    max-width: calc(1140px + 2 * var(--gap));
+  }
+}
+
 .example-grid .example-container-xs {
-  max-width: 312px;
+  max-width: 719px;
+}
+.example-grid .example-container-xxs {
+  max-width: 480px;
 }
 .example-grid .example-container-xs .row {
   gap: 16px
 }
-.example-grid .example-container-xs .row.row-cols-12 > .col,
-.example-grid .example-container-xs .row.row-cols-6 > .col,
-.example-grid .example-container-xs .row.row-cols-3 > .col {
-  width: calc(100% / 3 - var(--spacing-s) / 3 * 2);
+@media (min-width: 576px) {
+  .example-grid .example-container-xs .row.row-cols-12 > .col,
+  .example-grid .example-container-xs .row.row-cols-6 > .col,
+  .example-grid .example-container-xs .row.row-cols-3 > .col {
+    width: calc(100% / 3 - var(--spacing-s) / 3 * 2);
+  }
+  .example-grid .example-container-xs .row.row-cols-4 > .col {
+    width: calc(100% / 4 - var(--spacing-s) / 4 * 3);
+  }
+  .example-grid .example-container-xs .row.row-cols-2 > .col {
+    width: calc(100% / 2 - var(--spacing-s) / 2);
+  }
 }
-.example-grid .example-container-xs .row.row-cols-4 > .col {
-  width: calc(100% / 4 - var(--spacing-s) / 4 * 3);
+.example-grid .example-container-xxs .row.row-cols-12 > .col {
+  width: calc(100% / 3 - var(--spacing-m) / 3 * 2);
 }
-.example-grid .example-container-xs .row.row-cols-2 > .col {
-  width: calc(100% / 2 - var(--spacing-s) / 2);
+.example-grid .example-container-xxs .row.row-cols-4 > .col,
+.example-grid .example-container-xxs .row.row-cols-6 > .col {
+  width: calc(100% / 2 - var(--spacing-m) / 2);
+}
+.example-grid .example-container-xxs .row.row-cols-3 > .col,
+.example-grid .example-container-xxs .row.row-cols-2 > .col {
+  width: 100%;
 }
 
 /***** Breadcrumb *****/
