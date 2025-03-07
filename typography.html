@@ -39,7 +39,7 @@
             <br>
             <div>
               font-family: Work Sans <br>
-              font-size: 50px <br>
+              font-size: 40px <br>
               font-weight: bold (700) <br>
               line-height: 120% <br>
               letter-spacing: -1px
@@ -140,7 +140,7 @@
 
         <div class="example-typography-item">
           <div>
-            <h1 class="brand-heading">Brand Heading</h1>
+            <h1 class="font-brand">Brand Heading</h1>
             <br>
             <div>
               font-family: Fraunces <br>
@@ -150,10 +150,10 @@
             </div>
           </div>
           <div>
-            <h1 class="brand-heading">Brand Heading looks like this</h1>
+            <h1 class="font-brand">Brand Heading looks like this</h1>
             <br>
             <p>
-              <code>&lt;h1 class="brand-heading">Brand Heading&lt;/h1></code>
+              <code>&lt;h1 class="font-brand">Brand Heading&lt;/h1></code>
             </p>
           </div>
         </div>
@@ -214,6 +214,8 @@
               </code>
             </p>
             <br>
+            <p>or</p>
+            <br>
             <p>
               <code>
                 &lt;p class="small">Small paragraph text&lt;/p>
@@ -242,16 +244,7 @@
                   <li>Item 3</li>
                   <li>Item 4</li>
                 </ul>
-              </div>
-              <div class="col-6">
-                <ol>
-                  <li>Item 1</li>
-                  <li>Item 2</li>
-                  <li>Item 3</li>
-                  <li>Item 4</li>
-                </ol>
-              </div>
-            </div>
+                <br>
 <pre>
 <code>&lt;ul>
   &lt;li>Item 1&lt;/li>
@@ -261,7 +254,15 @@
 &lt;/ul>
 </code>
 </pre>
-
+              </div>
+              <div class="col-6">
+                <ol>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                  <li>Item 4</li>
+                </ol>
+                <br>
 <pre>
 <code>&lt;ol>
   &lt;li>Item 1&lt;/li>
@@ -271,12 +272,14 @@
 &lt;/ol>
 </code>
 </pre>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="example-typography-item">
           <div>
-            <div class="quote">Brand Text</div>
+            <div class="quote font-brand">Brand Text</div>
             <br>
             <div>
               font-family: Fraunces <br>
@@ -286,19 +289,21 @@
             </div>
           </div>
           <div>
-            <blockquote>
+            <blockquote class="font-brand">
               Brand paragraph text looks like this and is used for quotes and blockquotes.
             </blockquote>
             <br>
             <p>
               <code>
-                &lt;blockquote>Brand paragraph text&lt;/blockquote>
+                &lt;blockquote class="font-brand">Brand paragraph text&lt;/blockquote>
               </code>
             </p>
             <br>
+            <p>or</p>
+            <br>
             <p>
               <code>
-                &lt;div class="quote">Brand paragraph text&lt;/div>
+                &lt;div class="quote font-brand">Brand paragraph text&lt;/div>
               </code>
             </p>
           </div>
@@ -325,6 +330,15 @@
                 &lt;h4 class="card-headline">card headline&lt;/h4>
               </code>
             </p>
+            <br>
+            <p>or</p>
+            <br>
+<pre>
+<code>&lt;div class="card">
+  &lt;h4>card headline&lt;/h4>
+&lt;/div>
+</code>
+</pre>
           </div>
         </div>
       </div>
@@ -434,6 +448,10 @@
             </div>
             <div>
               <h1>Header 1 looks like this</h1>
+              <br>
+              <p>
+                <code>&lt;h1>Header 1&lt;/h1></code>
+              </p>
             </div>
           </div>
 
@@ -451,6 +469,10 @@
             </div>
             <div>
               <h2>Header 2 looks like this</h2>
+              <br>
+              <p>
+                <code>&lt;h2>Header 2&lt;/h2></code>
+              </p>
             </div>
           </div>
 
@@ -468,6 +490,10 @@
             </div>
             <div>
               <h3>Header 3 looks like this</h3>
+              <br>
+              <p>
+                <code>&lt;h3>Header 3&lt;/h3></code>
+              </p>
             </div>
           </div>
 
@@ -485,8 +511,11 @@
             </div>
             <div>
               <h4>Header 4 looks like this</h4>
+              <br>
+              <p>
+                <code>&lt;h4>Header 4&lt;/h4></code>
+              </p>
             </div>
-            
           </div>
 
           <div class="example-typography-item">
@@ -500,13 +529,19 @@
               </div>
             </div>
             <div>
-              Small Caps is used throughout the site when referencing either <span class="small-caps">Viva Health</span> or <span class="small-caps">Viva Medicare</span>. 
+              <p>
+                Small Caps is used throughout the site when referencing either <span class="small-caps">Viva Health</span> or <span class="small-caps">Viva Medicare</span>. 
+              </p>
+              <br>
+              <p>
+                <code>&lt;span class="small-caps">Viva Health&lt;/span></code>
+              </p>
             </div>
           </div>
 
           <div class="example-typography-item">
             <div>
-              <h1 class="brand-heading">Brand Heading</h1>
+              <h1 class="font-brand">Brand Heading</h1>
               <br>
               <div>
                 font-family: Fraunces <br>
@@ -516,7 +551,11 @@
               </div>
             </div>
             <div>
-              <h1 class="brand-heading">Brand Heading looks like this</h1>
+              <h1 class="font-brand">Brand Heading looks like this</h1>
+              <br>
+              <p>
+                <code>&lt;h1 class="font-brand">Brand Heading&lt;/h1></code>
+              </p>
             </div>
           </div>
         </div>
@@ -545,6 +584,12 @@
               <p>
                 Standard paragraph text looks like this and is used throughout the site as the default text style. Any body copy or standard text should use this text style.
               </p>
+              <br>
+              <p>
+                <code>
+                  &lt;p>Standard paragraph text&lt;/p>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -560,7 +605,23 @@
               </div>
             </div>
             <div>
-              <small>Small paragraph text looks like this and is used for captions.</small>
+              <p>
+                <small>Small paragraph text looks like this and is used for captions.</small>
+              </p>
+              <br>
+              <p>
+                <code>
+                  &lt;small>Small text&lt;/small>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+              <p>
+                <code>
+                  &lt;p class="small">Small paragraph text&lt;/p>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -584,6 +645,16 @@
                     <li>Item 3</li>
                     <li>Item 4</li>
                   </ul>
+                  <br>
+<pre>
+<code>&lt;ul>
+  &lt;li>Item 1&lt;/li>
+  &lt;li>Item 2&lt;/li>
+  &lt;li>Item 3&lt;/li>
+  &lt;li>Item 4&lt;/li>
+&lt;/ul>
+</code>
+</pre>
                 </div>
                 <div class="col-6">
                   <ol>
@@ -592,6 +663,16 @@
                     <li>Item 3</li>
                     <li>Item 4</li>
                   </ol>
+                  <br>
+<pre>
+<code>&lt;ol>
+  &lt;li>Item 1&lt;/li>
+  &lt;li>Item 2&lt;/li>
+  &lt;li>Item 3&lt;/li>
+  &lt;li>Item 4&lt;/li>
+&lt;/ol>
+</code>
+</pre>
                 </div>
               </div>
             </div>
@@ -599,7 +680,7 @@
 
           <div class="example-typography-item">
             <div>
-              <p class="quote">Brand Text</p>
+              <p class="quote font-brand">Brand Text</p>
               <br>
               <div>
                 font-family: Fraunces <br>
@@ -609,9 +690,23 @@
               </div>
             </div>
             <div>
-              <blockquote>
+              <blockquote class="font-brand">
                 Brand paragraph text looks like this and is used for quotes and blockquotes.
               </blockquote>
+              <br>
+              <p>
+                <code>
+                  &lt;blockquote class="font-brand">Brand paragraph text&lt;/blockquote>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+              <p>
+                <code>
+                  &lt;div class="quote font-brand">Brand paragraph text&lt;/div>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -630,6 +725,21 @@
             </div>
             <div class="card">
               <h4>CARD Headings look like this and are used on cards.</h4>
+              <br>
+              <p>
+                <code>
+                  &lt;h4 class="card-headline">card headline&lt;/h4>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+<pre>
+<code>&lt;div class="card">
+  &lt;h4>card headline&lt;/h4>
+&lt;/div>
+</code>
+</pre>
             </div>
           </div>
         </div>
@@ -658,9 +768,19 @@
               <p class="disclaimer">
                 Standard Disclaimer text looks like this and is used XXXXX
               </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer">Standard Disclaimer text&lt;/p>
+                </code>
+              </p>
               <br>
-              <p class="disclaimer text-bold">
+              <p class="disclaimer text-semibold">
                 Disclaimer Paragraph (Bold) also has an emphasis style that looks like this
+              </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer text-semibold">Disclaimer Paragraph (Bold)&lt;/p>
+                </code>
               </p>
             </div>
           </div>
@@ -680,9 +800,19 @@
               <p>
                 <small class="disclaimer">Small Disclaimer text looks like this and is used XXXXX</small>
               </p>
+              <p>
+                <code>
+                  &lt;small class="disclaimer">Small Disclaimer text&lt;/small>
+                </code>
+              </p>
               <br>
-              <p class="disclaimer small">
-                <strong>Disclaimer Paragraph (Bold) also has an emphasis style that looks like this</strong>
+              <p class="disclaimer small text-bold">
+                Disclaimer Paragraph (Bold) also has an emphasis style that looks like this
+              </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer small text-bold">Small Disclaimer (Bold)&lt;/p>
+                </code>
               </p>
             </div>
           </div>
@@ -719,7 +849,11 @@
               </div>
             </div>
             <div>
-              <h1>Header 1 looks like this</h1>
+              <h2>Header 1 looks like this</h2>
+              <br>
+              <p>
+                <code>&lt;h1>Header 2&lt;/h1></code>
+              </p>
             </div>
           </div>
 
@@ -737,6 +871,10 @@
             </div>
             <div>
               <h2>Header 2 looks like this</h2>
+              <br>
+              <p>
+                <code>&lt;h2>Header 2&lt;/h2></code>
+              </p>
             </div>
           </div>
 
@@ -754,6 +892,10 @@
             </div>
             <div>
               <h3>Header 3 looks like this</h3>
+              <br>
+              <p>
+                <code>&lt;h3>Header 3&lt;/h3></code>
+              </p>
             </div>
           </div>
 
@@ -771,8 +913,11 @@
             </div>
             <div>
               <h4>Header 4 looks like this</h4>
+              <br>
+              <p>
+                <code>&lt;h4>Header 4&lt;/h4></code>
+              </p>
             </div>
-            
           </div>
 
           <div class="example-typography-item">
@@ -786,13 +931,19 @@
               </div>
             </div>
             <div>
-              Small Caps is used throughout the site when referencing either <span class="small-caps">Viva Health</span> or <span class="small-caps">Viva Medicare</span>. 
+              <p>
+                Small Caps is used throughout the site when referencing either <span class="small-caps">Viva Health</span> or <span class="small-caps">Viva Medicare</span>. 
+              </p>
+              <br>
+              <p>
+                <code>&lt;span class="small-caps">Viva Health&lt;/span></code>
+              </p>
             </div>
           </div>
 
           <div class="example-typography-item">
             <div>
-              <h1 class="brand-heading">Brand Heading</h1>
+              <h1 class="font-brand">Brand Heading</h1>
               <br>
               <div>
                 font-family: Fraunces <br>
@@ -802,7 +953,11 @@
               </div>
             </div>
             <div>
-              <h1 class="brand-heading">Brand Heading looks like this</h1>
+              <h1 class="font-brand">Brand Heading looks like this</h1>
+              <br>
+              <p>
+                <code>&lt;h1 class="font-brand">Brand Heading&lt;/h1></code>
+              </p>
             </div>
           </div>
         </div>
@@ -831,6 +986,12 @@
               <p>
                 Standard paragraph text looks like this and is used throughout the site as the default text style. Any body copy or standard text should use this text style.
               </p>
+              <br>
+              <p>
+                <code>
+                  &lt;p>Standard paragraph text&lt;/p>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -846,7 +1007,23 @@
               </div>
             </div>
             <div>
-              <small>Small paragraph text looks like this and is used for captions.</small>
+              <p>
+                <small>Small paragraph text looks like this and is used for captions.</small>
+              </p>
+              <br>
+              <p>
+                <code>
+                  &lt;small>Small text&lt;/small>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+              <p>
+                <code>
+                  &lt;p class="small">Small paragraph text&lt;/p>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -870,6 +1047,16 @@
                     <li>Item 3</li>
                     <li>Item 4</li>
                   </ul>
+<br>
+<pre>
+<code>&lt;ul>
+  &lt;li>Item 1&lt;/li>
+  &lt;li>Item 2&lt;/li>
+  &lt;li>Item 3&lt;/li>
+  &lt;li>Item 4&lt;/li>
+&lt;/ul>
+</code>
+</pre>
                 </div>
                 <div class="col-6">
                   <ol>
@@ -878,6 +1065,16 @@
                     <li>Item 3</li>
                     <li>Item 4</li>
                   </ol>
+                  <br>
+<pre>
+<code>&lt;ol>
+  &lt;li>Item 1&lt;/li>
+  &lt;li>Item 2&lt;/li>
+  &lt;li>Item 3&lt;/li>
+  &lt;li>Item 4&lt;/li>
+&lt;/ol>
+</code>
+</pre>
                 </div>
               </div>
             </div>
@@ -885,7 +1082,7 @@
 
           <div class="example-typography-item">
             <div>
-              <p class="quote">Brand Text</p>
+              <p class="quote font-brand">Brand Text</p>
               <br>
               <div>
                 font-family: Fraunces <br>
@@ -895,9 +1092,23 @@
               </div>
             </div>
             <div>
-              <blockquote>
+              <blockquote class="font-brand">
                 Brand paragraph text looks like this and is used for quotes and blockquotes.
               </blockquote>
+              <br>
+              <p>
+                <code>
+                  &lt;blockquote class="font-brand">Brand paragraph text&lt;/blockquote>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+              <p>
+                <code>
+                  &lt;div class="quote font-brand">Brand paragraph text&lt;/div>
+                </code>
+              </p>
             </div>
           </div>
 
@@ -916,6 +1127,21 @@
             </div>
             <div class="card">
               <h4>CARD Headings look like this and are used on cards.</h4>
+              <br>
+              <p>
+                <code>
+                  &lt;h4 class="card-headline">card headline&lt;/h4>
+                </code>
+              </p>
+              <br>
+              <p>or</p>
+              <br>
+<pre>
+<code>&lt;div class="card">
+  &lt;h4>card headline&lt;/h4>
+&lt;/div>
+</code>
+</pre>
             </div>
           </div>
         </div>
@@ -944,9 +1170,19 @@
               <p class="disclaimer">
                 Standard Disclaimer text looks like this and is used XXXXX
               </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer">Standard Disclaimer text&lt;/p>
+                </code>
+              </p>
               <br>
-              <p class="disclaimer text-bold">
-                Disclaimer Paragraph (SemiBold) also has an emphasis style that looks like this
+              <p class="disclaimer text-semibold">
+                Disclaimer Paragraph (Bold) also has an emphasis style that looks like this
+              </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer text-semibold">Disclaimer Paragraph (Bold)&lt;/p>
+                </code>
               </p>
             </div>
           </div>
@@ -966,9 +1202,19 @@
               <p>
                 <small class="disclaimer">Small Disclaimer text looks like this and is used XXXXX</small>
               </p>
+              <p>
+                <code>
+                  &lt;small class="disclaimer">Small Disclaimer text&lt;/small>
+                </code>
+              </p>
               <br>
               <p class="disclaimer small text-bold">
-                Disclaimer Paragraph (SemiBold) also has an emphasis style that looks like this
+                Disclaimer Paragraph (Bold) also has an emphasis style that looks like this
+              </p>
+              <p>
+                <code>
+                  &lt;p class="disclaimer small text-bold">Small Disclaimer (Bold)&lt;/p>
+                </code>
               </p>
             </div>
           </div>
