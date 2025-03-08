@@ -420,10 +420,8 @@ code:hover:before {
 .example-badges code:first-child {
   margin-top: 0;
 }
-.example-badges-row {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xl);
+.example-badges-row-bottom {
+  align-items: flex-end;
 }
 .example-badges-row:first-child {
   font-weight: 700;
@@ -443,6 +441,32 @@ code:hover:before {
 }
 .example-badges-row div:nth-child(4) {
   width: 60px;
+}
+
+.example-badges-row div.example-column,
+.example-badges-row .example-column div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .example-column + .example-column {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .example-badges-row {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+  }
+}
+@media (min-width: 1024px) {
+  .example-columns {
+    display: flex;
+  }
 }
 
 /***** Typography *****/
