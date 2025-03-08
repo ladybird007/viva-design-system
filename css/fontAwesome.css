@@ -5945,6 +5945,240 @@
 .fa-square-question {
   --fa: "\f2fd"; }
 
+.fa-vault {
+  --fa: "\e2c5"; }
+
+.fa-utensils {
+  --fa: "\f2e7"; }
+
+.fa-briefcase {
+  --fa: "\f0b1"; }
+
+.fa-sparkles {
+  --fa: "\f890"; }
+
+.fa-gift-card {
+  --fa: "\f663"; }
+
+.fa-globe-pointer {
+  --fa: "\e60e"; }
+
+.fa-keynote {
+  --fa: "\f66c"; }
+
+.fa-lightbulb-on {
+  --fa: "\f672"; }
+
+.fa-presentation-screen {
+  --fa: "\f685"; }
+
+.fa-badge {
+  --fa: "\f335"; }
+
+.fa-badge-dollar {
+  --fa: "\f645"; }
+
+.fa-billboard {
+  --fa: "\e5cd"; }
+
+.fa-bullseye-arrow {
+  --fa: "\f648"; }
+
+.fa-money-check-dollar-pen {
+  --fa: "\f873"; }
+
+.fa-clipboard-question {
+  --fa: "\e4e3"; }
+
+.fa-display-chart-up {
+  --fa: "\e5e3"; }
+
+.fa-dog {
+  --fa: "\f6d3"; }
+
+.fa-map-location-dot {
+ --fa: "\f5a0"; }
+
+.fa-island-tropical {
+ --fa: "\f811"; }
+
+.fa-cars {
+  --fa: "\f85b"; }
+
+.fa-car-building {
+ --fa: "\f859"; }
+
+.fa-gauge-max {
+  --fa: "\f626"; }
+
+.fa-sign-post {
+ --fa: "\e624"; }
+
+.fa-circle-location-arrow {
+  --fa: "\f602"; }
+
+.fa-message-medical {
+ --fa: "\f7f4"; }
+
+.fa-bone-break {
+  --fa: "\f5d8"; }
+
+.fa-ear {
+  --fa: "\f5f0"; }
+
+.fa-wave-pulse {
+  --fa: "\f5f8"; }
+
+.fa-user-nurse {
+  --fa: "\f82f"; }
+
+.fa-user-doctor-message {
+  --fa: "\f82e"; }
+
+.fa-user-magnifying-glass {
+  --fa: "\e5c5"; }
+
+.fa-xmark-large {
+  --fa: "\e59b"; }
+
+.fa-filter-list {
+  --fa: "\e17c"; }
+
+.fa-filters {
+  --fa: "\e17e"; }
+
+.fa-filter-slash {
+  --fa: "\e17d"; }
+
+.fa-arrow-up-arrow-down {
+  --fa: "\e099"; }
+
+.fa-arrow-down-arrow-up {
+  --fa: "\f883"; }
+
+.fa-sliders-up {
+  --fa: "\f3f1"; }
+
+.fa-objects-column {
+  --fa: "\e3c1"; }
+
+.fa-grid-2 {
+  --fa: "\e196"; }
+  
+.fa-grid {
+  --fa: "\e195"; }
+
+.fa-scribble {
+  --fa: "\e23f"; }
+
+.fa-square-dashed {
+  --fa: "\e269"; }
+
+.fa-angles-up-down {
+    --fa: "\e60d"; }
+
+.fa-notebook {
+  --fa: "\e201"; }
+
+.fa-file-zip {
+  --fa: "\e5ee"; }
+
+.fa-file-doc {
+  --fa: "\e5ed"; }
+
+.fa-file-png {
+  --fa: "\e666"; }
+
+.fa-file-jpg {
+  --fa: "\e646"; }
+
+.fa-file-gif {
+  --fa: "\e645"; }
+
+.fa-file-ppt {
+  --fa: "\e64a"; }
+
+.fa-file-xls {
+  --fa: "\e64d"; }
+
+.fa-file-xml {
+  --fa: "\e654" ;}
+
+.fa-file-mp3 {
+  --fa: "\e648"; }
+
+.fa-file-mp4 {
+  --fa: "\e649"; }
+
+.fa-file-mov {
+  --fa: "\e647"; }
+
+.fa-file-spreadsheet {
+  --fa: "\f65b"; }
+
+.fa-file-chart-pie {
+  --fa: "\f65a"; }
+  
+.fa-file-certificate {
+  --fa: "\f5f3"; }
+
+.fa-files {
+  --fa: "\e178"; }
+
+.fa-file-magnifying-glass {
+  --fa: "\f865"; }
+
+.fa-file-exclamation {
+  --fa: "\f31a"; }
+
+.fa-file-circle-info {
+  --fa: "\e493"; }
+
+.fa-file-lock {
+  --fa: "\e3a6"; }
+
+.fa-file-slash {
+  --fa: "\e3a7"; }
+
+.fa-spinner-third {
+  --fa: "\f3f4"; }
+
+.fa-phone-plus {
+  --fa: "\f4d2"; }
+
+.fa-phone-arrow-up-right {
+  --fa: "\e224"; }
+
+.fa-phone-arrow-down-left {
+  --fa: "\e223"; }
+
+.fa-mobile-notch {
+  --fa: "\e1ee"; }
+
+.fa-envelope-dot {
+  --fa: "\e16f"; }
+
+.fa-messages {
+  --fa: "\f4b6"}
+
+.fa-message-slash {
+  --fa: "\f4a9"; }
+
+.fa-messages-question {
+  --fa: "\e1e7"; }
+
+.fa-message-sms {
+  --fa: "\e1e5"; }
+
+.fa-message-quote {
+  --fa: "\e1e4"; }
+
+.fa-message-question {
+  --fa: "\e1e3"; }
+
+.fa-message-plus {
+  --fa: "\f4a8"; }
+
 
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
