@@ -545,3 +545,42 @@ code:hover:before {
   }
 }
 
+/***** Example icons *****/
+.example-icons-grid + h2 {
+  margin-top: var(--spacing-xl);
+}
+.example-icons h4 {
+  margin-top: var(--spacing-l);
+  margin-bottom: var(--spacing-m);
+}
+.example-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-pale);
+  border-radius: var(--border-radius-xs);
+  box-shadow: var(--shadow-s);
+  padding: var(--spacing-m) var(--spacing-s);
+  border: 1px solid var(--gray-light);
+  width: 225px;
+}
+.example-icon i {
+  font-size: 30px;
+}
+.example-icon code {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-s);
+  margin-top: var(--spacing-s);
+  padding: 4px 8px;
+}
+.example-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+}
+.example-icons-grid + .example-icons-grid {
+  margin-top: var(--spacing-m);
+}
+

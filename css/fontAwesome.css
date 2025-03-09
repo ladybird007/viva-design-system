@@ -6179,6 +6179,134 @@
 .fa-message-plus {
   --fa: "\f4a8"; }
 
+.fa-message-minus {
+  --fa: "\f4a7"; }
+
+.fa-message-medical {
+  --fa: "\f7f4"; }
+
+.fa-message-lines {
+  --fa: "\f4a6"; }
+
+.fa-message-heart {
+  --fa: "\e5c9"; }
+
+.fa-message-exclamation {
+  --fa: "\f4a5"; }
+
+.fa-circle-wifi {
+  --fa: "\e67d"; }
+
+.fa-mobile-signal-out {
+  --fa: "\e1f0"; }
+
+.fa-wifi-slash {
+  --fa: "\f6ac"; }
+
+.fa-comments-question {
+  --fa: "\e14e"; }
+
+.fa-comment-quote {
+  --fa: "\e14c"; }
+
+.fa-comment-question {
+  --fa: "\e14b"; }
+
+.fa-comment-plus {
+  --fa: "\f4b2"; }
+
+.fa-comment-minus {
+  --fa: "\f4b1"; }
+
+.fa-comment-medical {
+  --fa: "\f7f5"; }
+
+.fa-comment-lines {
+  --fa: "\f4b0"; }
+
+.fa-comment-heart {
+  --fa: "\e5c8"; }
+
+.fa-comment-exclamation {
+  --fa: "\f4af"; }
+
+.fa-comment-check {
+  --fa: "\f4ac"; }
+
+.fa-mailbox-flag-up {
+  --fa: "\e5bb"; }
+
+.fa-period {
+  --fa: "\2e"; }
+
+.fa-hourglass-clock {
+  --fa: "\e41b"; }
+
+.fa-alarm-clock {
+  --fa: "\f34e"; }
+
+.fa-house-medical-flag {
+  --fa: "\e514"; }
+
+.fa-house-water {
+  --fa: "\f74f"; }
+
+.fa-house-fire {
+  --fa: "\e50c"; }
+
+.fa-apartment {
+  --fa: "\e468"; }
+
+.fa-tent-double-peak {
+  --fa: "\e627"; }
+
+.fa-lighthouse {
+  --fa: "\e612"; }
+
+.fa-farm {
+  --fa: "\f864"; }
+
+.fa-party-horn {
+  --fa: "\e31b"; }
+
+.fa-bell-on {
+  --fa: "\f8fa"; }
+
+.fa-light-emergency-on {
+  --fa: "\e420"; }
+
+.fa-octagon-exclamation {
+  --fa: "\e204"; }
+
+.fa-alarm-clock {
+  --fa: "\f34e"; }
+
+.fa-calendar-exclamation {
+  --fa: "\f334"; }
+
+.fa-seal-exclamation {
+  --fa: "\e242"; }
+
+.fa-up {
+  --fa: "\f357"; }
+
+.fa-down {
+  --fa: "\f354"; }
+
+.fa-left {
+  --fa: "\f355"; }
+
+.fa-right {
+  --fa: "\f356"; }
+
+.fa-stars {
+  --fa: "\f762"; }
+
+.fa-industry-windows {
+ --fa: "\f3b3"; }
+
+.fa-message-check {
+  --fa: "\f4a2"; }
 
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';
