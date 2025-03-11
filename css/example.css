@@ -589,3 +589,11 @@ code:hover:before {
 .example-dropdown-hover .custom-option:nth-child(3) {
   background: rgba(181,222,200,0.5);
 }
+
+/******* Divires *****/
+.example-dividers code {
+  background-color: var(--gray-pale);
+  border-radius: 20px;
+  box-shadow: var(--shadow-s);
+  padding: 4px 8px;
+}

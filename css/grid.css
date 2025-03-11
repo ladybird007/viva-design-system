@@ -23,6 +23,7 @@ div[class*="row-cols-"] {
 .col {
   width: 100%;
 }
+
 .row.row-cols-4 > .col {
   width: calc(100% / 4 - var(--gutter) / 4 * 3);
 }
@@ -33,6 +34,25 @@ div[class*="row-cols-"] {
   width: calc(100% / 2 - var(--gutter) / 2);
 }
 
+@media (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
   .row.row-cols-12 > .col,
   .row.row-cols-6 > .col {
@@ -53,6 +73,20 @@ div[class*="row-cols-"] {
   }
 }
 @media (min-width: 769px) {
+
+  .col-1 {
+    width: calc(100% / 12);
+  }
+  .col-2 {
+    width: calc(100% / 12 * 2);
+  }
+  .col-10 {
+    width: calc(100% / 12 * 10);
+  }
+  .col-11 {
+    width: calc(100% / 12 * 11);
+  }
+
   .row.row-cols-6 > .col {
     width: calc(100% / 6 - var(--gutter) / 6 * 5);
   }

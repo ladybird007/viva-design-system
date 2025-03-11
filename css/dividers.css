@@ -1,0 +1,30 @@
+hr {
+  display: block;
+  border: none;
+  border-radius: 2px;
+}
+.hr-xs {
+  border-top: 1px solid var(--gray-light);
+}
+.hr-s {
+  border-top: 1px solid var(--gray);
+}
+.hr-m {
+  border-top: 1px solid var(--black);
+}
+.hr-l {
+  border-top: 1.5px solid var(--teal);
+}
+.hr-brand-light {
+  border-top: 3px solid var(--cadet-light);
+}
+.hr-brand-dark {
+  border-top: 3px solid var(--teal);
+}
+.hr-dotted {
+  height: 3px;
+  background-image: repeating-linear-gradient(90deg, #000000, #000000 10px, transparent 10px, transparent 20px);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 100% 3px;
+}
