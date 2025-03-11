@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown - Viva Design System</title>
+
+  <link rel="stylesheet" href="../../css/style.css">
+  
+</head>
+<body>
+
+  <header class="example-header">
+    <div class="container">
+      <h1>Dropdown</h1>
+      <p>
+        The <strong>Dropdown</strong> component is a list of options that a user can select from. These selections can fill in a form, filter, or sort content.
+      </p>
+      <a href="../../index.html">
+        <img src="../../img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+
+  <div class="example-content">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Dropdown</h2>
+        <p>Used as a list of options that a user can select from. These selections can fill in a form, filter, or sort content.</p>
+      </div>
+      <div class="example-dropdown">
+        <div class="row row-cols-4">
+          <div class="col">
+            <label for="sources">Label</label> 
+            <select name="sources" id="sources" class="custom-select" placeholder="Select Option" data-single-select>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label for="sources">Label&lt;/label> 
+&lt;select name="sources" id="sources" class="custom-select" placeholder="Select Option" data-single-select>
+  &lt;option value="one">This is one option&lt;/option>
+  &lt;option value="two">This is another option&lt;/option>
+  &lt;option value="three">This is an option on hover&lt;/option>
+  &lt;option value="four">This is another option&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col example-dropdown-hover">
+            <label for="sources2">Label</label>
+            <select name="sources2" id="sources2" class="custom-select" placeholder="Select Option" data-single-select>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <label for="sources3">Label</label>
+            <select name="sources3" id="sources3" class="custom-select" placeholder="Select Options" data-multi-select>
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+            </select>
+
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label for="sources3">Label&lt;/label>
+&lt;select name="sources3" id="sources3" class="custom-select" placeholder="Select Options" data-multi-select>
+  &lt;option value="one">One&lt;/option>
+  &lt;option value="two">Two&lt;/option>
+  &lt;option value="three">Three&lt;/option>
+  &lt;option value="four">Four&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <label for="sources4">Label</label>
+            <select name="sources4" id="sources4" class="custom-select" placeholder="Select Option" data-search-select>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label for="sources4">Label&lt;/label>
+&lt;select name="sources4" id="sources4" class="custom-select" placeholder="Select Option"data-select-search>
+  &lt;option value="one">This is one option&lt;/option>
+  &lt;option value="two">This is another option&lt;/option>
+  &lt;option value="three">This is an option on hover&lt;/option>
+  &lt;option value="four">This is another option&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row row-cols-4">
+          <div class="col">
+            <select name="sources5" id="sources5" class="custom-select" placeholder="Select Option" data-single-select>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;select name="sources5" id="sources5" class="custom-select" placeholder="Select Option" data-single-select>
+  &lt;option value="one">This is one option&lt;/option>
+  &lt;option value="two">This is another option&lt;/option>
+  &lt;option value="three">This is an option on hover&lt;/option>
+  &lt;option value="four">This is another option&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col example-dropdown-hover">
+            <select name="sources6" id="sources6" class="custom-select" placeholder="Select Option" data-single-select>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+          </div>
+
+          <div class="col">
+            <select name="sources7" id="sources7" class="custom-select" placeholder="Select Options" multiple data-multi-select>
+              <option value="one">One</option>
+              <option value="two">Two</option>
+              <option value="three">Three</option>
+              <option value="four">Four</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;select name="sources7" id="sources7" class="custom-select" placeholder="Select Options" multiple data-multi-select>
+  &lt;option value="one">One&lt;/option>
+  &lt;option value="two">Two&lt;/option>
+  &lt;option value="three">Three&lt;/option>
+  &lt;option value="four">Four&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <select name="sources8" id="sources8" class="custom-select" placeholder="Select Options" data-select-search>
+              <option value="one">This is one option</option>
+              <option value="two">This is another option</option>
+              <option value="three">This is an option on hover</option>
+              <option value="four">This is another option</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;select name="sources8" id="sources8" class="custom-select"  placeholder="Select Options" data-select-searcht>
+  &lt;option value="one">This is one option&lt;/option>
+  &lt;option value="two">This is another option&lt;/option>
+  &lt;option value="three">This is an option on hover&lt;/option>
+  &lt;option value="four">This is another option&lt;/option>
+&lt;/select>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/copyText.js"></script>
+  <script src="dropdown.js""></script>
+</body>
+</html>
