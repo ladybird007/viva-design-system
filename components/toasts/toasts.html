@@ -2,45 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Toasts - Viva Design System</title>
 
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="toastify/toastify.min.css">
 </head>
 <body>
-
   <header class="example-header">
     <div class="container">
       <h1>Toasts</h1>
       <p>
-        
+        Toasts communicate confirmation of an action or a low-priority message. or function of an icon, or display the alt text of an image.
       </p>
       <a href="../../index.html">
         <img src="../../img/Logomark.png" alt="">
       </a>
     </div>
   </header>
-
-  <div class="example-content">
+  <div class="example-content bg-white">
     <div class="container">
-      <div class="row">
-        <div class="carousel-wrap">
-          <div class="js-single-slider">
-            <div>1 Slide</div>
-            <div>2 Slide</div>
-            <div>3 Slide</div>
-          </div>
-        </div>
+      <div class="example-headline">
+        <h2>Toasts</h2>
+        <p>Used to communicate confirmation of an action or a low-priority message.</p>
       </div>
-      <br>
-      <br>
-      
+
+      <div class="example-toasts">
+        <button class="btn-toast-info">Info</button>
+        <button class="btn-toast-danger">Danger</button>
+        <button class="btn-toast-success">Success</button>
+        <button class="btn-toast-warning">Warning</button>
+      </div>
     </div>
   </div>
-  
-  <script src="../../js/jquery-3.7.1.min.js"></script>
-  <script src="toastify.js"></script>
-  <script src="carousel.js"></script>
+
+  <script src="toastify/toastify-js.js"></script>
+  <script src="toasts.js"></script>
+  <script src="../../js/copyText.js"></script>
 </body>
 </html>

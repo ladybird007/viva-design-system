@@ -1,0 +1,51 @@
+.toastify.on {
+  border-radius: 6px;
+  display: flex; 
+}
+.toastify:before {
+  content: '';
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  flex-shrink: 0;
+}
+.toastify.info {
+  background: var(--alert-info-pale);
+  color: var(--alert-info-dark);
+  border: 1px solid var(--alert-info-border);
+}
+.toastify.danger {
+  background: var(--alert-danger-pale);
+  color: var(--alert-danger-dark);
+  border: 1px solid var(--alert-danger-border);
+}
+.toastify.success {
+  background: var(--alert-success-pale);
+  color: var(--alert-success-dark);
+  border: 1px solid var(--alert-success-border);
+}
+.toastify.warning {
+  background: var(--alert-warning-pale);
+  color: var(--black);
+  border: 1px solid var(--alert-warning-border);
+}
+.toastify.info:before {
+  background-image: url(../alert/icons/info.svg);
+}
+.toastify.danger:before {
+  background-image: url(../alert/icons/danger.svg);
+}
+.toastify.success:before {
+  background-image: url(../alert/icons/success.svg);
+}
+.toastify.warning:before {
+  background-image: url(../alert/icons/warning-circle.svg);
+}
+
+.toastify .toast-close {
+  color: inherit; 
+}
