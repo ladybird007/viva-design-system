@@ -19,6 +19,7 @@
 @import url(../css/shadows.css);
 @import url(../css/dividers.css);
 @import url(../css/toggles.css);
+@import url(../components/tooltips/tooltips.css);
 @import url(../css/example.css);
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,0 +1,46 @@
+.tippy-box {
+  border-radius: var(--border-radius-xs);
+}
+.tippy-box[data-theme~='green'] {
+  background-color: var(--teal);
+  color: var(--white);
+}
+.tippy-box[data-theme~='green'] .tippy-arrow {
+  color: var(--teal);
+}
+.tippy-box[data-theme~='black'] {
+  background-color: var(--black);
+  color: var(--white);
+}
+.tippy-box[data-theme~='black'] .tippy-arrow {
+  color: var(--black);
+}
+.tippy-box[data-theme~='white'] {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: var(--shadow-m);
+}
+.tippy-box[data-theme~='white'] .tippy-arrow {
+  color: var(--white);
+}
+.tippy-box[data-placement^=top]>.tippy-arrow {
+  bottom: 1px;
+}
+.tippy-box[data-placement^=bottom]>.tippy-arrow {
+  top: 1px;
+}
+.tippy-content {
+  padding: var(--spacing-s);
+  font-size: 14px;
+}
+.tippy-content p + p {
+  margin-top: var(--spacing-s);
+}
+.tippy-content
+*[data-tippy-content],
+*[data-template] {
+  cursor: pointer;
+}
+.tooltip-content {
+  display: none;
+}
