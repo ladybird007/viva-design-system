@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Toggles - Viva Design System</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Toggles</h1>
+      <p>
+        Used to turn something on or off
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+  <div class="example-content bg-white">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Toggles</h2>
+        <p>Used to turn something on or off</p>
+      </div>
+      
+      <div class="example-toggles">
+        <div class="example-toggles-header row row-cols-2">
+          <div class="col text-center text-red"><strong>Small</strong></div>
+          <div class="col text-center text-red"><strong>Medium</strong></div>
+        </div>
+        <div class="row row-cols-5">
+          <div class="col">
+            <div></div>
+            <div>Default</div>
+            <div>Hover</div>
+            <div>Focus</div>
+            <div>Disabled</div>
+          </div>
+  
+          <div class="col">
+            <div class="text-red">Off</div>
+  
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox" disabled>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="text-red">On</div>
+  
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox"checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-small">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-small">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox" checked disabled>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="text-red">Off</div>
+  
+            <div>
+              <label class="toggle toggle-medium">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-medium">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-medium">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-medium">
+                <input type="checkbox" disabled>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="text-red">On</div>
+  
+            <div>
+              <label class="toggle toggle-medium">
+                <input type="checkbox"checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-medium">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-medium">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-medium">
+                <input type="checkbox" checked disabled>
+                <span class="toggle-icon"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="example-toggles-footer row row-cols-2">
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">
+  &lt;label class="toggle toggle-small">
+    &lt;input type="checkbox" />
+    &lt;span class="toggle-icon">&lt;/span>
+  &lt;/label>
+  </code>
+  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label class="toggle toggle-medium">
+  &lt;input type="checkbox" />
+  &lt;span class="toggle-icon">&lt;/span>
+&lt;/label>
+</code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="example-toggles-footer row row-cols-2">
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">
+  &lt;label class="toggle toggle-small">
+    &lt;input type="checkbox" disabled />
+    &lt;span class="toggle-icon">&lt;/span>
+  &lt;/label>
+  </code>
+  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label class="toggle toggle-medium">
+  &lt;input type="checkbox" disabled />
+  &lt;span class="toggle-icon">&lt;/span>
+&lt;/label>
+</code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <br>
+      <br>
+      <br>
+
+      <div class="example-toggles">
+        <div class="example-toggles-header row row-cols-2">
+          <div class="col text-center text-red"><strong>Left Align</strong></div>
+          <div class="col text-center text-red"><strong>Right Align</strong></div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <div>Default</div>
+            <div>Hover</div>
+            <div>Focus</div>
+            <div>Disabled</div>
+          </div>
+  
+          <div class="col-5">
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-small">
+                <input type="checkbox">
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-small">
+                <input type="checkbox" disabled>
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+          </div>
+  
+          <div class="col-5">
+            <div>
+              <label class="toggle toggle-small toggle-right">
+                <input type="checkbox"checked>
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div class="example-hover">
+              <label class="toggle toggle-small toggle-right">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div class="example-focus">
+              <label class="toggle toggle-small toggle-right">
+                <input type="checkbox" checked>
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+      
+            <div>
+              <label class="toggle toggle-small toggle-right">
+                <input type="checkbox" checked disabled>
+                <span class="toggle-icon"></span>
+                <span class="toggle-text">Toggle Text</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="example-toggles-footer row row-cols-2">
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">
+  &lt;label class="toggle toggle-small">
+    &lt;input type="checkbox" />
+    &lt;span class="toggle-icon">&lt;/span>
+    &lt;span class="toggle-text">Toggle Text&lt;/span>
+  &lt;/label>
+  </code>
+  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label class="toggle toggle-small toggle-right">
+  &lt;input type="checkbox"/>
+  &lt;span class="toggle-icon">&lt;/span>
+  &lt;span class="toggle-text">Toggle Text&lt;/span>
+&lt;/label>
+</code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="example-toggles-footer row row-cols-2">
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">
+  &lt;label class="toggle toggle-small">
+    &lt;input type="checkbox" disabled />
+    &lt;span class="toggle-icon">&lt;/span>
+    &lt;span class="toggle-text">Toggle Text&lt;/span>
+  &lt;/label>
+  </code>
+  </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              <div class="example-html bg-white rounded">
+                <div class="example-html-head">
+                  <div>HTML</div>
+                  <button class="copy-btn" onclick="copyText(this)">Copy</button>
+                </div>
+                <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;label class="toggle toggle-small toggle-right">
+  &lt;input type="checkbox" disabled/>
+  &lt;span class="toggle-icon">&lt;/span>
+  &lt;span class="toggle-text">Toggle Text&lt;/span>
+&lt;/label>
+</code>
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

@@ -597,3 +597,56 @@ code:hover:before {
   box-shadow: var(--shadow-s);
   padding: 4px 8px;
 }
+/****** Toggles *****/
+.example-toggles-header {
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.example-toggles .col,
+.example-toggles .col-2,
+.example-toggles .col-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.example-toggles .col > div,
+.example-toggles .col-2 > div,
+.example-toggles .col-5 > div,
+.example-toggles .col > strong {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.example-toggles .example-toggles-footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--gray-pale);
+}
+.example-toggles .example-toggles-footer .col > div {
+  height: inherit;
+}
+.example-hover .toggle input + .toggle-icon {
+  background-color: var(--gray);
+}
+.example-hover .toggle input:checked + .toggle-icon {
+  background-color: var(--teal);
+}
+.example-focus .toggle input + .toggle-icon {
+  box-shadow: var(--shadow-focus);
+}
+@media (max-width: 575px) {
+  .example-toggles .row.row-cols-2 > .col {
+    width: calc(100% / 2 - var(--gutter) / 2);
+  }
+}
+@media (min-width: 769px) {
+  .example-toggles-header,
+  .example-toggles-footer {
+    padding-left: 20%;
+  }
+
+  .row.row-cols-5 > .col {
+    width: calc(20% - var(--gutter));
+  }
+}

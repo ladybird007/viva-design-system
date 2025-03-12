@@ -23,7 +23,6 @@ div[class*="row-cols-"] {
 .col {
   width: 100%;
 }
-
 .row.row-cols-4 > .col {
   width: calc(100% / 4 - var(--gutter) / 4 * 3);
 }
@@ -80,13 +79,40 @@ div[class*="row-cols-"] {
   .col-2 {
     width: calc(100% / 12 * 2);
   }
+  .col-3 {
+    width: calc(100% / 12 * 3);
+  }
+  .col-4 {
+    width: calc(100% / 12 * 4);
+  }
+  .col-5 {
+    width: calc(100% / 12 * 5);
+  }
+  .col-6 {
+    width: calc(100% / 12 * 6);
+  }
+  .col-7 {
+    width: calc(100% / 12 * 7);
+  }
+  .col-8 {
+    width: calc(100% / 12 * 8);
+  }
+  .col-9 {
+    width: calc(100% / 12 * 9);
+  }
   .col-10 {
     width: calc(100% / 12 * 10);
   }
   .col-11 {
     width: calc(100% / 12 * 11);
   }
+  .col-12 {
+    width: 100%;
+  }
 
+  .row.row-cols-5 > .col {
+    width: calc(100% / 5 - var(--gutter) / 5 * 4);
+  }
   .row.row-cols-6 > .col {
     width: calc(100% / 6 - var(--gutter) / 6 * 5);
   }
