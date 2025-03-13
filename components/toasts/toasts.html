@@ -28,10 +28,320 @@
       </div>
 
       <div class="example-toasts">
-        <button class="btn-toast-info">Info</button>
-        <button class="btn-toast-danger">Danger</button>
-        <button class="btn-toast-success">Success</button>
-        <button class="btn-toast-warning">Warning</button>
+        <button class="btn-toast-info">Click to seee <strong>Info Toast</strong></button>
+        <br>
+        <br>
+        <div class="toast-text-hidden">
+          <div id="toast-text-info" class="toast-text">
+            <strong>Toast Info</strong>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="bg-gray rounded example-toasts-copy">
+          <div class="row">
+            <div class="col">
+              <p class="text-center"><strong>JS init</strong></p>
+<pre>
+<code>
+  const toastInfo = Toastify({  
+    node: document.getElementById('toast-text-info'),  
+    className: "info",
+    close: true,
+    duration: 5000
+  }).showToast();
+
+</code>
+</pre>
+            </div>
+            <div class="col">
+              <p class="text-center"><strong>Text of Toast</strong></p>
+<pre>
+<code>
+  &lt;div class="toast-text-hidden">
+    &lt;div id="toast-text-info" class="toast-text">
+      &lt;strong>Toast Info&lt;/strong>
+      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
+    &lt;/div>
+  &lt;/div>
+
+</code>
+</pre>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="toast-text-hidden">
+          <div id="toast-text-danger" class="toast-text">
+            <strong>Toast Danger</strong>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <button class="btn-toast-danger">Click to seee <strong>Danger Toast</strong></button> 
+        <br>
+        <br>
+        <div class="bg-gray rounded example-toasts-copy">
+          <div class="row">
+            <div class="col">
+              <p class="text-center"><strong>JS init</strong></p>
+<pre>
+<code>
+  const toastSucces = Toastify({  
+    node: document.getElementById('toast-text-danger'),  
+    className: "success",
+    close: true,
+    duration: 5000
+  }).showToast();
+
+</code>
+</pre>
+            </div>
+            <div class="col">
+              <p class="text-center"><strong>Text of Toast</strong></p>
+<pre>
+<code>
+  &lt;div class="toast-text-hidden">
+    &lt;div id="toast-text-danger" class="toast-text">
+      &lt;strong>Toast Danger&lt;/strong>
+      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
+    &lt;/div>
+  &lt;/div>
+
+</code>
+</pre>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="toast-text-hidden">
+          <div id="toast-text-success" class="toast-text">
+            <strong>Toast Success</strong>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <button class="btn-toast-success">Click to seee <strong>Success Toast</strong></button> 
+        <br>
+        <br>
+        <div class="bg-gray rounded example-toasts-copy">
+          <div class="row">
+            <div class="col">
+              <p class="text-center"><strong>JS init</strong></p>
+<pre>
+<code>
+  const toastWarning = Toastify({  
+    node: document.getElementById('toast-text-success'),  
+    className: "warning",
+    close: true,
+    duration: 5000
+  }).showToast();
+
+</code>
+</pre>
+            </div>
+            <div class="col">
+              <p class="text-center"><strong>Text of Toast</strong></p>
+<pre>
+<code>
+  &lt;div class="toast-text-hidden">
+    &lt;div id="toast-text-success" class="toast-text">
+      &lt;strong>Toast Success&lt;/strong>
+      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
+    &lt;/div>
+  &lt;/div>
+
+</code>
+</pre>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="toast-text-hidden">
+          <div id="toast-text-warning" class="toast-text">
+            <strong>Toast Warning</strong>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <button class="btn-toast-warning">Click to seee <strong>Warning Toast</strong></button>
+        <br>
+        <br>
+        <div class="bg-gray rounded example-toasts-copy">
+          <div class="row">
+            <div class="col">
+              <p class="text-center"><strong>JS init</strong></p>
+<pre>
+<code>
+  const toastDanger = Toastify({  
+    node: document.getElementById('toast-text-warning'),  
+    className: "danger",
+    close: true,
+    duration: 5000
+  }).showToast();
+  
+</code>
+</pre>
+            </div>
+            <div class="col">
+              <p class="text-center"><strong>Text of Toast</strong></p>
+<pre>
+<code>
+  &lt;div class="toast-text-hidden">
+    &lt;div id="toast-text-warning" class="toast-text">
+      &lt;strong>Toast Warning&lt;/strong>
+      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
+    &lt;/div>
+  &lt;/div>
+
+</code>
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="example-toasts-table-wrap">
+        <table class="example-toasts-table">
+          <thead>
+            <tr>
+              <th>Option Key</th>
+              <th>Type</th>
+              <th>Usage</th>
+              <th>Defaults</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>text</td>
+              <td>string</td>
+              <td>Message to be displayed in the toast</td>
+              <td>"Hi there!"</td>
+            </tr>
+            <tr>
+              <td>node</td>
+              <td>ELEMENT_NODE</td>
+              <td>Provide a node to be mounted inside the toast. node takes higher precedence over text</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>duration</td>
+              <td>number</td>
+              <td>Duration for which the toast should be displayed. -1 for permanent toast</td>
+              <td>3000</td>
+            </tr>
+            <tr>
+              <td>selector</td>
+              <td>string | ELEMENT_NODE</td>
+              <td>ShadowRoot</td>
+              <td>CSS Selector or Element Node on which the toast should be added</td>
+            </tr>
+            <tr>
+              <td>destination</td>
+              <td>URL string</td>
+              <td>URL to which the browser should be navigated on click of the toast</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>newWindow</td>
+              <td>boolean</td>
+              <td>Decides whether the destination should be opened in a new window or not</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>close</td>
+              <td>boolean</td>
+              <td>To show the close icon or not</td>
+              <td>false</td>
+            </tr>
+            <tr>
+              <td>gravity</td>
+              <td>"top" or "bottom"</td>
+              <td>To show the toast from top or bottom</td>
+              <td>"top"</td>
+            </tr>
+            <tr>
+              <td>position</td>
+              <td>"left" or "right"</td>
+              <td>To show the toast on left or right</td>
+              <td>"right"</td>
+            </tr>
+            <tr>
+              <td>backgroundColor</td>
+              <td>CSS background value</td>
+              <td>To be deprecated, use style.background option instead. Sets the background color of the toast</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>avatar</td>
+              <td>URL string</td>
+              <td>Image/icon to be shown before text</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>Ability to provide custom class name for further customization</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>stopOnFocus</td>
+              <td>boolean</td>
+              <td>To stop timer when hovered over the toast (Only if duration is set)</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>callback</td>
+              <td>Function</td>
+              <td>Invoked when the toast is dismissed</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>onClick</td>
+              <td>Function</td>
+              <td>Invoked when the toast is clicked</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>offset</td>
+              <td>Object</td>
+              <td>Ability to add some offset to axis</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>escapeMarkup</td>
+              <td>boolean</td>
+              <td>Toggle the default behavior of escaping HTML markup</td>
+              <td>true</td>
+            </tr>
+            <tr>
+              <td>style</td>
+              <td>object</td>
+              <td>Use the HTML DOM Style properties to add any style directly to toast</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>ariaLive</td>
+              <td>string</td>
+              <td>Announce the toast to screen readers, see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions for options</td>
+              <td>"polite"</td>
+            </tr>
+            <tr>
+              <td>oldestFirst</td>
+              <td>boolean</td>
+              <td>Set the order in which toasts are stacked in page</td>
+              <td>true</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       </div>
     </div>
   </div>

@@ -1,28 +1,28 @@
 const toastInfo = Toastify({
-  text: "This is a toast",
+  node: document.getElementById('toast-text-info'),
   className: "info",
   close: true,
-  duration: 50000
+  duration: 5000
 });
 const toastDanger = Toastify({
-  text: "This is a toast",
+  node: document.getElementById('toast-text-danger'),
   className: "danger",
   close: true,
-  duration: 50000
+  duration: 5000
 });
 
 const toastSucces = Toastify({
-  text: "This is a toast",
+  node: document.getElementById('toast-text-success'),
   className: "success",
   close: true,
-  duration: 50000
+  duration: 5000
 });
 
 const toastWarning = Toastify({
-  text: "This is a toast",
+  node: document.getElementById('toast-text-warning'),
   className: "warning",
   close: true,
-  duration: 50000
+  duration: 5000
 });
 
 const btnInfo = document.querySelector('.btn-toast-info'),

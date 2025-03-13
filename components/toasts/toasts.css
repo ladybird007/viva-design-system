@@ -1,10 +1,12 @@
+.toastify {
+  max-width: 340px;
+}
 .toastify.on {
   border-radius: 6px;
-  display: flex; 
+  gap: 12px
 }
 .toastify:before {
   content: '';
-  margin-right: 12px;
   width: 20px;
   height: 20px;
   display: block;
@@ -12,6 +14,7 @@
   background-position: 50% 50%;
   background-size: contain;
   flex-shrink: 0;
+  float: left;
 }
 .toastify.info {
   background: var(--alert-info-pale);
@@ -45,7 +48,39 @@
 .toastify.warning:before {
   background-image: url(../alert/icons/warning-circle.svg);
 }
-
 .toastify .toast-close {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: inherit; 
+  opacity: 1;
+  gap: 4px;
 }
+.toastify .toast-close:after {
+  content: 'Undo';
+  font-weight: 700;
+  font-size: 15px;
+}
+.toast-text-hidden {
+  display: none;
+}
+.toast-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.toastify p {
+  font-size: 14px;
+  line-height: 16px;
+}
+.toastify strong {
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+}
+
+

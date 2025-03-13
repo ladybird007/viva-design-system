@@ -650,3 +650,36 @@ code:hover:before {
     width: calc(20% - var(--gutter));
   }
 }
+
+/***** Toasts *****/
+.example-toasts-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.example-toasts-table {
+  border: 1px solid var(--gray);
+}
+.example-toasts-table tr {
+  border-top: 1px solid var(--gray);
+}
+.example-toasts-table td,
+.example-toasts-table th {
+  padding: 12px;
+}
+.example-toasts-table thead {
+  text-align: left;
+}
+.example-toasts-copy {
+  max-width: 100%;
+  overflow-x: auto;
+  display: inline-block;
+  padding: var(--spacing-m);
+}
+.example-toasts code {
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--shadow-s);
+  margin-top: var(--spacing-s);
+  padding: 4px 8px;
+}
