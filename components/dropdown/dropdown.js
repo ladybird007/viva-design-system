@@ -1,7 +1,7 @@
 $('[data-single-select]').each(function() {
-  let classes = $(this).attr("class"),
-      id      = $(this).attr("id"),
-      name    = $(this).attr("name");
+  let classes = $(this).attr("class");
+      // id      = $(this).attr("id"),
+      // name    = $(this).attr("name");
 
   let template =  '<div class="' + classes + '">';
       template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
@@ -17,22 +17,51 @@ $('[data-single-select]').each(function() {
 });
 
 $('[data-search-select]').each(function() {
-  let classes = $(this).attr("class"),
-    id      = $(this).attr("id"),
-    name    = $(this).attr("name");
+  let classes = $(this).attr("class");
+    // id      = $(this).attr("id"),
+    // name    = $(this).attr("name");
 
   let template =  '<div class="' + classes + '">';
     template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
     template += '<div class="custom-options">';
-    template += '<div class="select-search-wrap"><input type="text" class="select-search" placeholder="Search..."><button class="select-search-clear"><i class="fa-solid fa-circle-xmark"></i></button></div>';
+    template += `
+      <div class="select-search-wrap">
+          <input type="text" class="select-search" placeholder="Search...">
+          <button class="select-search-clear">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+      </div>`;
+    template += `<div class="options-wrap">`;
     $(this).find("option").each(function() {
-      template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      template += '<span class="custom-option'+'" data-value="'+$(this).attr("value")+'">' + $(this).html() + '</span>';
     });
-  template += '</div></div>';
+  template += '</div></div></div>';
 
   $(this).wrap('<div class="custom-select-wrapper"></div>');
   $(this).hide();
   $(this).after(template);
+});
+
+$('.select-search').on('keyup', function(e) {
+  const search = $(this).val().toLowerCase();
+  $(this).parents('.custom-select')
+    .find('.custom-option').each(function() {      
+      const checker = $(this).text().toLowerCase().indexOf(search) > -1;      
+      if(!checker) {
+        $(this).attr('style', 'display: none');
+      } else {
+        $(this).attr('style', 'display: block');
+      }
+    });    
+
+});
+
+$('.select-search-clear').on('click', function() {
+  $(this).parents('.custom-select').find('.select-search').val(''); 
+  $(this).parents('.custom-select')
+  .find('.custom-option').each(function() {          
+    $(this).attr('style', 'display: block');    
+  });  
 });
 
 $(".custom-option:first-of-type").hover(function() {
@@ -41,23 +70,34 @@ $(".custom-option:first-of-type").hover(function() {
   $(this).parents(".custom-options").removeClass("option-hover");
 });
 $(".custom-select-trigger").on("click", function(event) {
-  $('html').one('click',function() {
-    $(".custom-select").removeClass("opened");
-  });
+
+  // WHY NEED THIS ???
+  // $('html').one('click',function() {  
+  //   $(".custom-select").removeClass("opened");
+  // });
+
   $(this).parents(".custom-select").toggleClass("opened");
   event.stopPropagation();
 });
-$(".custom-option").on("click", function() {
+
+$(".custom-option").on("click", function() {      
   $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
   $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
   $(this).addClass("selection");
   $(this).parents(".custom-select").removeClass("opened");
   $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+
+  // clear search field if exists
+  setTimeout(() => {
+    $(this).parents('.custom-select').find('.select-search').val(''); 
+    $(this).parents('.custom-select')
+    .find('.custom-option').each(function() {          
+      $(this).attr('style', 'display: block');    
+    });  
+  }, 500);
 });
 
-
-$('.select-search').oninput = () => {
-  console.log('dsddd')
+$('.select-search').oninput = () => {  
   $(".custom-select").addClass("opened");
   this.element.querySelectorAll('.custom-option').forEach(option => {
       option.style.display = option.querySelector('.custom-option').innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) > -1 ? 'flex' : 'none';
@@ -71,8 +111,9 @@ class MultiSelect {
 
   constructor(element, options = {}) {
       let defaults = {
-          placeholder: 'Select Option',
+          placeholder: 'Select Options',
           max: null,
+          counter: null,
           search: true,
           selectAll: true,
           listAll: true,
@@ -133,7 +174,7 @@ class MultiSelect {
           <div class="multi-select ${this.name}"${this.selectElement.id ? ' id="' + this.selectElement.id + '"' : ''} style="${this.width ? 'width:' + this.width + ';' : ''}${this.height ? 'height:' + this.height + ';' : ''}">
               ${this.selectedValues.map(value => `<input type="hidden" name="${this.name}[]" value="${value}">`).join('')}
               <div class="multi-select-header" style="${this.width ? 'width:' + this.width + ';' : ''}${this.height ? 'height:' + this.height + ';' : ''}">
-                  <span class="multi-select-header-max">${this.options.max ? this.selectedValues.length + '/' + this.options.max : ''}</span>
+                  <span class="multi-select-header-counter hidden">${this.options.counter ? this.selectedValues.length : ''}</span>
                   <span class="multi-select-header-placeholder">${this.placeholder}</span>
               </div>
               <div class="multi-select-options" style="${this.options.dropdownWidth ? 'width:' + this.options.dropdownWidth + ';' : ''}${this.options.dropdownHeight ? 'height:' + this.options.dropdownHeight + ';' : ''}">
@@ -155,7 +196,7 @@ class MultiSelect {
               let selected = true;
               if (!option.classList.contains('multi-select-selected')) {
                   if (this.options.max && this.selectedValues.length >= this.options.max) {
-                      return;
+                    return;
                   }
                   option.classList.add('multi-select-selected');
                   if (this.options.listAll === true || this.options.listAll === 'true') {
@@ -188,6 +229,13 @@ class MultiSelect {
               }
               if (this.options.max) {
                   this.element.querySelector('.multi-select-header-max').innerHTML = this.selectedValues.length + '/' + this.options.max;
+              }
+              if (this.options.counter && this.selectedValues.length > 0) {
+                this.element.querySelector('.multi-select-header-counter').classList.remove('hidden');
+                this.element.querySelector('.multi-select-header-counter').innerHTML = this.selectedValues.length;
+              } else {
+                this.element.querySelector('.multi-select-header-counter').classList.add('hidden');
+                this.element.querySelector('.multi-select-header-counter').innerHTML = '';
               }
               if (this.options.search === true || this.options.search === 'true') {
                   this.element.querySelector('.multi-select-search').value = '';
@@ -236,11 +284,27 @@ class MultiSelect {
               headerElement.classList.remove('multi-select-header-active');
           }
       });
-      let clearButton = this.element.querySelector('.multi-select-search-clear');
+
+
+
+      let clearButton = this.element.querySelector('.multi-select-header-counter');
       if (clearButton !== null) {
-        clearButton.onclick = () => {
-          this.element.querySelector('.multi-select-search').value = '';
-          this.element.querySelectorAll('.multi-select-option').forEach(option => option.style.display = 'flex');
+        clearButton.onclick = (event) => {                    
+          this.element.querySelector('.multi-select-header-counter').classList.add('hidden');
+          this.element.querySelector('.multi-select-header-counter').innerHTML = '';
+          headerElement.insertAdjacentHTML('afterbegin', `<span class="multi-select-header-placeholder">${this.placeholder}</span>`);
+          this.element.querySelectorAll('.multi-select-header-option').forEach((option) => {
+            option.classList.remove('.multi-select-header-option');
+            option.style.display = 'none'
+          });
+          this.element.querySelectorAll('.multi-select-option').forEach((option) => {
+            option.classList.remove('multi-select-selected');
+            option.style.display = 'flex'
+          });          
+          this.data.forEach((data) => {
+            data.selected = false;
+          });
+          event.stopPropagation();
         }
       }
   }
@@ -263,8 +327,9 @@ class MultiSelect {
   }
 
   get selectedValues() {
-      return this.data.filter(data => data.selected).map(data => data.value);
+    return this.data.filter(data => data.selected).map(data => data.value);
   }
+
 
   get selectedItems() {
       return this.data.filter(data => data.selected);
@@ -328,10 +393,4 @@ class MultiSelect {
 
 }
 
-document.querySelectorAll('[data-multi-select]').forEach(select => new MultiSelect(select, {search: false, selectAll: false, onSelect: function(value) {
-
-  arr.push(value);
-  let counter = arr.length;
-  document.querySelector('.multi-select-header-max').textContent = counter;
-
-}}));
+document.querySelectorAll('[data-multi-select]').forEach(select => new MultiSelect(select, {search: false, selectAll: false, counter: true }));

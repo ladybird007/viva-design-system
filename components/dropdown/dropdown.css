@@ -251,6 +251,35 @@
   margin-right: 4px;
 }
 
+.multi-select-header .multi-select-header-counter.hidden {
+  display: none;
+}
+.multi-select-header .multi-select-header-counter {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  order: 1;
+  height: 22px;
+  padding: 0 var(--spacing-xs);
+  color: var(--teal);
+  background-color: var(--cadet-pale);
+  border-radius: 12px; 
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: var(--spacing-xs);
+}
+.multi-select-header .multi-select-header-counter:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background: url(icon/cross.svg) no-repeat 50% 50%;
+}
+
+.multi-select-header .multi-select-header-option {
+  order: 2;
+}
+
+
 /*.multi-select .multi-select-header, 
 .multi-select .multi-select-option, 
 .multi-select .multi-select-all {

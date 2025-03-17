@@ -31,8 +31,8 @@
       <div class="example-dropdown">
         <div class="row row-cols-4">
           <div class="col">
-            <label for="sources">Label</label> 
-            <select name="sources" id="sources" class="custom-select" placeholder="Select Option" data-single-select>
+            <label for="single-select-label">Label</label> 
+            <select name="single-select-label" id="single-select-label" class="custom-select" placeholder="Select Option" data-single-select>
               <option value="one">This is one option</option>
               <option value="two">This is another option</option>
               <option value="three">This is an option on hover</option>
@@ -50,8 +50,8 @@
               <div class="example-html-body">
 <pre>
 <code data-lang="html" class="copy-content">
-&lt;label for="sources">Label&lt;/label> 
-&lt;select name="sources" id="sources" class="custom-select" placeholder="Select Option" data-single-select>
+&lt;label for="single-select-label">Label&lt;/label> 
+&lt;select name="single-select-label" id="single-select-label" class="custom-select" placeholder="Select Option" data-single-select>
   &lt;option value="one">This is one option&lt;/option>
   &lt;option value="two">This is another option&lt;/option>
   &lt;option value="three">This is an option on hover&lt;/option>
@@ -64,8 +64,8 @@
           </div>
 
           <div class="col example-dropdown-hover">
-            <label for="sources2">Label</label>
-            <select name="sources2" id="sources2" class="custom-select" placeholder="Select Option" data-single-select>
+            <label for="single-select-hover-label">Label</label>
+            <select name="single-select-hover-label" id="single-select-hover-label" class="custom-select" placeholder="Select Option" data-single-select>
               <option value="one">This is one option</option>
               <option value="two">This is another option</option>
               <option value="three">This is an option on hover</option>
@@ -74,8 +74,8 @@
           </div>
 
           <div class="col">
-            <label for="sources3">Label</label>
-            <select name="sources3" id="sources3" class="custom-select" placeholder="Select Options" data-multi-select>
+            <label for="multi-select-label">Label</label>
+            <select name="multi-select-label" id="multi-select-label" class="custom-select" multiple data-multi-select>
               <option value="one">One</option>
               <option value="two">Two</option>
               <option value="three">Three</option>
@@ -91,24 +91,29 @@
                 <button class="copy-btn" onclick="copyText(this)">Copy</button>
               </div>
               <div class="example-html-body">
-<pre>
-<code data-lang="html" class="copy-content">
-&lt;label for="sources3">Label&lt;/label>
-&lt;select name="sources3" id="sources3" class="custom-select" placeholder="Select Options" data-multi-select>
-  &lt;option value="one">One&lt;/option>
-  &lt;option value="two">Two&lt;/option>
-  &lt;option value="three">Three&lt;/option>
-  &lt;option value="four">Four&lt;/option>
-&lt;/select>
-</code>
-</pre>
+                <pre>
+                <code data-lang="html" class="copy-content">
+                &lt;label for="multi-select-label">Label&lt;/label>
+                &lt;select name="multi-select-label" id="multi-select-label" class="custom-select" multiple data-multi-select>
+                  &lt;option value="one">One&lt;/option>
+                  &lt;option value="two">Two&lt;/option>
+                  &lt;option value="three">Three&lt;/option>
+                  &lt;option value="four">Four&lt;/option>
+                &lt;/select>
+                </code>
+                </pre>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <label for="sources4">Label</label>
-            <select name="sources4" id="sources4" class="custom-select" placeholder="Select Option" data-search-select>
+            <label for="search-select-label">Label</label>
+            <select name="search-select-label" 
+              id="search-select-label" 
+              class="custom-select" 
+              placeholder="Select Option" 
+              data-search-select
+            >
               <option value="one">This is one option</option>
               <option value="two">This is another option</option>
               <option value="three">This is an option on hover</option>
@@ -126,8 +131,8 @@
               <div class="example-html-body">
 <pre>
 <code data-lang="html" class="copy-content">
-&lt;label for="sources4">Label&lt;/label>
-&lt;select name="sources4" id="sources4" class="custom-select" placeholder="Select Option"data-select-search>
+&lt;label for="search-select-label">Label&lt;/label>
+&lt;select name="search-select-label" id="search-select-label" class="custom-select" placeholder="Select Option" data-search-select>
   &lt;option value="one">This is one option&lt;/option>
   &lt;option value="two">This is another option&lt;/option>
   &lt;option value="three">This is an option on hover&lt;/option>
@@ -143,13 +148,10 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
 
         <div class="row row-cols-4">
           <div class="col">
-            <select name="sources5" id="sources5" class="custom-select" placeholder="Select Option" data-single-select>
+            <select name="single-select" id="single-select" class="custom-select" placeholder="Select Option" data-single-select>
               <option value="one">This is one option</option>
               <option value="two">This is another option</option>
               <option value="three">This is an option on hover</option>
@@ -165,22 +167,22 @@
                 <button class="copy-btn" onclick="copyText(this)">Copy</button>
               </div>
               <div class="example-html-body">
-<pre>
-<code data-lang="html" class="copy-content">
-&lt;select name="sources5" id="sources5" class="custom-select" placeholder="Select Option" data-single-select>
-  &lt;option value="one">This is one option&lt;/option>
-  &lt;option value="two">This is another option&lt;/option>
-  &lt;option value="three">This is an option on hover&lt;/option>
-  &lt;option value="four">This is another option&lt;/option>
-&lt;/select>
-</code>
-</pre>
+                <pre>
+                <code data-lang="html" class="copy-content">
+                &lt;select name="single-select" id="single-select" class="custom-select" placeholder="Select Option" data-single-select>
+                  &lt;option value="one">This is one option&lt;/option>
+                  &lt;option value="two">This is another option&lt;/option>
+                  &lt;option value="three">This is an option on hover&lt;/option>
+                  &lt;option value="four">This is another option&lt;/option>
+                &lt;/select>
+                </code>
+                </pre>
               </div>
             </div>
           </div>
 
           <div class="col example-dropdown-hover">
-            <select name="sources6" id="sources6" class="custom-select" placeholder="Select Option" data-single-select>
+            <select name="single-select-hover" id="single-select-hover" class="custom-select" placeholder="Select Option" data-single-select>
               <option value="one">This is one option</option>
               <option value="two">This is another option</option>
               <option value="three">This is an option on hover</option>
@@ -189,7 +191,7 @@
           </div>
 
           <div class="col">
-            <select name="sources7" id="sources7" class="custom-select" placeholder="Select Options" multiple data-multi-select>
+            <select name="multi-select" id="multi-select" class="custom-select" multiple data-multi-select>
               <option value="one">One</option>
               <option value="two">Two</option>
               <option value="three">Three</option>
@@ -205,26 +207,26 @@
                 <button class="copy-btn" onclick="copyText(this)">Copy</button>
               </div>
               <div class="example-html-body">
-<pre>
-<code data-lang="html" class="copy-content">
-&lt;select name="sources7" id="sources7" class="custom-select" placeholder="Select Options" multiple data-multi-select>
-  &lt;option value="one">One&lt;/option>
-  &lt;option value="two">Two&lt;/option>
-  &lt;option value="three">Three&lt;/option>
-  &lt;option value="four">Four&lt;/option>
-&lt;/select>
-</code>
-</pre>
+                <pre>
+                <code data-lang="html" class="copy-content">
+                &lt;select name="multi-select" id="multi-select" class="custom-select" multiple data-multi-select>
+                  &lt;option value="one">One&lt;/option>
+                  &lt;option value="two">Two&lt;/option>
+                  &lt;option value="three">Three&lt;/option>
+                  &lt;option value="four">Four&lt;/option>
+                &lt;/select>
+                </code>
+                </pre>
               </div>
             </div>
           </div>
 
           <div class="col">
-            <select name="sources8" id="sources8" class="custom-select" placeholder="Select Options" data-select-search>
-              <option value="one">This is one option</option>
-              <option value="two">This is another option</option>
-              <option value="three">This is an option on hover</option>
-              <option value="four">This is another option</option>
+            <select name="search-select" id="search-select" class="custom-select" placeholder="Select Option" data-search-select>
+              <option value="one">This is one option 1</option>
+              <option value="two">This is another option 2</option>
+              <option value="three">This is an option on hover 3</option>
+              <option value="four">This is another option 4</option>
             </select>
             
             <br>
@@ -236,16 +238,16 @@
                 <button class="copy-btn" onclick="copyText(this)">Copy</button>
               </div>
               <div class="example-html-body">
-<pre>
-<code data-lang="html" class="copy-content">
-&lt;select name="sources8" id="sources8" class="custom-select"  placeholder="Select Options" data-select-searcht>
-  &lt;option value="one">This is one option&lt;/option>
-  &lt;option value="two">This is another option&lt;/option>
-  &lt;option value="three">This is an option on hover&lt;/option>
-  &lt;option value="four">This is another option&lt;/option>
-&lt;/select>
-</code>
-</pre>
+                <pre>
+                <code data-lang="html" class="copy-content">
+                &lt;select name="sources8" id="sources8" class="custom-select"  placeholder="Select Options" data-search-select>
+                  &lt;option value="one">This is one option&lt;/option>
+                  &lt;option value="two">This is another option&lt;/option>
+                  &lt;option value="three">This is an option on hover&lt;/option>
+                  &lt;option value="four">This is another option&lt;/option>
+                &lt;/select>
+                </code>
+                </pre>
               </div>
             </div>
           </div>
