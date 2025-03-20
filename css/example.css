@@ -591,7 +591,8 @@ code:hover:before {
 }
 
 /******* Divires *****/
-.example-dividers code {
+.example-dividers code,
+.example-form code {
   background-color: var(--gray-pale);
   border-radius: 20px;
   box-shadow: var(--shadow-s);
@@ -682,4 +683,13 @@ code:hover:before {
   box-shadow: var(--shadow-s);
   margin-top: var(--spacing-s);
   padding: 4px 8px;
+}
+
+/***** Inputs *****/
+.example-content .form-group {
+  max-width: 350px;
+}
+.example-form code {
+  display: inline-block;
+  padding-bottom: 24px;
 }

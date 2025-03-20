@@ -111,6 +111,9 @@ h4.card-headline,
 .text-teal-dark {
   color: var(--teal-dark);
 }
+.text-gray {
+  color: var(--gray);
+}
 .text-med-gray  {
   color: var(--med-gray);
 }
@@ -127,6 +130,12 @@ h4.card-headline,
 
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 
 .font-brand {

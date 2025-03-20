@@ -42,6 +42,7 @@ $('[data-search-select]').each(function() {
   $(this).after(template);
 });
 
+
 $('.select-search').on('keyup', function(e) {
   const search = $(this).val().toLowerCase();
   $(this).parents('.custom-select')

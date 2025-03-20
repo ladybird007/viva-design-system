@@ -15,6 +15,7 @@
 @import url(../components/dropdown/dropdown.css);
 @import url(../components/toasts/toasts.css);
 @import url(../css/badges.css);
+@import url(../components/inputs-forms/inputs-form.css);
 @import url(../css/grid.css);
 @import url(../css/shadows.css);
 @import url(../css/dividers.css);
@@ -45,34 +46,6 @@ body {
 /***** Rounded *****/
 .rounded {
   border-radius: var(--spacing-xs);
-}
-
-
-/****** Forms ******/
-.custom-checkbox {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  cursor: pointer;
-  font-weight: 500;
-}
-.custom-checkbox-icon {
-  width: 18px;
-  height: 18px;
-  border: 1px solid var(--teal);
-  border-radius: var(--border-radius-xxs);
-  background-color: var(--white);
-  cursor: pointer;
-}
-.custom-checkbox input {
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-}
-.custom-checkbox input:checked + .custom-checkbox-icon {
-  background-color: var(--teal-pale);
 }
 
 
