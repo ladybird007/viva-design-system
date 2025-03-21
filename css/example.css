@@ -52,7 +52,6 @@
 
 .example-content pre {
   max-width: 100%;
-  overflow: auto;
 }
 
 .example-headline {
@@ -83,7 +82,8 @@
   width: 237px;
 }
 .example-badges code,
-.example-box-shadow-wrap code {
+.example-box-shadow-wrap code,
+.example-logos code {
   margin-top: var(--spacing-s);
   padding: var(--spacing-xs);
   background-color: var(--white);
@@ -710,3 +710,5 @@ code:hover:before {
   display: inline-block;
   padding-bottom: 24px;
 }
+
+/***** Logos ******/
