@@ -49,9 +49,8 @@
 .example-content.bg-white {
   background-color: var(--white);
 }
-
-.example-content pre {
-  max-width: 100%;
+.example-content code {
+  white-space: pre-wrap;
 }
 
 .example-headline {
