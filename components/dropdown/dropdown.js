@@ -1,7 +1,5 @@
 $('[data-single-select]').each(function() {
   let classes = $(this).attr("class");
-      // id      = $(this).attr("id"),
-      // name    = $(this).attr("name");
 
   let template =  '<div class="' + classes + '">';
       template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
@@ -18,8 +16,6 @@ $('[data-single-select]').each(function() {
 
 $('[data-search-select]').each(function() {
   let classes = $(this).attr("class");
-    // id      = $(this).attr("id"),
-    // name    = $(this).attr("name");
 
   let template =  '<div class="' + classes + '">';
     template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
@@ -54,8 +50,14 @@ $('.select-search').on('keyup', function(e) {
         $(this).attr('style', 'display: block');
       }
     });    
-
 });
+
+$('.select-search').oninput = () => {  
+  $(this).closest(".custom-select").addClass("opened");
+  this.element.querySelectorAll('.custom-option').forEach(option => {
+    option.style.display = option.querySelector('.custom-option').innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) > -1 ? 'flex' : 'none';
+  });
+};
 
 $('.select-search-clear').on('click', function() {
   $(this).parents('.custom-select').find('.select-search').val(''); 
@@ -70,15 +72,24 @@ $(".custom-option:first-of-type").hover(function() {
 }, function() {
   $(this).parents(".custom-options").removeClass("option-hover");
 });
-$(".custom-select-trigger").on("click", function(event) {
 
-  // WHY NEED THIS ???
-  // $('html').one('click',function() {  
-  //   $(".custom-select").removeClass("opened");
-  // });
 
-  $(this).parents(".custom-select").toggleClass("opened");
+$('.custom-select-trigger').on("click", function(event) {
+  $('.multi-select-header').removeClass('multi-select-header-active');
+  $('.custom-select').removeClass("opened");
+  $(this).parents('.custom-select').toggleClass("opened");
+  
   event.stopPropagation();
+});
+$("html").on('click', function(event) {
+  event.stopPropagation();
+  let eTarget = event.target;
+  if(eTarget.classList.contains('select-search') || eTarget.classList.contains('multi-select-search') || eTarget.classList.contains('fa-solid') || eTarget.classList.contains('multi-select-option-text') || eTarget.classList.contains('multi-select-option') || eTarget.classList.contains('multi-select-header')) {
+    return false;
+  } else {
+    $('.custom-select').removeClass("opened");
+    $('.multi-select-header').removeClass('multi-select-header-active');
+  }
 });
 
 $(".custom-option").on("click", function() {      
@@ -98,13 +109,6 @@ $(".custom-option").on("click", function() {
   }, 500);
 });
 
-$('.select-search').oninput = () => {  
-  $(".custom-select").addClass("opened");
-  this.element.querySelectorAll('.custom-option').forEach(option => {
-      option.style.display = option.querySelector('.custom-option').innerHTML.toLowerCase().indexOf(search.value.toLowerCase()) > -1 ? 'flex' : 'none';
-  });
-};
-
 
 
 
@@ -114,7 +118,7 @@ class MultiSelect {
       let defaults = {
           placeholder: 'Select Options',
           max: null,
-          counter: null,
+          counter: false,
           search: true,
           selectAll: true,
           listAll: true,
@@ -144,7 +148,8 @@ class MultiSelect {
                   value: options[i].value,
                   text: options[i].innerHTML,
                   selected: options[i].selected,
-                  html: options[i].getAttribute('data-html')
+                  html: options[i].getAttribute('data-html'),
+                  className: options[i].getAttribute('class')
               });
           }
       }
@@ -158,8 +163,8 @@ class MultiSelect {
       let optionsHTML = '';
       for (let i = 0; i < this.data.length; i++) {
           optionsHTML += `
-              <div class="multi-select-option${this.selectedValues.includes(this.data[i].value) ? ' multi-select-selected' : ''}" data-value="${this.data[i].value}">
-                  <span class="multi-select-option-radio"></span>
+              <div class="multi-select-option ${this.data[i].className ? this.data[i].className : ''}${this.selectedValues.includes(this.data[i].value) ? ' multi-select-selected' : ''}" data-value="${this.data[i].value}">
+                  <span class="multi-select-option-icon"></span>
                   <span class="multi-select-option-text">${this.data[i].html ? this.data[i].html : this.data[i].text}</span>
               </div>
           `;
@@ -253,7 +258,10 @@ class MultiSelect {
               }
           };
       });
-      headerElement.onclick = () => headerElement.classList.toggle('multi-select-header-active');  
+      headerElement.onclick = () => {
+        $('.custom-select').removeClass('opened');
+        headerElement.classList.toggle('multi-select-header-active');
+      };  
       if (this.options.search === true || this.options.search === 'true') {
           let search = this.element.querySelector('.multi-select-search');
           search.oninput = () => {
@@ -395,3 +403,4 @@ class MultiSelect {
 }
 
 document.querySelectorAll('[data-multi-select]').forEach(select => new MultiSelect(select, {search: false, selectAll: false, counter: true }));
+document.querySelectorAll('[data-multi-select-search]').forEach(select => new MultiSelect(select, {search: true, selectAll: false }));
