@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Pagination - Viva Design System</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Pagination</h1>
+      <p>
+        Pagination lets users navigate through multiple pages of content.
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+  <div class="example-content bg-white">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Pagination</h2>
+        <p>
+          Used to help users navigate through multiples pages of content.
+        </p>
+      </div>
+
+      <h4>Short</h4>
+      <br>
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+          <li class="pagination-item pagination-item-current"><span class="pagination-link">2</span></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <br>
+
+      <h4>Truncated</h4>
+      <br>
+      <div class="pagination">
+        <div class="pagination-mobile">
+          <select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>of 10 pages</span>
+        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-prev pagination-item-disabled"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-left"></i></a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+          <li class="pagination-item pagination-item-current"><span class="pagination-link">2</span></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+          <li class="pagination-item pagination-item-dots">
+            <span class="pagination-link"><i class="fa-solid fa-ellipsis"></i></span>
+            <ul class="sub-pagination-list">
+              <li class="pagination-item"><a href="#" class="pagination-link">6</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+            </ul>
+          </li>
+          <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+
+      <br>
+      <br>
+
+      <h4>Mobile</h4>
+      <br>
+      <div class="pagination">
+        <div class="pagination-mobile example-pagination-mobile">
+          <select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>of 10 pages</span>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <h4>Table Pagination Desktop</h4>
+      <br>
+      <div class="pagination pagination-space-between">
+        <a href="#" class="btn btn-simple">Prev</a>
+        <div class="pagination-mobile">
+          <select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>of 10 pages</span>
+        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+          <li class="pagination-item pagination-item-current"><span class="pagination-link">2</span></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+          <li class="pagination-item pagination-item-dots">
+            <span class="pagination-link"><i class="fa-solid fa-ellipsis"></i></span>
+            <ul class="sub-pagination-list">
+              <li class="pagination-item"><a href="#" class="pagination-link">6</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+            </ul>
+          </li>
+          <li class="pagination-item"><a href="#" class="pagination-link">9</a></li>
+        </ul>
+        <a href="#" class="btn btn-simple">Next</a>
+      </div>
+
+      <br>
+      <br>
+
+      <h4>Table Pagination Mobile</h4>
+      <br>
+      <div class="pagination">
+        <a href="#" class="btn btn-simple">Prev</a>
+        <div class="pagination-mobile example-pagination-mobile">
+          <select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>of 10 pages</span>
+        </div>
+        <a href="#" class="btn btn-simple">Next</a>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <h4>Page Count</h4>
+      <br>
+      <div class="pagination">
+        <span>Items per page</span> 
+        <a href="#" class="btn btn-simple">Simple Button</a>
+      </div>
+      <br>
+      <div class="pagination">
+        <div class="pagination-counter">
+          <a href="#" class="btn btn-simple">Simple Button</a>
+          <span>Items per page</span> 
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <h4>Placement</h4>
+      <br>
+      <div class="pagination pagination-space-between pagination-border">
+        <div class="pagination-counter">
+          <a href="#" class="btn btn-simple">Simple Button</a>
+          <span>Items per page</span> 
+        </div>
+        <div class="pagination-mobile">
+          <select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <span>of 10 pages</span>
+        </div>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-prev pagination-item-disabled"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-left"></i></a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+          <li class="pagination-item pagination-item-current"><span class="pagination-link">2</span></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+          <li class="pagination-item pagination-item-dots">
+            <span class="pagination-link"><i class="fa-solid fa-ellipsis"></i></span>
+            <ul class="sub-pagination-list">
+              <li class="pagination-item"><a href="#" class="pagination-link">6</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+              <li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+            </ul>
+          </li>
+          <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/copyText.js"></script>
+  <script src="js/dropdown.js"></script>
+</body>
+</html>

@@ -710,4 +710,15 @@ code:hover:before {
   padding-bottom: 24px;
 }
 
-/***** Logos ******/
+/***** Pagination ******/
+.example-pagination-mobile.pagination-mobile {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+@media (min-width: 769px) {
+  .example-pagination-mobile.pagination-mobile {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
