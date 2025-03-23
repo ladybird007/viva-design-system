@@ -19,7 +19,7 @@
       </a>
     </div>
   </header>
-  <div class="example-content bg-white">
+  <div class="example-content">
     <div class="container">
       <div class="example-headline">
         <h2>Pagination</h2>
@@ -38,6 +38,30 @@
           <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
           <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
         </ul>
+      </div>
+
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination">
+  &lt;ul class="pagination-list">
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">1&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-current">&lt;span class="pagination-link">2&lt;/span>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">3&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">4&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">5&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+</code>
+</pre>
+        </div>
       </div>
 
       <br>
@@ -79,6 +103,59 @@
           <li class="pagination-item"><a href="#" class="pagination-link">10</a></li>
           <li class="pagination-item pagination-item-next"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
+      </div>
+
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination">
+  &lt;div class="pagination-mobile">
+    &lt;select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+      &lt;option value="1">1&lt;/option>
+      &lt;option value="2">2&lt;/option>
+      &lt;option value="3">3&lt;/option>
+      &lt;option value="4">4&lt;/option>
+      &lt;option value="5">5&lt;/option>
+      &lt;option value="6">6&lt;/option>
+      &lt;option value="7">7&lt;/option>
+      &lt;option value="8">8&lt;/option>
+      &lt;option value="9">9&lt;/option>
+      &lt;option value="10">10&lt;/option>
+    &lt;/select>
+    &lt;span>of 10 pages&lt;/span>
+  &lt;/div>
+  &lt;ul class="pagination-list">
+    &lt;li class="pagination-item pagination-item-prev pagination-item-disabled">
+      &lt;a href="#" class="pagination-link">&lt;i class="fa-solid fa-chevron-left">&lt;/i>&lt;/a>
+    &lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">1&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-current">&lt;span class="pagination-link">2&lt;/span>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">3&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">4&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">5&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-dots">
+      &lt;span class="pagination-link">&lt;i class="fa-solid fa-ellipsis">&lt;/i>&lt;/span>
+      &lt;ul class="sub-pagination-list">
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">6&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">7&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">8&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">10&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-next">
+    &lt;a href="#" class="pagination-link">&lt;i class="fa-solid fa-chevron-right">&lt;/i>&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/div>
+</code>
+</pre>
+        </div>
       </div>
 
       <br>
@@ -147,6 +224,56 @@
       </div>
 
       <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination pagination-space-between">
+  &lt;a href="#" class="btn btn-simple">Prev&lt;/a>
+  &lt;div class="pagination-mobile">
+    &lt;select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+      &lt;option value="1">1&lt;/option>
+      &lt;option value="2">2&lt;/option>
+      &lt;option value="3">3&lt;/option>
+      &lt;option value="4">4&lt;/option>
+      &lt;option value="5">5&lt;/option>
+      &lt;option value="6">6&lt;/option>
+      &lt;option value="7">7&lt;/option>
+      &lt;option value="8">8&lt;/option>
+      &lt;option value="9">9&lt;/option>
+      &lt;option value="10">10&lt;/option>
+    &lt;/select>
+    &lt;span>of 10 pages&lt;/span>
+  &lt;/div>
+  &lt;ul class="pagination-list">
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">1&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-current">&lt;span class="pagination-link">2&lt;/span>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">3&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">4&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">5&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-dots">
+      &lt;span class="pagination-link">&lt;i class="fa-solid fa-ellipsis">&lt;/i>&lt;/span>
+      &lt;ul class="sub-pagination-list">
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">6&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">7&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">8&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">9&lt;/a>&lt;/li>
+  &lt;/ul>
+  &lt;a href="#" class="btn btn-simple">Next&lt;/a>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
       <br>
 
       <h4>Table Pagination Mobile</h4>
@@ -182,10 +309,47 @@
         <a href="#" class="btn btn-simple">Simple Button</a>
       </div>
       <br>
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination">
+  &lt;span>Items per page&lt;/span> 
+  &lt;a href="#" class="btn btn-simple">Simple Button&lt;/a>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
       <div class="pagination">
         <div class="pagination-counter">
           <a href="#" class="btn btn-simple">Simple Button</a>
           <span>Items per page</span> 
+        </div>
+      </div>
+      <br>
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination">
+  &lt;a href="#" class="btn btn-simple">Simple Button&lt;/a>
+  &lt;span>Items per page&lt;/span> 
+&lt;/div>
+</code>
+</pre>
         </div>
       </div>
 
@@ -234,12 +398,67 @@
           <li class="pagination-item pagination-item-next"><a href="#" class="pagination-link"><i class="fa-solid fa-chevron-right"></i></a></li>
         </ul>
       </div>
+      <br>
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="pagination pagination-space-between pagination-border">
+  &lt;div class="pagination-counter">
+    &lt;a href="#" class="btn btn-simple">Simple Button&lt;/a>
+    &lt;span>Items per page&lt;/span> 
+  &lt;/div>
+  &lt;div class="pagination-mobile">
+    &lt;select name="pagination-table-mobile" id="pagination-table-mobile" class="pagination-select">
+      &lt;option value="1">1&lt;/option>
+      &lt;option value="2">2&lt;/option>
+      &lt;option value="3">3&lt;/option>
+      &lt;option value="4">4&lt;/option>
+      &lt;option value="5">5&lt;/option>
+      &lt;option value="6">6&lt;/option>
+      &lt;option value="7">7&lt;/option>
+      &lt;option value="8">8&lt;/option>
+      &lt;option value="9">9&lt;/option>
+      &lt;option value="10">10&lt;/option>
+    &lt;/select>
+    &lt;span>of 10 pages&lt;/span>
+  &lt;/div>
+  &lt;ul class="pagination-list">
+    &lt;li class="pagination-item pagination-item-prev pagination-item-disabled">
+      &lt;a href="#" class="pagination-link">&lt;i class="fa-solid fa-chevron-left">&lt;/i>&lt;/a>
+    &lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">1&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-current">&lt;span class="pagination-link">2&lt;/span>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">3&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">4&lt;/a>&lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">5&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-dots">
+      &lt;span class="pagination-link">&lt;i class="fa-solid fa-ellipsis">&lt;/i>&lt;/span>
+      &lt;ul class="sub-pagination-list">
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">6&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">7&lt;/a>&lt;/li>
+        &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">8&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li class="pagination-item">&lt;a href="#" class="pagination-link">10&lt;/a>&lt;/li>
+    &lt;li class="pagination-item pagination-item-next">
+      &lt;&lt;a href="#" class="pagination-link">&lt;i class="fa-solid fa-chevron-right">&lt;/i>&lt;/a>
+    &lt;/li>
+  &lt;/ul>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
 
     </div>
   </div>
 
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/copyText.js"></script>
-  <script src="js/dropdown.js"></script>
 </body>
 </html>

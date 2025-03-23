@@ -6,6 +6,7 @@
 @import url(../css/typography.css);
 @import url(../css/fontAwesome.css);
 @import url(../css/typography.css);
+@import url(../css/buttons.css);
 @import url(../css/colors.css);
 @import url(../components/accordion/accordion.css);
 @import url(../components/alert/alerts.css);
@@ -74,25 +75,4 @@ img {
 }
 .js-dropdown-btn.opened .js-dropdown-icon {
   transform: rotate(180deg);
-}
-
-/***** Buttons ******/
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 93px;
-  height: 36px;
-  padding-left: var(--spacing-xs);
-  padding-right: var(--spacing-xs);
-  border-width: 1px;
-  border-style: solid;
-  font-size: 14px;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: var(--border-radius-xs);
-}
-.btn.btn-simple {
-  border-color: var(--gray);
-  color: var(--med-gray-dark); 
 }

@@ -142,29 +142,3 @@ h4.card-headline,
   font-family: "Fraunces", serif;
 }
 
-.internal-link,
-.external-link {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--teal);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.internal-link:after,
-.external-link:after {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
-}
-.internal-link:after {
-  background-image: url(../icons/internal.svg);
-}
-.external-link:after {
-  background-image: url(../icons/external.svg)
-}
-

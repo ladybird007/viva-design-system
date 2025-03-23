@@ -692,6 +692,7 @@ code:hover:before {
   display: inline-block;
   padding: var(--spacing-m);
 }
+.example-buttons code,
 .example-toasts code {
   display: inline-block;
   background-color: var(--white);
@@ -722,3 +723,94 @@ code:hover:before {
     padding-right: 32px;
   }
 }
+
+/****** Buttons ******/
+.btn.example-mobile:not(.btn-simple) {
+  height: 44px;
+}
+.btn.example-focus {
+  box-shadow: var(--shadow-focus);
+}
+
+.btn-primary.example-hover {
+  background-color: var(--dark-teal-dark);
+  color: var(--white);
+}
+
+.btn-secondary.example-hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+.btn-tertiary.example-hover {
+  background-color: var(--teal-pale);
+  color: var(--black);
+}
+
+.btn-black.example-hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+.btn-white.example-hover {
+  background-color: var(--light-grass-light);
+  color: var(--teal);
+}
+
+.btn-destructive.example-hover {
+  background-color: var(--alert-danger-dark);
+  color: var(--white);
+}
+
+.btn-warning.example-hover {
+  background-color: var(--alert-warning-dark);
+  color: var(--white);
+}
+
+.btn-simple.example-hover {
+  background-color: var(--gray-pale);
+}
+
+.enroll-now-btn.example-hover {
+  background-color: var(--white);
+}
+.enroll-now-btn.example-focus {
+   box-shadow: var(--shadow-focus);
+   background-color: var(--white);
+}
+
+.inline-link.example-hover,
+.internal-link.example-hover,
+.external-link.example-hover,
+.btn-text-only.example-hover {
+  color: var(--teal);
+}
+.internal-link.example-hover:after,
+.internal-link.example-visited-hover:after {
+  content: url("data:image/svg+xml;charset=UTF-8,<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' version='1.1'><path d='M4.284 2.092L6.316 0.683999C6.828 1.516 7.32933 2.268 7.82 2.94C8.31067 3.60133 8.81733 4.19333 9.34 4.716C9.87333 5.23867 10.4387 5.71867 11.036 6.156V6.252C10.4387 6.68933 9.87333 7.17467 9.34 7.708C8.81733 8.23067 8.31067 8.82267 7.82 9.484C7.32933 10.1453 6.828 10.8973 6.316 11.74L4.284 10.332C4.74267 9.63867 5.21733 9.04133 5.708 8.54C6.20933 8.028 6.716 7.596 7.228 7.244C7.74 6.892 8.236 6.60933 8.716 6.396C9.196 6.18267 9.63867 6.028 10.044 5.932V6.476C9.63867 6.38 9.196 6.23067 8.716 6.028C8.236 5.81467 7.74 5.532 7.228 5.18C6.716 4.828 6.20933 4.396 5.708 3.884C5.21733 3.372 4.74267 2.77467 4.284 2.092ZM0.38 4.844H4.14C5.01467 4.844 5.84133 4.89733 6.62 5.004C7.40933 5.1 8.13467 5.228 8.796 5.388L10.14 6.204L8.796 7.02C8.13467 7.18 7.40933 7.31333 6.62 7.42C5.84133 7.516 5.01467 7.564 4.14 7.564H0.38V4.844Z' fill='%230A5B58'/></svg>");
+}
+.inline-link.example-focused,
+.internal-link.example-focused,
+.external-link.example-focused,
+.btn-text-only.example-focused {
+  color: var(--teal-dark);
+}
+.inline-link.example-focused:after,
+.internal-link.example-focused:before,
+.external-link.example-focused:before,
+.btn-text-only.example-focused:after {
+  opacity: 1;
+}
+.inline-link.example-visited,
+.internal-link.example-visited,
+.external-link.example-visited,
+.btn-text-only.example-visited {
+  color: var(--teal-dark);
+}
+.inline-link.example-visited-hover,
+.internal-link.example-visited-hover,
+.external-link.example-visited-hover,
+.btn-text-only.example-visited-hover {
+  color: var(--teal);
+}
+

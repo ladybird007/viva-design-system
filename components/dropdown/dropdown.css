@@ -253,6 +253,10 @@
   color: inherit;
 }
 
+.select-search-wrap,
+.multi-select-search-wrap {
+  position: relative;
+}
 .select-search-wrap button,
 .multi-select-search-wrap button {
   position: absolute;
