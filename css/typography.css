@@ -120,6 +120,9 @@ h4.card-headline,
 .text-red {
   color: var(--alert-danger);
 }
+.text-light-grass {
+  color: var(--light-grass);
+}
 
 .text-semibold {
   font-weight: 600;
