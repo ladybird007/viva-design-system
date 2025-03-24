@@ -15,6 +15,7 @@
   border-radius: var(--border-radius-xs);
   transition: all 0.3s;
   outline: none;
+  flex-shrink: 0;
 }
 .btn:focus {
   box-shadow: var(--shadow-focus);
@@ -155,6 +156,7 @@
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s;
+  flex-shrink: 0;
 }
 .enroll-now-btn:after {
   content: "";
@@ -208,6 +210,7 @@
   padding-right: 4px;
   line-height: 1.5;
   font-size: 16px;
+  flex-shrink: 0;
 }
 
 .inline-link:hover,
@@ -284,6 +287,14 @@
 .internal-link:focus:before,
 .btn-text-only:focus:after {
   opacity: 1;
+}
+
+.btns-group {
+  display: flex;
+  gap: var(--spacing-s);
+}
+.btns-group.vertical {
+  flex-direction: column;
 }
 
 @media (max-width: 768px) {

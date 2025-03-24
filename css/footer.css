@@ -14,16 +14,37 @@
 .footer .hr-brand-light {
   opacity: 0.2;
 }
-.footer a {
+.footer a:not([class]) {
   color: inherit;
   text-decoration: none;
 }
-.footer-top p {
+.footer a:not([class]):hover {
+  color: var(--light-grass);
+}
+.footer-text-big {
   font-size: 24px;
 }
-.footer-shedule {
-  margin-top: var(--spacing-l);
+.footer-text-medium {
+  font-size: 22px;
+}
+.footer-text-small {
+  font-size: 16px;
+}
+.footer-top .footer-line {
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+} 
+.footer-top .footer-headline {
+  padding-bottom: 0;
+}
+.footer-top .footer-headline:after {
+  display: none;
+}
+.footer-shedule-big {
   font-size: 19px;
+}
+.footer-shedule + .footer-headline {
+  margin-top: var(--spacing-l);
 }
 .footer-bottom {
   display: flex;
@@ -53,6 +74,9 @@
   opacity: 0.2;
   border-radius: 2px;
 }
+.footer-headline .small-caps {
+  font-weight: 700;
+}
 .footer-list {
   padding: 0;
   margin: 0;
@@ -68,4 +92,48 @@
   display: flex;
   gap: var(--spacing-m);
   margin-top: var(--spacing-s);
+}
+.footer-links a {
+  display: inline-flex;
+}
+.footer-links span {
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+}
+.footer-text p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-top: var(--spacing-s);
+}
+.footer-text a {
+  font-weight: 700;
+}
+
+.footer .btn {
+  width: 196px;
+}
+
+.footer-buttons {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .footer-buttons {
+    margin-top: var(--spacing-l);
+    justify-content: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .footer .col-3 {
+    width: calc(50% - var(--gutter) / 2);
+  }
+}
+@media (min-width: 769px) {
+  .footer-buttons {
+    justify-content: flex-end;
+    gap: var(--spacing-l);
+  }
+  .footer-text-medicare {
+    padding-top: var(--spacing-m);
+  }
 }

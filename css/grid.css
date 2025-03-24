@@ -33,6 +33,10 @@ div[class*="row-cols-"] {
   width: calc(100% / 2 - var(--gutter) / 2);
 }
 
+.mt-l {
+  margin-top: var(--spacing-l);
+}
+
 @media (max-width: 768px) {
   .row {
     flex-wrap: wrap;

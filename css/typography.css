@@ -130,6 +130,9 @@ h4.card-headline,
 .text-bold {
   font-weight: 700;
 }
+.text-regular {
+  font-weight: 400;
+}
 
 .text-center {
   text-align: center;
