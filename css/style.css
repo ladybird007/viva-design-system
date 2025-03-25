@@ -6,6 +6,7 @@
 @import url(../css/typography.css);
 @import url(../css/fontAwesome.css);
 @import url(../css/typography.css);
+@import url(../css/banners.css);
 @import url(../css/buttons.css);
 @import url(../css/colors.css);
 @import url(../components/accordion/accordion.css);
@@ -20,6 +21,7 @@
 @import url(../css/grid.css);
 @import url(../css/shadows.css);
 @import url(../css/dividers.css);
+@import url(../css/steps.css);
 @import url(../css/toggles.css);
 @import url(../components/tooltips/tooltips.css);
 @import url(../css/pagination.css);

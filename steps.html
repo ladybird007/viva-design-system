@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Steps - Viva Design System</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Steps</h1>
+      <p>
+        Progress steps indicate where the user is in a step-by-step process. These are useful for sign up pages where the user needs to enter data across multiple steps. 
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+  <div class="example-content">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Steps</h2>
+        <p>Used to find relevant content without navigation using words or phrases.</p>
+      </div>
+
+      <h4>Public Enrollment Steps</h4>
+      
+      <br>
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="active">
+              Name & Contact
+            </li>
+            <li>
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item headline-only">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Compare Plans
+            </li>
+            <li>
+              Drug Coverage
+            </li>
+            <li>
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="active">
+        Name & Contact
+      &lt;/li>
+      &lt;li>
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Compare Plans
+      &lt;/li>
+      &lt;li>
+        Drug Coverage
+      &lt;/li>
+      &lt;li>
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item active headline-only">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="active">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Compare Plans
+            </li>
+            <li>
+              Drug Coverage
+            </li>
+            <li>
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="active">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Compare Plans
+      &lt;/li>
+      &lt;li>
+        Drug Coverage
+      &lt;/li>
+      &lt;li>
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="active">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item active headline-only">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Compare Plans
+            </li>
+            <li>
+              Drug Coverage
+            </li>
+            <li>
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Compare Plans
+      &lt;/li>
+      &lt;li>
+        Drug Coverage
+      &lt;/li>
+      &lt;li>
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="done">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="active">
+              Compare Plans
+            </li>
+            <li>
+              Drug Coverage
+            </li>
+            <li>
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done headline-only">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="active">
+        Compare Plans
+      &lt;/li>
+      &lt;li>
+        Drug Coverage
+      &lt;/li>
+      &lt;li>
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="done">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Compare Plans
+            </li>
+            <li class="active">
+              Drug Coverage
+            </li>
+            <li>
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done headline-only">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Compare Plans
+      &lt;/li>
+      &lt;li class="active">
+        Drug Coverage
+      &lt;/li>
+      &lt;li>
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="done">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Compare Plans
+            </li>
+            <li class="done">
+              Drug Coverage
+            </li>
+            <li class="active">
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li>
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done headline-only">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Compare Plans
+      &lt;/li>
+      &lt;li class="done">
+        Drug Coverage
+      &lt;/li>
+      &lt;li class="active">
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li>
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="done">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Compare Plans
+            </li>
+            <li class="done">
+              Drug Coverage
+            </li>
+            <li class="done">
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="active">
+              Payment Method
+            </li>
+            <li>
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done headline-only">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Compare Plans
+      &lt;/li>
+      &lt;li class="done">
+        Drug Coverage
+      &lt;/li>
+      &lt;li class="done">
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="active">
+        Payment Method
+      &lt;/li>
+      &lt;li>
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      
+      <div class="enrollment-steps">
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">1</span> Applicant info
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Name & Contact
+            </li>
+            <li class="done">
+              Medicare info
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item done headline-only">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">2</span> Eligibility
+          </h5>
+        </div>
+        <div class="enrollment-steps-item done">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">3</span> Choose Your Plan
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Compare Plans
+            </li>
+            <li class="done">
+              Drug Coverage
+            </li>
+            <li class="done">
+              Additional Information
+            </li>
+          </ul>
+        </div>
+        <div class="enrollment-steps-item active">
+          <h5 class="enrollment-steps-headline">
+            <span class="enrollment-steps-icon">4</span> Completing Enrollment
+          </h5>
+          <ul class="enrollment-steps-list">
+            <li class="done">
+              Payment Method
+            </li>
+            <li class="active">
+              Confirmation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="enrollment-steps">
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">1&lt;/span> Applicant info
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Name & Contact
+      &lt;/li>
+      &lt;li class="done">
+        Medicare info
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done headline-only">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">2&lt;/span> Eligibility
+    &lt;/h5>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item done">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">3&lt;/span> Choose Your Plan
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Compare Plans
+      &lt;/li>
+      &lt;li class="done">
+        Drug Coverage
+      &lt;/li>
+      &lt;li class="done">
+        Additional Information
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="enrollment-steps-item active">
+    &lt;h5 class="enrollment-steps-headline">
+      &lt;span class="enrollment-steps-icon">4&lt;/span> Completing Enrollment
+    &lt;/h5>
+    &lt;ul class="enrollment-steps-list">
+      &lt;li class="done">
+        Payment Method
+      &lt;/li>
+      &lt;li class="active">
+        Confirmation
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <h4>Steps Horizontal</h4>
+
+      <br>
+
+      <div class="steps steps-horizontal">
+        <div class="steps-item done">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Main Heading</h5>
+            <p>Please provide your name and email</p>
+          </div>
+        </div>
+        <div class="steps-item active">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Active Heading</h5>
+            <p>A few details about your company</p>
+          </div>
+        </div>
+        <div class="steps-item">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Inactive Heading</h5>
+            <p>Start collaborating with your team</p>
+          </div>
+        </div>
+        <div class="steps-item">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Inactive Heading</h5>
+            <p>Start collaborating with your team</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="steps steps-horizontal">
+  &lt;div class="steps-item done">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Main Heading&lt;/h5>
+      &lt;p>Please provide your name and email&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item active">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Active Heading&lt;/h5>
+      &lt;p>A few details about your company&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Inactive Heading&lt;/h5>
+      &lt;p>Start collaborating with your team&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Inactive Heading&lt;/h5>
+      &lt;p>Start collaborating with your team&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <h4>Steps Vertical / Mobile</h4>
+
+      <br>
+
+      <div class="steps steps-vertical">
+        <div class="steps-item done">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Main Heading</h5>
+            <p>Please provide your name and email</p>
+          </div>
+        </div>
+        <div class="steps-item active">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Active Heading</h5>
+            <p>A few details about your company</p>
+          </div>
+        </div>
+        <div class="steps-item">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Inactive Heading</h5>
+            <p>Start collaborating with your team</p>
+          </div>
+        </div>
+        <div class="steps-item">
+          <div class="steps-icon"></div>
+          <div class="steps-text">
+            <h5>Inactive Heading</h5>
+            <p>Start collaborating with your team</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">
+&lt;div class="steps steps-vertical">
+  &lt;div class="steps-item done">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Main Heading&lt;/h5>
+      &lt;p>Please provide your name and email&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item active">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Active Heading&lt;/h5>
+      &lt;p>A few details about your company&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Inactive Heading&lt;/h5>
+      &lt;p>Start collaborating with your team&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="steps-item">
+    &lt;div class="steps-icon">&lt;/div>
+    &lt;div class="steps-text">
+      &lt;h5>Inactive Heading&lt;/h5>
+      &lt;p>Start collaborating with your team&lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+        </div>
+      </div>
+
+      
+          
+    </div>
+  </div>
+
+  <script src="js/copyText.js"></script>
+</body>
+</html>

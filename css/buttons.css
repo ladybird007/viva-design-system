@@ -35,11 +35,9 @@
   border-color: var(--dark-teal-dark);
   color: var(--white);
 }
-
-
 .btn-secondary,
 .btn-secondary:not([disabled]):focus {
-  background-color: var(--white);
+  background-color: transparent;
   border-color: var(--teal);
   color: var(--teal);
   border-width: 2px;
@@ -49,7 +47,7 @@
   color: var(--white);
 }
 .btn-secondary[disabled] {
-  background-color: var(--white);
+  background-color: transparent;
   color: var(--alert-disabled);
   border-color: var(--alert-disabled);
 }
