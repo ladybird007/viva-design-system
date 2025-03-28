@@ -21,7 +21,7 @@ div[class*="row-cols-"] {
 }
 
 .col {
-  width: 100%;
+  flex: 1;
 }
 .row.row-cols-4 > .col {
   width: calc(100% / 4 - var(--gutter) / 4 * 3);
@@ -35,6 +35,10 @@ div[class*="row-cols-"] {
 
 .mt-l {
   margin-top: var(--spacing-l);
+}
+
+.pb-m {
+  padding-bottom: var(--spacing-m);
 }
 
 @media (max-width: 768px) {

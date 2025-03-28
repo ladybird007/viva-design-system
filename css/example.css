@@ -46,9 +46,13 @@
   padding-bottom: 80px;
   background-color: #EEEEEE;
 }
-.example-content.example-footer {
+.example-content.example-footer,
+.example-content.example-content-small {
   min-height: auto;
   padding-bottom: 40px;
+}
+.example-content.example-content-small {
+  padding-top: 40px;
 }
 .example-content.bg-white {
   background-color: var(--white);
