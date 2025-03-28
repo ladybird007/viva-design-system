@@ -606,6 +606,9 @@ code:hover:before {
   color: var(--teal);
   font-weight: 600;
 }
+.example-search-select {
+  width: 241px;
+}
 
 /******* Divires *****/
 .example-dividers code,

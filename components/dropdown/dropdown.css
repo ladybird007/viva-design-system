@@ -269,6 +269,7 @@
   outline: none;
   padding: 0;
   cursor: pointer;
+  display: none;
 }
 .select-search-wrap .select-search:focus,
 .multi-select-search-wrap .multi-select-search:focus  {

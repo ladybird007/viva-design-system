@@ -48,5 +48,20 @@
       $('.js-nav-link').removeClass('opened');
       $('.sub-nav').slideUp();
     });
+
+
+
+    $('.search-input').on('keyup', function(e) {
+      const inputVal = $(this).val();
+      if(inputVal !== '') {
+        $(this).next().fadeIn();
+      } else {
+        $(this).next().fadeOut();
+      }
+    });
+    $('.search-clear').on('click', function() {
+      $(this).parents('.search-wrap').find('.search-input').val('');   
+      $(this).fadeOut();
+    });
   })
 })(jQuery)

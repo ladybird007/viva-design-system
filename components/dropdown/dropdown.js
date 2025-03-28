@@ -41,6 +41,11 @@ $('[data-search-select]').each(function() {
 
 $('.select-search').on('keyup', function(e) {
   const search = $(this).val().toLowerCase();
+  if (search !== '') {
+    $(this).next().fadeIn();
+  } else {
+    $(this).next().fadeOut();
+  }
   $(this).parents('.custom-select')
     .find('.custom-option').each(function() {      
       const checker = $(this).text().toLowerCase().indexOf(search) > -1;      
@@ -61,6 +66,7 @@ $('.select-search').oninput = () => {
 
 $('.select-search-clear').on('click', function() {
   $(this).parents('.custom-select').find('.select-search').val(''); 
+  $(this).fadeOut();
   $(this).parents('.custom-select')
   .find('.custom-option').each(function() {          
     $(this).attr('style', 'display: block');    
