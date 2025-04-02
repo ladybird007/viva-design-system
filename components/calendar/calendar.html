@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="air-datepicker.css">
+  <link rel="stylesheet" href="daterangepicker.css">
   <link rel="stylesheet" href="calendar.css">
 </head>
 <body>
@@ -27,6 +28,30 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
+          <h4>Single Date Picker</h4>
+          <div class="custom-calendar" data-for="birthday">
+            <input type="text" name="birthday" value="10/24/1984" />
+          </div>
+        </div>
+        <div class="col-4">
+          <h4>Date Range Picker</h4>
+          <div class="custom-calendar" data-for="daterange">
+            <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+          </div>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-4">
           <input type="text" class="standart-calendar">
         </div>
         <div class="col-4">
@@ -37,6 +62,9 @@
     </div>
   </div>
   
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="daterangepicker.min.js"></script>
   <script src="air-datepicker.js"></script>
   <script src="calendar.js"></script>
 </body>
