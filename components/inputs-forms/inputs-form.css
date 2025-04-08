@@ -45,6 +45,9 @@ textarea.form-field:not(.form-field-resize) {
 .calendar-wrap {
   position: relative;
 }
+.calendar-wrap .form-field {
+  padding-right: var(--spacing-l);
+}
 .calendar-wrap .fa-calendar {
   position: absolute;
   right: 10px;

@@ -714,13 +714,18 @@ code:hover:before {
 }
 
 /***** Inputs *****/
-.example-content .form-group {
-  max-width: 350px;
-}
+
 .example-form code {
   display: inline-block;
   padding-bottom: 24px;
 }
+
+@media (min-width: 769px) {
+  .example-content .form-group {
+    max-width: 350px;
+  }
+}
+
 
 /***** Pagination ******/
 .example-pagination-mobile.pagination-mobile {
