@@ -1,0 +1,301 @@
+.list-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-content li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-xs);
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+}
+
+.list-content i,
+.list-content .badge{
+  margin-top: 2px;
+}
+
+.list-content strong,
+.list-content span,
+.list-content small {
+  display: block;
+}
+.list-content strong,
+.list-content span {
+  color: var(--med-gray-dark);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.list-content strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.list-content span:not(.badge) {
+  font-size: 14px;
+}
+.list-content small {
+  font-size: 12px;
+  color: var(--med-gray);
+  letter-spacing: -0.05em;
+  line-height: 1.4;
+}
+.list-content-text {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-xs);
+}
+
+ul:not([class]),
+ol:not([class]) {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-m);
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+ul:not([class]) li,
+ol:not([class]) li {
+  padding-top: var(--spacing-xs);
+  padding-bottom: var(--spacing-xs);
+}
+
+ul:not([class]) ul:not([class]),
+ol:not([class]) ol:not([class]) {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: var(--spacing-xs);
+}
+
+ul:not([class]) > li > ul:not([class]) {
+  list-style: '- ';
+}
+ul:not([class]) > li > ul:not([class]) > li > ul:not([class]) {
+  list-style: square;
+}
+
+ol:not([class]) > li > ol:not([class]) {
+  list-style: lower-latin;
+}
+ol:not([class]) > li > ol:not([class]) > li > ol:not([class]) {
+  list-style: lower-roman;
+}
+
+.doctor-results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 var(--spacing-m);
+}
+.doctor-results-list-item {
+  margin-top: var(--spacing-l);
+}
+.doctor-card {
+  padding: var(--spacing-m);
+  background-color: var(--results-list-bg);
+  box-shadow: var(--shadow-m);
+  border-radius: 12px;
+  display: flex;
+  gap: var(--spacing-s);
+}
+.doctor-card h3 {
+  color: var(--med-gray-dark);
+}
+.doctor-card-personal-info {
+  flex: 1;
+}
+.doctor-card-number {
+  min-width: 40px;
+  flex-shrink: 0;
+}
+.doctor-card-name {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+}
+.doctor-card-specialty {
+  margin-top: var(--spacing-xxs);
+}
+.doctor-card-location {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: var(--spacing-s);
+}
+.doctor-card-location i {
+  width: 16px;
+  text-align: center;
+  color: var(--med-gray-dark); 
+}
+.doctor-card-location a {
+  color: var(--teal-dark);  
+  text-decoration: none;
+}
+.doctor-card-location p {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+}
+.doctor-card-location + a {
+  margin-top: var(--spacing-m);
+}
+.doctor-card-skill-label {
+  position: relative;
+  color: var(--teal-dark);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: var(--spacing-s);
+  align-items: center;
+  margin-bottom: var(--spacing-xxs);
+}
+.doctor-card-skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+  padding-left: var(--spacing-m);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  border-left: 1px solid var(--gray-light);
+}
+.doctor-card-skill {
+  position: relative;
+  padding-left: var(--spacing-l);
+}
+.doctor-card-skill i,
+.doctor-card-skill svg{
+  position: absolute;
+  left: calc( -1 * var(--spacing-l));
+  top: 50%;
+  transform: translateY(-50%);
+}
+.doctor-card-skill .fa-hospital {
+  font-size: 12px;
+}
+.doctor-card .badge-green i {
+  color: var(--alert-success-dark);
+}
+.doctor-card .badge-red i {
+  color: var(--alert-danger-dark);
+}
+.doctor-card .inline-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  .doctor-card {
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
+  .doctor-card-name {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin-bottom: var(--spacing-s);
+  }
+}
+@media (max-width: 768px) {
+  .doctor-card-item {
+    position: relative;
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
+  .doctor-card-skills {
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
+  }
+  .doctor-card-number {
+    position: absolute;
+    top: var(--spacing-m);
+    left: var(--spacing-m);
+  }
+  .doctor-card-name h3 {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .doctor-card-skills {
+    width: 275px;
+  }
+  .doctor-card-name .badge {
+    margin-top: 3px;
+  }
+} 
+
+
+.benefits-list {
+  margin: 0;
+  display: grid;
+  list-style: none;
+}
+.benefits-card {
+  background-color: var(--white);
+  box-shadow: var(--shadow-m);
+  border-radius: 12px;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+}
+.benefits-card-image {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+.benefits-card-desc {
+  padding: var(--spacing-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-l);
+}
+.benefits-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+.benefits-card h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 1024px) {
+  .benefits-list {
+    padding: var(--spacing-s) 0;
+    row-gap: var(--spacing-l);
+  }
+}
+@media (max-width: 639px) {
+  .benefits-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 640px) and (max-width: 1024px) {
+  .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .benefits-list {
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .benefits-card h3 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Modals - Viva Design System</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Modals</h1>
+      <p>
+        <strong>Modals</strong> focus user attention on one card of information and sits on top of page content.
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+  <div class="example-content bg-white">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Modals</h2>
+        <p>Used to focus user attention on a single card action or information</p>
+      </div>
+      <div class="example-modals">
+        <div><a href="#" class="btn btn-simple js-modal-btn" data-id="#modal-default">Show Defaul Modal</a></div>
+        <br>
+        <div class="modal-container small">
+          <div class="modal-content">
+            <h4>Unsaved changes</h4>
+            <p>Do you want to save or discard changes?</p>
+          </div>
+          <div class="modal-footer">
+            <div class="btns-group right">
+              <button class="btn btn-secondary">Discard</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="modal" id="modal-default">
+          <div class="modal-overlay gray">
+            <div class="modal-container small">
+              <div class="modal-content">
+                <h4>Unsaved changes</h4>
+                <p>Do you want to save or discard changes?</p>
+              </div>
+              <div class="modal-footer">
+                <div class="btns-group right">
+                  <button class="btn btn-secondary js-modal-close">Discard</button>
+                  <button class="btn btn-primary js-modal-close">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">&lt;div class="modal" id="modal-default">
+    &lt;div class="modal-overlay gray">
+      &lt;div class="modal-container small">
+        &lt;div class="modal-content">
+          &lt;h4>Unsaved changes&lt;/h4>
+          &lt;p>Do you want to save or discard changes?&lt;/p>
+        &lt;/div>
+        &lt;div class="modal-footer">
+          &lt;div class="btns-group right">
+            &lt;button class="btn btn-secondary js-modal-close">Discard&lt;/button>
+            &lt;button class="btn btn-primary js-modal-close">Save&lt;/button>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div></code>
+  </pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div><a href="#" class="btn btn-simple js-modal-btn" data-id="#modal-alert">Show Alert Modal</a></div>
+        <br>
+        <div class="modal-container small">
+          <div class="modal-content text-center">
+            <div class="modal-icon">
+              <img src="icons/alert.svg" alt="">
+            </div>
+            <h4>A Problem Occurred</h4>
+            <p>You do not have permissions to access this file. Please go back and try a different file.</p>
+          </div>
+          <div class="modal-footer">
+            <div class="btns-group center">
+              <button class="btn btn-secondary btn-long">Dismiss</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="modal" id="modal-alert">
+          <div class="modal-overlay gray">
+            <div class="modal-container small">
+              <div class="modal-content text-center">
+                <div class="modal-icon">
+                  <img src="icons/alert.svg" alt="">
+                </div>
+                <h4>A Problem Occurred</h4>
+                <p>You do not have permissions to access this file. Please go back and try a different file.</p>
+              </div>
+              <div class="modal-footer">
+                <div class="btns-group center">
+                  <button class="btn btn-secondary btn-long js-modal-close">Dismiss</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">&lt;div class="modal" id="modal-alert">
+    &lt;div class="modal-overlay gray">
+      &lt;div class="modal-container small">
+        &lt;div class="modal-content">
+          &lt;div class="modal-icon">
+            &lt;img src="icons/alert.svg" alt="">
+          &lt;/div>
+          &lt;h4>A Problem Occurred&lt;/h4>
+          &lt;p>You do not have permissions to access this file. Please go back and try a different file.&lt;/p>
+        &lt;/div>
+        &lt;div class="modal-footer">
+          &lt;div class="btns-group center">
+            &lt;button class="btn btn-secondary btn-long js-modal-close">Dismiss&lt;/button>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div></code>
+  </pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div><a href="#" class="btn btn-simple js-modal-btn" data-id="#modal-external">Show External Modal</a></div>
+        <br>
+        <div class="modal-container">
+          <div class="modal-header">
+            <h4>Caremark Formulary Search</h4>
+            <span class="modal-close"><i class="fa-regular fa-xmark"></i></span>
+          </div>
+          <div class="modal-content">
+            <p>
+              The page you requested is on the following site: 
+              <strong>Caremark Formulary Search</strong>. To get there, you must leave this site. 
+              If you want to proceed, please click the green button below. 
+              To return to this site, click the outlined button below 
+              or the “X” in the top right corner. 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <div class="btns-group right">
+              <button class="btn btn-long btn-secondary">Return to Site</button>
+              <button class="btn btn-primary">Proceed</button>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="modal" id="modal-external">
+          <div class="modal-overlay green">
+            <div class="modal-container">
+              <div class="modal-header">
+                <h4>Caremark Formulary Search</h4>
+                <span class="modal-close js-modal-close"><i class="fa-regular fa-xmark"></i></span>
+              </div>
+              <div class="modal-content">
+                <p>
+                  The page you requested is on the following site: 
+                  <strong>Caremark Formulary Search</strong>. To get there, you must leave this site. 
+                  If you want to proceed, please click the green button below. 
+                  To return to this site, click the outlined button below 
+                  or the “X” in the top right corner. 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <div class="btns-group right">
+                  <button class="btn btn-secondary btn-long js-modal-close">Return to Site</button>
+                  <button class="btn btn-primary js-modal-close">Proceed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+  <pre>
+  <code data-lang="html" class="copy-content">&lt;a href="#" class="btn btn-simple js-modal-btn" data-id="#modal-external">Show External Modal&lt;/a>
+  &lt;div class="modal" id="modal-external">
+    &lt;div class="modal-overlay gray">
+      &lt;div class="modal-container">
+        &lt;div class="modal-header">
+          &lt;h4>Caremark Formulary Search&lt;/h4>
+          &lt;span class="modal-close js-modal-close">&lt;i class="fa-regular fa-xmark">&lt;/i>&lt;/span>
+        &lt;/div>
+        &lt;div class="modal-content">
+          &lt;p>
+            The page you requested is on the following site: 
+            &lt;strong>Caremark Formulary Search&lt;/strong>. To get there, you must leave this site. 
+            If you want to proceed, please click the green button below. 
+            To return to this site, click the outlined button below 
+            or the “X” in the top right corner. 
+          &lt;/p>
+        &lt;/div>
+        &lt;div class="modal-footer">
+          &lt;div class="btns-group center">
+            &lt;button class="btn btn-secondary btn-long js-modal-close">Return to Site&lt;/button>
+            &lt;button class="btn btn-primary js-modal-close">Proceed&lt;/button>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div></code>
+  </pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/copyText.js"></script>
+</body>
+</html>

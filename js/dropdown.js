@@ -19,7 +19,6 @@
     $("html").on('click', function(event) {
       event.stopPropagation();
       let eTarget = event.target;
-      console.log(eTarget);
       if(!(eTarget.classList.contains('search-input'))) {
         $('.search-btn').removeClass("opened");
         $('.search-container').slideUp();

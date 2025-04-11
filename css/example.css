@@ -142,6 +142,7 @@
 /****** HTML ******/
 .example-html {
   background-color: #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .example-html.bg-white {
   background-color: var(--white);
@@ -155,6 +156,7 @@
 }
 .example-html pre {
   white-space: pre-wrap;
+  word-break: break-all;
   padding: var(--spacing-m);
 }
 .example-html pre code {
@@ -830,3 +832,10 @@ code:hover:before {
   color: var(--teal);
 }
 
+/***** Progress bars *****/
+.example-progress + .example-progress {
+  margin-top: var(--spacing-xxl);
+}
+.example-progress .progress-wrap {
+  margin-top: var(--spacing-xl);
+}

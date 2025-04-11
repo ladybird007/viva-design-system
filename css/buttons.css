@@ -16,12 +16,16 @@
   transition: all 0.3s;
   outline: none;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .btn:focus {
   box-shadow: var(--shadow-focus);
 }
 .btn[disabled]:hover {
   cursor: default;
+}
+.btn-long {
+  min-width: 140px;
 }
 
 .btn-primary,
@@ -293,6 +297,12 @@
 }
 .btns-group.vertical {
   flex-direction: column;
+}
+.btns-group.center {
+  justify-content: center;
+}
+.btns-group.right {
+  justify-content: flex-end;
 }
 
 @media (max-width: 768px) {

@@ -117,6 +117,9 @@ h4.card-headline,
 .text-teal-dark {
   color: var(--teal-dark);
 }
+.text-teal-light {
+  color: var(--teal-light);
+}
 .text-gray {
   color: var(--gray);
 }
