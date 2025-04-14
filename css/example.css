@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--spacing-m)
 }
 .example-header h1 {
   font-size: 60px;
@@ -724,7 +725,7 @@ code:hover:before {
 
 @media (min-width: 769px) {
   .example-content .form-group {
-    max-width: 350px;
+    max-width: 380px;
   }
 }
 

@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carousel - Viva Design System</title>
+  <title>Carousels - Viva Design System</title>
 
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="js/owl.carousel.min.css">
 </head>
 <body>
 
   <header class="example-header">
     <div class="container">
-      <h1>Carousel</h1>
+      <h1>Carousels</h1>
       <p>
-        
+        Breadcrumbs are used as a navigational aid to show the user's current location and the path to get there.
       </p>
       <a href="../../index.html">
         <img src="../../img/Logomark.png" alt="">
@@ -24,36 +24,626 @@
 
   <div class="example-content">
     <div class="container">
-      <div class="row">
-        <div class="carousel-wrap">
-          <div class="js-single-slider">
-            <div>1 Slide</div>
-            <div>2 Slide</div>
-            <div>3 Slide</div>
+
+      <div>
+        <h4>Carousel Simple</h4>
+
+        <br>
+
+        <div class="owl-carousel simple-carousel js-simple-carousel">
+          <div class="item"><img src="../../img/carousel/1.png" alt="" /></div>
+          <div class="item"><img src="../../img/carousel/2.png" alt="" /></div>
+          <div class="item"><img src="../../img/carousel/3.png" alt="" /></div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="owl-carousel simple-carousel js-simple-carousel">
+&lt;div class="item">&lt;img src="../../img/carousel/1.png" alt="" />&lt;/div>
+&lt;div class="item">&lt;img src="../../img/carousel/2.png" alt="" />&lt;/div>
+&lt;div class="item">&lt;img src="../../img/carousel/3.png" alt="" />&lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>JS</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">$('.js-simple-carousel').owlCarousel({
+loop: true,
+navText: ['&lt;i class="fa-solid fa-chevron-left">&lt;/i>','&lt;i class="fa-solid fa-chevron-right">&lt;/i>'],
+items: 1,
+responsive: {
+  0 : {
+    nav: false,
+  },
+  1025 : {
+    nav: true,
+  }
+}
+});</code>
+</pre>
           </div>
         </div>
       </div>
+
       <br>
       <br>
-      <div class="carousel-wrap">
-        <div class="js-thumbnail-nav-slider">
-          <div>Nav 1</div>
-          <div>Nav 2</div>
-          <div>Nav 3</div>
-          <div>Nav 4</div>
+      <br>
+
+
+      <div>
+        <h4>Carousel Cards</h4>
+
+        <br>
+
+        <div class="owl-carousel js-cards-carousel">
+          <div class="item">
+            <div class="benefits-card">
+              <div class="benefits-card-image">
+                <img src="../../img/benefitsList/imageGrass.png" alt="">
+              </div>
+              <div class="benefits-card-desc">
+                <div class="benefits-card-text">
+                  <p class="benefits-card-label small">Benefits</p>
+                  <h3 class="benefits-card-title">Preventive Care</h3>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  </p>
+                </div>
+                <a href="#" class="internal-link">Internal Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="benefits-card">
+              <div class="benefits-card-image">
+                <img src="../../img/benefitsList/imageGrass.png" alt="">
+              </div>
+              <div class="benefits-card-desc">
+                <div class="benefits-card-text">
+                  <p class="benefits-card-label small">Benefits</p>
+                  <h3 class="benefits-card-title">Preventive Care</h3>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  </p>
+                </div>
+                <a href="#" class="internal-link">Internal Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="benefits-card">
+              <div class="benefits-card-image">
+                <img src="../../img/benefitsList/imageGrass.png" alt="">
+              </div>
+              <div class="benefits-card-desc">
+                <div class="benefits-card-text">
+                  <p class="benefits-card-label small">Benefits</p>
+                  <h3 class="benefits-card-title">Preventive Care</h3>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  </p>
+                </div>
+                <a href="#" class="internal-link">Internal Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="benefits-card">
+              <div class="benefits-card-image">
+                <img src="../../img/benefitsList/imageGrass.png" alt="">
+              </div>
+              <div class="benefits-card-desc">
+                <div class="benefits-card-text">
+                  <p class="benefits-card-label small">Benefits</p>
+                  <h3 class="benefits-card-title">Preventive Care</h3>
+                  <p>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                  </p>
+                </div>
+                <a href="#" class="internal-link">Internal Link</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="js-thumbnail-slider">
-          <div>1 Slide</div>
-          <div>2 Slide</div>
-          <div>3 Slide</div>
-          <div>4 Slide</div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="owl-carousel js-cards-carousel">
+  &lt;div class="item">
+    &lt;div class="benefits-card">
+      &lt;div class="benefits-card-image">
+        &lt;img src="../../img/benefitsList/imageGrass.png" alt="" />
+      &lt;/div>
+      &lt;div class="benefits-card-desc">
+        &lt;div class="benefits-card-text">
+          &lt;p class="benefits-card-label small">Benefits&lt;/p>
+          &lt;h3 class="benefits-card-title">Preventive Care&lt;/h3>
+          &lt;p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          &lt;/p>
+        &lt;/div>
+        &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="item">
+    &lt;div class="benefits-card">
+      &lt;div class="benefits-card-image">
+        &lt;img src="../../img/benefitsList/imageGrass.png" alt="" />
+      &lt;/div>
+      &lt;div class="benefits-card-desc">
+        &lt;div class="benefits-card-text">
+          &lt;p class="benefits-card-label small">Benefits&lt;/p>
+          &lt;h3 class="benefits-card-title">Preventive Care&lt;/h3>
+          &lt;p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          &lt;/p>
+        &lt;/div>
+        &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="item">
+    &lt;div class="benefits-card">
+      &lt;div class="benefits-card-image">
+        &lt;img src="../../img/benefitsList/imageGrass.png" alt="" />
+      &lt;/div>
+      &lt;div class="benefits-card-desc">
+        &lt;div class="benefits-card-text">
+          &lt;p class="benefits-card-label small">Benefits&lt;/p>
+          &lt;h3 class="benefits-card-title">Preventive Care&lt;/h3>
+          &lt;p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          &lt;/p>
+        &lt;/div>
+        &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="item">
+    &lt;div class="benefits-card">
+      &lt;div class="benefits-card-image">
+        &lt;img src="../../img/benefitsList/imageGrass.png" alt="" />
+      &lt;/div>
+      &lt;div class="benefits-card-desc">
+        &lt;div class="benefits-card-text">
+          &lt;p class="benefits-card-label small">Benefits&lt;/p>
+          &lt;h3 class="benefits-card-title">Preventive Care&lt;/h3>
+          &lt;p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+          &lt;/p>
+        &lt;/div>
+        &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>JS</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">$('.js-cards-carousel').owlCarousel({
+  loop: true,
+  margin: 24,
+  center:true,
+  navText: ['&lt;i class="fa-solid fa-chevron-left">&lt;/i>','&lt;i class="fa-solid fa-chevron-right">&lt;/i>'],
+  responsive: {
+    0 : {
+      items: 1,
+      nav: false,
+    },
+    768 : {
+      items: 2,
+    },
+    1025 : {
+      items: 3,
+      nav: true,
+    }
+  }
+});</code>
+</pre>
+          </div>
         </div>
       </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div>
+        <h4>Carousel Slider</h4>
+
+        <br>
+
+        <div class="owl-carousel js-simple-carousel">
+          <div class="item">
+            <div class="call-out">
+              <div class="row align-items-center">
+                <div class="col-7">
+                  <div class="call-out-text">
+                    <h4 class="card-headline">MEDICARE</h4>
+                    <h1>Understanding the Different Enrollment Periods</h1>
+                    <p>
+                      Demonstrating big data's transformative role in patient care, 
+                      this study highlights its effectiveness in improving diagnoses and treatment plans.
+                    </p>
+                    <a href="#" class="internal-link">Internal Link</a>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="call-out-img">
+                    <img src="../../img/call-out/phones.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="call-out">
+              <div class="row">
+                <div class="col-7">
+                  <div class="call-out-text">
+                    <h4 class="card-headline">MEDICARE</h4>
+                    <h1>Understanding the Different Enrollment Periods 2</h1>
+                    <p>
+                      Demonstrating big data's transformative role in patient care, 
+                      this study highlights its effectiveness in improving diagnoses and treatment plans.
+                    </p>
+                    <a href="#" class="internal-link">Internal Link</a>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="call-out-img">
+                    <img src="../../img/call-out/phones.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="owl-carousel js-simple-carousel">
+  &lt;div class="item">
+    &lt;div class="call-out">
+      &lt;div class="row align-items-center">
+        &lt;div class="col-7">
+          &lt;div class="call-out-text">
+            &lt;h4 class="card-headline">MEDICARE&lt;/h4>
+            &lt;h1>Understanding the Different Enrollment Periods&lt;/h1>
+            &lt;p>
+              Demonstrating big data's transformative role in patient care, 
+              this study highlights its effectiveness in improving diagnoses and treatment plans.
+            &lt;/p>
+            &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="col-5">
+          &lt;div class="call-out-img">
+            &lt;img src="../../img/call-out/phones.png" alt="" />
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="item">
+    &lt;div class="call-out">
+      &lt;div class="row align-items-center">
+        &lt;div class="col-7">
+          &lt;div class="call-out-text">
+            &lt;h4 class="card-headline">MEDICARE&lt;/h4>
+            &lt;h1>Understanding the Different Enrollment Periods 2&lt;/h1>
+            &lt;p>
+              Demonstrating big data's transformative role in patient care, 
+              this study highlights its effectiveness in improving diagnoses and treatment plans.
+            &lt;/p>
+            &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="col-5">
+          &lt;div class="call-out-img">
+            &lt;img src="../../img/call-out/phones.png" alt="" />
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>JS</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">$('.js-simple-carousel').owlCarousel({
+loop: true,
+navText: ['&lt;i class="fa-solid fa-chevron-left">&lt;/i>','&lt;i class="fa-solid fa-chevron-right">&lt;/i>'],
+items: 1,
+responsive: {
+  0 : {
+    nav: false,
+  },
+  1025 : {
+    nav: true,
+  }
+}
+});</code>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div>
+        <h4>Testimonials Slider</h4>
+
+        <br>
+
+        <div class="owl-carousel js-simple-carousel">
+          <div class="item">
+            <div class="testimonials">
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class="testimonial-text">
+                    <h2 class="text-teal">Our Members are Talking!</h2>
+                    <div>
+                      <img src="../../icons/quote.svg" alt="">
+                    </div>
+                    <p>
+                      <span class="small-caps">Viva Medicare's</span> prescription drug benefits are really helpful to me. I can get my prescriptions for little to no cost.
+                    </p>
+                    <div>
+                      <img src="../../icons/quote.svg" alt="">
+                    </div>
+                    <p class="text-bold text-teal">- Francis, Viva Medicare Member</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="testimonial-img">
+                    <img src="../../img/testimonials/1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial">
+              <div class="row">
+                <div class="col">
+                  <div class="testimonial-text">
+                    <h2 class="text-teal">2 Our Members are Talking!</h2>
+                    <div>
+                      <img src="../../icons/quote.svg" alt="">
+                    </div>
+                    <p>
+                      <span class="small-caps">Viva Medicare's</span> prescription drug benefits are really helpful to me. I can get my prescriptions for little to no cost.
+                    </p>
+                    <div>
+                      <img src="../../icons/quote.svg" alt="">
+                    </div>
+                    <p class="text-bold text-teal">- Francis, Viva Medicare Member</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="testimonial-img">
+                    <img src="../../img/testimonials/1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="owl-carousel js-simple-carousel">
+  &lt;div class="item">
+    &lt;div class="testimonials">
+      &lt;div class="row align-items-center">
+        &lt;div class="col">
+          &lt;div class="testimonial-text">
+            &lt;h2 class="text-teal">Our Members are Talking!&lt;/h2>
+            &lt;div>
+              &lt;img src="../../icons/quote.svg" alt="">
+            &lt;/div>
+            &lt;p>
+              &lt;span class="small-caps">Viva Medicare's&lt;/span> prescription drug benefits are really helpful to me. I can get my prescriptions for little to no cost.
+            &lt;/p>
+            &lt;div>
+              &lt;img src="../../icons/quote.svg" alt="">
+            &lt;/div>
+            &lt;p class="text-bold text-teal">- Francis, Viva Medicare Member&lt;/p>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="col">
+          &lt;div class="testimonial-img">
+            &lt;img src="../../img/testimonials/1.png" alt="" />
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="item">
+    &lt;div class="testimonial">
+      &lt;div class="row">
+        &lt;div class="col">
+          &lt;div class="testimonial-text">
+            &lt;h2 class="text-teal">2 Our Members are Talking!&lt;/h2>
+            &lt;div>
+              &lt;img src="../../icons/quote.svg" alt="" />
+            &lt;/div>
+            &lt;p>
+              &lt;span class="small-caps">Viva Medicare's&lt;/span> prescription drug benefits are really helpful to me. I can get my prescriptions for little to no cost.
+            &lt;/p>
+            &lt;div>
+              &lt;img src="../../icons/quote.svg" alt="">
+            &lt;/div>
+            &lt;p class="text-bold text-teal">- Francis, Viva Medicare Member</p>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="col">
+          &lt;div class="testimonial-img">
+            &lt;img src="../../img/testimonials/1.png" alt="" />
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>JS</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">$('.js-simple-carousel').owlCarousel({
+loop: true,
+navText: ['&lt;i class="fa-solid fa-chevron-left">&lt;/i>','&lt;i class="fa-solid fa-chevron-right">&lt;/i>'],
+items: 1,
+responsive: {
+  0 : {
+    nav: false,
+  },
+  1025 : {
+    nav: true,
+  }
+}
+});</code>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div>
+        <h4>Carousel Preview</h4>
+
+        <br>
+        
+        <div class="owl-carousel preview-carousel js-preview-carousel">
+          <div class="item"><img src="../../img/carousel/1.png" alt="" /></div>
+          <div class="item"><img src="../../img/carousel/2.png" alt="" /></div>
+          <div class="item"><img src="../../img/carousel/3.png" alt="" /></div>
+        </div>
+        
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="owl-carousel preview-carousel js-preview-carousel">
+&lt;div class="item">&lt;img src="../../img/carousel/1.png" alt="" />&lt;/div>
+&lt;div class="item">&lt;img src="../../img/carousel/2.png" alt="" />&lt;/div>
+&lt;div class="item">&lt;img src="../../img/carousel/3.png" alt="" />&lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>JS</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">$('.js-preview-carousel').owlCarousel({
+stagePadding: 24,
+margin: 12,
+navText: ['&lt;i class="fa-solid fa-chevron-left">&lt;/i>','&lt;i class="fa-solid fa-chevron-right">&lt;/i>'],
+items: 1,
+responsive: {
+  0 : {
+    nav: false,
+  },
+  1025 : {
+    nav: true,
+  }
+}
+});</code>
+</pre>
+          </div>
+        </div>
+      </div>
+      
+  
     </div>
   </div>
   
   <script src="../../js/jquery-3.7.1.min.js"></script>
-  <script src="slick.min.js"></script>
-  <script src="carousel.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/carousel.js"></script>
 </body>
 </html>

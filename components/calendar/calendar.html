@@ -31,17 +31,118 @@
           <div class="form-group">
             <label class="form-label" for="input-single-calendar">Single Date Picker</label>
             <div class="calendar-wrap">
-              <input type="text" id="input-single-calendar" name="input-single-calendar" class="form-field single-calendar" placeholder="mm/dd/yyyy" required /> 
-              <i class="fa-regular fa-calendar"></i>
+              <input type="text" id="input-single-calendar" name="input-single-calendar" class="form-field single-calendar" placeholder="mm/dd/yyyy" /> 
+            </div>
+          </div>       
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>HTML</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="form-group">
+  &lt;label class="form-label" for="input-single-calendar">Single Date Picker&lt;/label>
+  &lt;div class="calendar-wrap">
+    &lt;input type="text" id="input-single-calendar" name="input-single-calendar" class="form-field single-calendar" placeholder="mm/dd/yyyy" /> 
+  &lt;/div>
+&lt;/div></code>
+</pre>
             </div>
           </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>JS</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">const singleCalendar = document.querySelector('.single-calendar');
+
+new AirDatepicker(singleCalendar, {
+  autoClose: true,
+  dateFormat: 'MM/dd/yyyy',
+  navTitles: {
+    days: 'MMMM yyyy',
+  },
+  locale: {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    dateFormat: 'MM/dd/yyyy',
+  }
+});</code>
+</pre>
+            </div>
+          </div>
+
         </div>
         <div class="col-6">
           <div class="form-group">
             <label class="form-label" for="input-range-calendar">Range Date Picker</label>
             <div class="calendar-wrap">
-              <input type="text" id="input-range-calendar" name="input-range-calendar" class="form-field range-calendar" placeholder="mm/dd/yyyy" required /> 
-              <i class="fa-regular fa-calendar"></i>
+              <input type="text" id="input-range-calendar" name="input-range-calendar" class="form-field range-calendar" placeholder="mm/dd/yyyy - mm/dd/yyyy" /> 
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>HTML</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="form-group">
+  &lt;label class="form-label" for="input-range-calendar">Range Date Picker&lt;/label>
+  &lt;div class="calendar-wrap">
+    &lt;input type="text" id="input-range-calendar" name="input-range-calendar" class="form-field range-calendar" placeholder="mm/dd/yyyy - mm/dd/yyyy" /> 
+  &lt;/div>
+&lt;/div></code>
+</pre>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>JS</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">const rangeCalendar = document.querySelector('.range-calendar');
+  
+new AirDatepicker(rangeCalendar, {
+  range: true,
+  buttons: ['clear', 'apply'],
+  multipleDatesSeparator: ' - ',
+  dateFormat: 'MM/dd/yyyy',
+  navTitles: {
+    days: 'MMMM yyyy',
+  },
+  locale: {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    apply: 'Apply',
+    clear: 'Clear',
+    dateFormat: 'MM/dd/yyyy'
+  }
+});</code>
+</pre>
             </div>
           </div>
         </div>
@@ -56,8 +157,61 @@
           <div class="form-group">
             <label class="form-label" for="input-single-timeline-calendar">Single Timeline Date Picker</label>
             <div class="calendar-wrap">
-              <input type="text" id="input-single-timeline-calendar" name="input-single-timeline-calendar" class="form-field single-timeline-calendar" placeholder="mm/dd/yyyy" required /> 
-              <i class="fa-regular fa-calendar"></i>
+              <input type="text" id="input-single-timeline-calendar" name="input-single-timeline-calendar" class="form-field single-timeline-calendar" placeholder="mm/dd/yyyy hh:mm" required /> 
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>HTML</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="form-group">
+  &lt;label class="form-label" for="input-single-timeline-calendar">Single Timeline Date Picker&lt;/label>
+  &lt;div class="calendar-wrap">
+    &lt;input type="text" id="input-single-timeline-calendar" name="input-single-timeline-calendar" class="form-field single-timeline-calendar" placeholder="mm/dd/yyyy hh:mm" /> 
+  &lt;/div>
+&lt;/div></code>
+</pre>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>JS</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">const singleTimelineCalendar = document.querySelector('.single-timeline-calendar');
+  
+new AirDatepicker(singleTimelineCalendar, {  
+  timepicker: true,
+  buttons: ['clear', 'apply'],
+  dateFormat: 'MM/dd/yyyy',
+  navTitles: {
+    days: 'MMMM yyyy',
+  },
+  locale: {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    apply: 'Apply',
+    clear: 'Clear',
+    dateFormat: 'MM/dd/yyyy',
+    timeFormat: 'HH:mm',
+    firstDay: 1
+  }
+});</code>
+</pre>
             </div>
           </div>
         </div>
@@ -65,9 +219,63 @@
         <div class="col-6">
           <div class="form-group">
             <label class="form-label" for="input-range-timeline-calendar">Range Timeline Date Picker</label>
-            <div class="calendar-wrap">
+            <div class="calendar-wrap wide-wrap">
               <input type="text" id="input-range-timeline-calendar" name="input-range-timeline-calendar" class="form-field range-timeline-calendar" placeholder="mm/dd/yyyy" required /> 
-              <i class="fa-regular fa-calendar"></i>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>HTML</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="form-group">
+  &lt;label class="form-label" for="input-range-timeline-calendar">Range Timeline Date Picker&lt;/label>
+  &lt;div class="calendar-wrap wide-wrap">
+    &lt;input type="text" id="input-range-timeline-calendar" name="input-range-timeline-calendar" class="form-field range-timeline-calendar" placeholder="mm/dd/yyyy hh:mm" /> 
+  &lt;/div>
+&lt;/div></code>
+</pre>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="example-html bg-white rounded">
+            <div class="example-html-head">
+              <div>JS</div>
+              <button class="copy-btn" onclick="copyText(this)">Copy</button>
+            </div>
+            <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">const rangeTimelineCalendar = document.querySelector('.range-timeline-calendar');
+  
+new AirDatepicker(rangeTimelineCalendar, {
+  range: true,
+  timepicker: true,
+  buttons: ['clear', 'apply'],
+  multipleDatesSeparator: ' - ',
+  dateFormat: 'MM/dd/yyyy',
+  classes: 'calendar-wide',
+  navTitles: {
+    days: 'MMMM yyyy',
+  },
+  locale: {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    apply: 'Apply',
+    clear: 'Clear',
+    dateFormat: 'MM/dd/yyyy'
+  }
+});</code>
+</pre>
             </div>
           </div>
         </div>

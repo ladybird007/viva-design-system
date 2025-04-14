@@ -126,7 +126,7 @@
   --border-radius-xxs: 4px;
   --border-radius-xs: 8px;
   --border-radius-s: 16px;
-
+  --border-radius-m: 24px;
   
 }
 @media (max-width: 1024px) {

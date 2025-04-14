@@ -8,6 +8,9 @@
   box-shadow: var(--shadow-s);
   border: none;
 }
+.air-datepicker.calendar-wide {
+  width: 380px;
+}
 .air-datepicker .air-datepicker--pointer {
   display: none;
 }
@@ -235,10 +238,18 @@
   border-color: var(--dark-teal-dark);
   color: var(--white);
 }
-
+@media (max-width: 768px) {
+  .air-datepicker,
+  .air-datepicker.calendar-wide {
+    width: calc(100vw - var(--gap) - var(--gap));
+  }
+}
 @media (min-width: 769px) {
-  .calendar-wrap {
+  .calendar-wrap {    
     max-width: 300px;
     width: 100%;
+  }
+  .calendar-wrap.wide-wrap {
+    max-width: 400px;
   }
 }

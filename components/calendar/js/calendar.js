@@ -22,9 +22,9 @@ new AirDatepicker(singleCalendar, {
   }
 });
 
-new AirDatepicker(singleTimelineCalendar, {
+new AirDatepicker(singleTimelineCalendar, {  
   timepicker: true,
-  buttons: ['clear', 'today'],
+  buttons: ['clear', 'apply'],
   dateFormat: 'MM/dd/yyyy',
   navTitles: {
     days: 'MMMM yyyy',
@@ -35,7 +35,7 @@ new AirDatepicker(singleTimelineCalendar, {
     daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    today: 'Apply',
+    apply: 'Apply',
     clear: 'Clear',
     dateFormat: 'MM/dd/yyyy',
     timeFormat: 'HH:mm',
@@ -45,7 +45,7 @@ new AirDatepicker(singleTimelineCalendar, {
 
 new AirDatepicker(rangeCalendar, {
   range: true,
-  buttons: ['clear', 'today'],
+  buttons: ['clear', 'apply'],
   multipleDatesSeparator: ' - ',
   dateFormat: 'MM/dd/yyyy',
   navTitles: {
@@ -57,7 +57,7 @@ new AirDatepicker(rangeCalendar, {
     daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    today: 'Apply',
+    apply: 'Apply',
     clear: 'Clear',
     dateFormat: 'MM/dd/yyyy'
   }
@@ -66,9 +66,10 @@ new AirDatepicker(rangeCalendar, {
 new AirDatepicker(rangeTimelineCalendar, {
   range: true,
   timepicker: true,
-  buttons: ['clear', 'today'],
+  buttons: ['clear', 'apply'],
   multipleDatesSeparator: ' - ',
   dateFormat: 'MM/dd/yyyy',
+  classes: 'calendar-wide',
   navTitles: {
     days: 'MMMM yyyy',
   },
@@ -78,7 +79,7 @@ new AirDatepicker(rangeTimelineCalendar, {
     daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
     monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    today: 'Apply',
+    apply: 'Apply',
     clear: 'Clear',
     dateFormat: 'MM/dd/yyyy'
   }
