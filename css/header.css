@@ -155,6 +155,11 @@
   display: none;
 }
 
+.sub-nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media (max-width: 991px) {
   .header-careers .main-nav {
     display: none;
@@ -309,7 +314,7 @@
   }
   .sub-nav ul {
     list-style: none;
-    padding-top: var(--spacing-xs);
+    padding-top: 0;
     padding-left: var(--spacing-xs);
     color: var(--med-gray-dark);
   }
@@ -329,6 +334,10 @@
   .main-nav-item > .opened:after {
     transform: rotate(180deg);
     color: var(--cadet);
+  }
+  .sub-nav .header-img,
+  .sub-nav .header-content {
+    display: none;
   }
 }
 @media (min-width: 767px) {
@@ -384,17 +393,23 @@
     background-color: var(--white);
     overflow: hidden;
   }
-  .main-nav-one-coulumn .sub-nav {
+  .sub-nav > .row {
+    gap: 0;
+  }
+  .main-nav-item-floating {
+    position: relative;
+  }
+  .main-nav-item-floating .sub-nav {
+    width: auto;
     left: 0;
     right: auto;
     transform: translateX(0);
+  }
+  .main-nav-item-floating .row {
+    flex-wrap: nowrap;
+  }
+  .main-nav-item-one-column .sub-nav-col {
     width: 300px;
-  }
-  .main-nav-one-coulumn .main-nav-item {
-    position: relative;
-  }
-  .main-nav-one-coulumn .col-3 {
-    width: 100%;
   }
   .sub-nav .btns-group {
     margin-top: var(--spacing-s);
@@ -451,11 +466,18 @@
     padding-left: var(--spacing-m);
     padding-right: var(--spacing-m);
   }
-  .main-nav:not(.main-nav-one-coulumn) .sub-nav .col-3:first-child {
+  .main-nav-item:not(.main-nav-item-one-column):not(.main-nav-item-two-columns) .sub-nav .col-3:first-child {
     width: calc(100% / 12 * 4);
+  }
+  .main-nav-item:not(.main-nav-item-one-column):not(.main-nav-item-two-columns) .sub-nav .col-3:last-child {
+    width: 100%;
   }
   .sub-nav .row {
     gap: 0;
+  }
+
+  .main-nav-item-two-columns .sub-nav-col {
+    width: 230px;
   }
 }
 @media (min-width: 767px) and (max-width: 1279px) {
@@ -463,10 +485,16 @@
     left: var(--gap);
     right: var(--gap);
   }
+  .main-nav-item:not(.main-nav-item-one-column):not(.main-nav-item-two-columns) .row {
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 992px) and (max-width: 1279px) {
   .main-nav-careers .main-nav-list {
     gap: var(--spacing-s);
+  }
+  .main-nav-item-two-columns .sub-nav-col {
+    width: 202px;
   }
 }
 @media (min-width: 992px) {
@@ -501,5 +529,8 @@
   }
   .header-content h3 {
     font-size: 34px;
+  }
+  .main-nav-item-two-columns .sub-nav-col {
+    width: 300px;
   }
 }
