@@ -142,6 +142,15 @@
   color: var(--alert-disabled);
 }
 
+.btn-icon {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  min-width: inherit;
+  font-size: 18px;
+  color: var(--med-gray);
+}
+
 .enroll-now-btn {
   position: relative;
   display: inline-flex;
@@ -213,6 +222,9 @@
   line-height: 1.5;
   font-size: 16px;
   flex-shrink: 0;
+}
+.inline-link.text-gray {
+  color: var(--med-gray);
 }
 
 .inline-link:hover,

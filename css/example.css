@@ -926,3 +926,11 @@ code:hover:before {
   color: var(--teal-dark);
   box-shadow: var(--shadow-s), var(--shadow-focus);
 }
+
+/****** Tables *****/
+.example-cells code {
+  padding: var(--spacing-s);
+  display: block;
+  box-shadow: var(--shadow-l);
+  border-radius: var(--border-radius-xs);
+}

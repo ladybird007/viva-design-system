@@ -14,6 +14,7 @@
   color: var(--black);
   font-family: inherit;
   letter-spacing: -0.5px;
+  background-color: var(--white);
 }
 textarea.form-field:not(.form-field-resize) {
   height: auto;
@@ -85,6 +86,15 @@ textarea.form-field:not(.form-field-resize) {
 }
 .error .password-wrap .form-field {
   color: var(--alert-danger);
+}
+
+.search-wrap .form-field {
+  padding-left: 44px;
+  border-radius: 30px;
+  background-image: url(../../icons/search.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;  
+  background-position: 18px center;
 }
 
 .form-label {
@@ -177,7 +187,7 @@ textarea.form-field:not(.form-field-resize) {
 }
 .disabled .delete-btn,
 .disabled .password-view {
-  cursor: inherit;
+  cursor: default;
 }
 
 .custom-checkbox,
@@ -233,6 +243,7 @@ textarea.form-field:not(.form-field-resize) {
   opacity: 0.5;
   border-color: var(--alert-disabled);
   background-color: var(--alert-disabled-pale);
+  cursor: default;
 }
 .custom-checkbox input:checked + .custom-checkbox-icon {
   border-color: var(--teal);

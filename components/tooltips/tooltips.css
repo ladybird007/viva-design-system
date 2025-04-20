@@ -44,3 +44,6 @@
 .tooltip-content {
   display: none;
 }
+span[data-tippy-content] {
+  cursor: pointer;
+}
