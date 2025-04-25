@@ -13,5 +13,14 @@
       $(this).closest('.modal').fadeOut()
       $('body').css('overflow', 'auto');
     });
+
+    $(".modal-overlay").on('click', function(event) {
+      event.stopPropagation();
+      let eTarget = event.target;
+      if(!(eTarget.classList.contains('modal-container'))) {
+        $(this).closest('.modal').fadeOut()
+        $('body').css('overflow', 'auto');
+      } 
+    });
   })
 })(jQuery)

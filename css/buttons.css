@@ -106,12 +106,14 @@
 
 
 .btn-warning,
-.btn-warning:not([disabled]):focus {
+.btn-warning:not([disabled]):focus,
+.btn-card:not([disabled]):focus {
   background-color: var(--alert-warning);
   border-color: var(--white);
   color: var(--black);
 }
-.btn-warning:hover {
+.btn-warning:hover,
+.btn-card:hover {
   background-color: var(--alert-warning-dark);
   color: var(--white);
 }
@@ -120,10 +122,17 @@
 .btn-destructive[disabled],
 .btn-black[disabled],
 .btn-tertiary[disabled],
-.btn-primary[disabled] {
+.btn-primary[disabled],
+.btn-card[disabled] {
   background-color: var(--alert-disabled);
   color: var(--white);
   border-color: var(--alert-disabled);
+}
+
+.btn-card {
+  border-color: var(--orange-dark);
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 .btn-simple:not([disabled]):hover {

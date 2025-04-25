@@ -934,3 +934,25 @@ code:hover:before {
   box-shadow: var(--shadow-l);
   border-radius: var(--border-radius-xs);
 }
+
+/***** Cards *****/
+.example-tablet .card-doctor,
+.example-mobile .card-doctor {
+  max-width: 528px;
+  flex-direction: column;
+}
+.example-tablet .card-doctor-skills,
+.example-mobile .card-doctor-skills {
+  width: 100%;
+  padding-top: var(--spacing-m);
+  padding-left: 0;
+  border-left: 0;
+  border-top: 1px solid var(--gray-light);
+}
+
+.example-mobile .card-doctor {
+  max-width: 327px;
+}
+.example-mobile .card-doctor .card-doctor-favorite-text {
+  display: none;
+}

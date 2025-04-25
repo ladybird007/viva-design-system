@@ -132,6 +132,9 @@ h4.card-headline,
 .text-light-grass {
   color: var(--light-grass);
 }
+.text-cadet {
+  color: var(--cadet);
+}
 
 .text-semibold {
   font-weight: 600;

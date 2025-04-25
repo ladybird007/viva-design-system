@@ -1,0 +1,465 @@
+.card-simple {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: var(--border-radius-xs);
+  box-shadow: var(--shadow-l);
+  color: var(--med-gray-dark);
+}
+.card-simple.card-small {
+  max-width: 237px;
+}
+.card-simple:not(.card-small) {
+  max-width: 432px;
+}
+.card-simple.card-small .card-simple-body {
+  padding: var(--spacing-m) var(--spacing-s);
+  gap: var(--spacing-l);
+}
+.card-simple.card-simple-no-media .card-simple-body {
+  padding: 44px var(--spacing-l);
+  gap: var(--spacing-l);
+}
+.card-simple-body.card-spacing-s {
+  padding: var(--spacing-l) var(--spacing-m);
+}
+.card-simple-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+.card-simple.text-center .card-simple-body {
+  align-items: center;
+}
+
+.card-simple .form-group {
+  max-width: inherit;
+  width: 100%;
+}
+.card-headline,
+.card-preheadline {
+  color: var(--med-gray);
+}
+.card-simple-media {
+  background-color: var(--gray-pale);
+  border-radius: var(--border-radius-xs) var(--border-radius-xs) 0 0;
+  overflow: hidden;
+}
+.card-simple img {
+  display: block;
+}
+.card-simple .row {
+  width: 100%;
+}
+
+.card-spacing-xs,
+.card-spacing-s,
+.card-spacing-m {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-spacing-xs {
+  gap: var(--spacing-xs);
+}
+.card-spacing-s {
+  gap: var(--spacing-s);
+}
+.card-spacing-m {
+  gap: var(--spacing-m);
+}
+
+/***** Plan *****/
+
+.card-plan {
+  background-color: var(--white);
+  border-radius: var(--border-radius-s);
+  box-shadow: var(--shadow-m);
+}
+.card-plan.card-small {
+  max-width: 400px;
+}
+.card-plan:not(.card-small) {
+  max-width: 600px;
+}
+.card-plan-header {
+  padding: 22px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border-radius: var(--border-radius-s) var(--border-radius-s) 0 0;
+}
+.card-plan-header img {
+  display: block;
+  max-height: 55px;
+  width: auto;
+}
+.card-plan-banner {
+  padding: var(--spacing-xs) var(--spacing-m);
+  background-color: var(--yellow);
+  color: var(--black);
+  text-align: center;
+}
+.card-plan-prices {
+  display: flex;
+}
+.card-plan-price {
+  flex: 1;
+}
+.card-plan-price-val {
+  margin-top: var(--spacing-xxs);
+  font-family: "Fraunces", serif;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+}
+.card-plan sup,
+.card-plan sub {
+  font-size: 0.57em;
+}
+.card-plan sub {
+  line-height: 1;
+  position: relative;
+  top: -7px;
+}
+.card-plan-details {
+  border-top: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-light);
+}
+.card-plan-headline {
+  margin-bottom: var(--spacing-m);
+  font-weight: 400;
+  display: inline-flex;
+  gap: var(--spacing-s)
+}
+.card-plan-prices {
+  padding-left: var(--spacing-m);
+  padding-right: var(--shadow-m);
+}
+.card-plan-details,
+.card-plan-footer {
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+}
+.card-plan-price {
+  padding-left: var(--spacing-xs);
+  padding-right: var(--spacing-xs);
+}
+.card-plan-price,
+.card-plan-details {
+  padding-top: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
+}
+.card-plan-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid var(--gray-light);
+}
+.card-plan .list-content li {
+  padding-top: var(--spacing-xs);
+  padding-bottom: var(--spacing-xs);
+}
+.card-plan .list-content li:first-child {
+  padding-top: 0;
+}
+.card-plan .list-content li:last-child {
+  padding-bottom: 0;
+}
+
+
+
+/***** Doctor *****/
+
+.card-doctor {
+  position: relative;
+  padding: var(--spacing-m);
+  background-color: var(--results-list-bg);
+  box-shadow: var(--shadow-m);
+  border-radius: 12px;
+  display: flex;
+  gap: var(--spacing-s);
+}
+.card-doctor h3 {
+  color: var(--med-gray-dark);
+}
+.card-doctor-personal-info {
+  flex: 1;
+}
+.card-doctor-number {
+  min-width: 40px;
+  flex-shrink: 0;
+}
+.card-doctor-name {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-s);
+}
+.card-doctor-name.vertical {
+  flex-direction: column;
+}
+.card-doctor-labels {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--med-gray-dark);
+  cursor: pointer;
+}
+.card-doctor-favorite {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+.card-doctor-favorite i {
+  font-size: 18px;
+}
+
+.card-doctor-specialty {
+  margin-top: var(--spacing-xxs);
+}
+.card-doctor-location {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: var(--spacing-s);
+}
+.card-doctor-location i {
+  width: 16px;
+  text-align: center;
+  color: var(--med-gray-dark); 
+}
+.card-doctor-location a {
+  color: var(--teal-dark);  
+  text-decoration: none;
+}
+.card-doctor-location p {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-s);
+}
+.card-doctor-location + a {
+  margin-top: var(--spacing-m);
+}
+.card-doctor-skill-label {
+  position: relative;
+  color: var(--teal-dark);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  gap: var(--spacing-s);
+  align-items: center;
+  margin-bottom: var(--spacing-xxs);
+}
+.card-doctor-skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+  padding-left: var(--spacing-m);
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  border-left: 1px solid var(--gray-light);
+}
+.card-doctor-skill {
+  position: relative;
+  padding-left: var(--spacing-l);
+}
+.card-doctor-skill i,
+.card-doctor-skill svg{
+  position: absolute;
+  left: calc( -1 * var(--spacing-l));
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-doctor-skill .fa-hospital {
+  font-size: 12px;
+}
+.card-doctor .badge-green i {
+  color: var(--alert-success-dark);
+}
+.card-doctor .badge-red i {
+  color: var(--alert-danger-dark);
+}
+.card-doctor .inline-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+@media (min-width: 992px) {
+  .card-plan-price-label {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1216px) {
+  .card-simple h3 {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .card-doctor {
+    width: 100%;
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
+  .card-doctor-name {
+    flex-direction: column;
+    margin-bottom: var(--spacing-s);
+  }
+  .card-doctor-skills {
+    padding-left: 0;
+    border-left: none;
+    width: 100%;
+    padding-top: var(--spacing-m);
+    border-top: 1px solid var(--gray-light);
+  }
+}
+@media (max-width: 768px) {
+  .card-doctor-item {
+    position: relative;
+    flex-direction: column;
+    gap: var(--spacing-m);
+  }
+  .card-doctor-number {
+    position: absolute;
+    top: var(--spacing-m);
+    left: var(--spacing-m);
+  }
+  .card-doctor-name:not(.vertical) h3 {
+    padding-left: var(--spacing-l);
+  }
+  .card-doctor .card-doctor-favorite-text {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .card-doctor-skills {
+    width: 275px;
+  }
+  .card-doctor-name .badge {
+    margin-top: 3px;
+  }
+} 
+
+/***** Benefits *****/
+
+.card-benefits {
+  background-color: var(--white);
+  box-shadow: var(--shadow-m);
+  border-radius: 12px;
+  overflow: hidden;
+  letter-spacing: -0.01em;
+}
+.card-benefits-image {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-benefits-image img,
+.card-benefits-video img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+.card-benefits-video {
+  position: relative;
+  cursor: pointer;
+}
+.card-benfits-video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.9;
+  background-color: var(--green-light);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.card-benfits-video-btn:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 4px;
+  border-left: 26px solid var(--white);
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  z-index: 1;
+}
+.card-benfits-video-btn:hover {
+  opacity: 1;
+  width: 85px;
+  height: 85px;
+}
+.card-benefits-desc {
+  padding: var(--spacing-s);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-l);
+}
+.card-benefits-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+.card-benefits h3 {
+  letter-spacing: -0.02em;
+}
+.card-benefits.horizontal .card-benefits-desc {
+  flex: 1;
+}
+.card-benefits-label {
+  color: var(--med-gray);
+}
+.card-benefits.horizontal + .card-benefits.horizontal {
+  margin-top: 50px;
+}
+
+@media (min-width: 769px) {
+  .card-benefits.horizontal {
+    display: flex;
+    align-items: center;
+  }
+  .card-benefits.horizontal.reverse,
+  .card-benefits.horizontal:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  .card-benefits.horizontal .card-benefits-image {
+    max-width: 300px;
+    width: 30%;
+  }
+  .card-benefits.horizontal .card-benefits-video {
+    max-width: 464px;
+    width: 50%;
+  }
+  .card-benefits.horizontal .card-benefits-desc {
+    padding: var(--spacing-l);
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-benefits h3 {
+    font-size: 24px;
+  }
+  
+}

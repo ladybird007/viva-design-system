@@ -25,6 +25,7 @@
   background-color: rgba(8, 73, 70, 0.9);
 }
 .modal-container {
+  position: relative;
   width: 100%;
   background-color: var(--white);
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
@@ -47,6 +48,9 @@
 .modal-content {
   padding: var(--spacing-m);
 }
+.modal-close + .modal-content {
+  margin-top: var(--spacing-m);
+}
 .modal-content h4 {
   margin-bottom: var(--spacing-xs);
 }
@@ -66,4 +70,9 @@
 }
 .modal-footer {
   padding: 0 var(--spacing-m) var(--spacing-m);
+}
+.modal-container > .modal-close {
+  position: absolute;
+  top: var(--spacing-s);
+  right: var(--spacing-m);
 }

@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Cards - Viva Design System</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Cards</h1>
+      <p>
+        Cards are used to display a summary of content and will reveal more details upon interaction.
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+  <div class="example-content">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Cards</h2>
+        <p>Used to show current location and user path</p>
+      </div>
+  
+      <h3>Simple Cards</h3>
+      <br>
+      <br>
+
+      <div>
+        <h4>Small card</h4>
+        <br>
+        <div class="card-simple card-small text-center">
+          <div class="card-simple-body">
+            <div class="card-spacing-xs">
+              <p class="small card-preheadline">Eyebrow</p>
+              <h3 class="text-teal">What are my <br> plan options?</h3>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit.
+            </p>
+            <div class="form-group">
+              <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+            </div>
+            <a href="#" class="btn btn-primary">Learn More</a>  
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-simple card-small text-center">
+  &lt;div class="card-simple-body">
+    &lt;div class="card-spacing-xs">
+      &lt;p class="small card-preheadline">Eyebrow&lt;/p>
+      &lt;h3 class="text-teal">What are my &lt;br> plan options?&lt;/h3>
+    &lt;/div>
+    &lt;p>
+      Amet minim mollit non deserunt ullamco est sit.
+    &lt;/p>
+    &lt;div class="form-group">
+      &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Learn More&lt;/a>  
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Card with media</h4>
+        <br>
+        <div class="card-simple text-center">
+          <div class="card-simple-media">
+            <img src="img/cards/baking-alabama.png" alt="Placeholder" class="card-simple-image" />
+          </div>
+          <div class="card-simple-body card-spacing-s">
+            <h4 class="card-headline">eyebrow</h4>
+            <div class="card-simple-logo">
+              <img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+            </div>
+            <h3 class="text-teal">We make Medicare Easy</h3>
+            <p>
+              Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+            </p>
+            <div class="form-group">
+              <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+            </div>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-simple text-center">
+  &lt;div class="card-simple-media">
+    &lt;img src="img/cards/baking-alabama.png" alt="Placeholder" class="card-simple-image" />
+  &lt;/div>
+  &lt;div class="card-simple-body spacing-s">
+    &lt;h4 class="card-headline">eyebrow&lt;/h4>
+    &lt;div class="card-simple-logo">
+      &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+    &lt;/div>
+    &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
+    &lt;p>
+      Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+    &lt;/p>
+    &lt;div class="form-group">
+      &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Learn More&lt;/a>  
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Card without media</h4>
+        <br>
+        <div class="card-simple card-simple-no-media">
+          <div class="card-simple-body">
+            <div class="card-spacing-xs">
+              <h4 class="card-headline">eyebrow</h4>
+              <div class="card-simple-logo">
+                <img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+              </div>
+              <h3 class="text-teal">We make Medicare Easy</h3>
+              <p>
+                Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+              </p>
+            </div>
+            <div class="card-spacing-m">
+              <div class="form-group">
+                <label class="form-label" for="zip">Your Zip Code <span class="text-red">*</span></label>
+                <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
+              </div>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-simple card-simple-no-media">
+  &lt;div class="card-simple-body">
+    &lt;div class="card-spacing-xs">
+      &lt;h4 class="card-headline">eyebrow&lt;/h4>
+      &lt;div class="card-simple-logo">
+        &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+      &lt;/div>
+      &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
+      &lt;p>
+        Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+      &lt;/p>
+    &lt;/div>
+    
+    &lt;div class="card-spacing-m">
+      &lt;div class="form-group">
+        &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+      &lt;/div>
+      &lt;a href="#" class="btn btn-primary">Learn More&lt;/a> 
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Card without media, Form inline</h4>
+        <br>
+        <div class="card-simple card-simple-no-media">
+          <div class="card-simple-body">
+            <div class="card-spacing-xs">
+              <h4 class="card-headline">eyebrow</h4>
+              <div class="card-simple-logo">
+                <img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+              </div>
+              <h3 class="text-teal">We make Medicare Easy</h3>
+              <p>
+                Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+              </p>
+            </div>
+            <div class="row align-items-end">
+              <div class="form-group">
+                <label class="form-label" for="zip">Your Zip Code <span class="text-red">*</span></label>
+                <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
+              </div>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-simple card-simple-no-media">
+  &lt;div class="card-simple-body">
+    &lt;div class="card-spacing-xs">
+      &lt;h4 class="card-headline">eyebrow&lt;/h4>
+      &lt;div class="card-simple-logo">
+        &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+      &lt;/div>
+      &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
+      &lt;p>
+        Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
+      &lt;/p>
+    &lt;/div>
+    
+    &lt;div class="row align-items-end">
+      &lt;div class="form-group">
+        &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+      &lt;/div>
+      &lt;a href="#" class="btn btn-primary">Learn More&lt;/a> 
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Plan Cards</h3>
+      <br>
+      <br>
+
+      <div>
+        <h4>Small card</h4>
+        <br>
+
+        <div class="card-plan card-small">
+          <div class="card-plan-header">
+            <img src="img/logos/VivaMedicarePlusWhite.svg" alt="Viva Medicare Plus" />
+          </div>
+          <div class="card-plan-banner">
+            <h4>Medicaid Required</h4>
+          </div>
+          <div class="card-plan-prices">
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">Premium:</p>
+              <p class="card-plan-price-val"><sup>$</sup>0<sub>/mo</sub></p>
+            </div>
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">PCP:</p>
+              <p class="card-plan-price-val"><sup>$</sup>0</p>
+            </div>
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">Specialist:</p>
+              <p class="card-plan-price-val"><sup>$</sup>25</p>
+            </div>
+          </div>
+          <div class="card-plan-details">
+            <h4 class="card-plan-headline"><i class="fa-regular fa-capsules"></i> Part D Details:</h4>
+            <p>
+              Generic drugs starting at $0; $300 deductible for Tier 3, Tier 4, 
+              and Tier 5 drugs (the deductible does not apply to Tier 1 and Tier 2 drugs); 
+              $0 for generic and brand name drugs in the Catastrophic Phase.
+            </p>
+          </div>
+          <div class="card-plan-footer">
+            <a href="#" class="internal-link">View Full Plan</a>
+            <a href="#" class="btn btn-card">Enroll Now</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-plan card-small">
+  &lt;div class="card-plan-header">
+    &lt;img src="img/logos/VivaMedicarePlusWhite.svg" alt="Viva Medicare Plus" />
+  &lt;/div>
+  &lt;div class="card-plan-banner">
+    &lt;h4>Medicaid Required&lt;/h4>
+  &lt;/div>
+  &lt;div class="card-plan-prices">
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">Premium:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>0&lt;sub>/mo&lt;/sub>&lt;/p>
+    &lt;/div>
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">PCP:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>0&lt;/p>
+    &lt;/div>
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">Specialist:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>25&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="card-plan-details">
+    &lt;h4 class="card-plan-headline">&lt;i class="fa-regular fa-capsules">&lt;/i> Part D Details:&lt;/h4>
+    &lt;p>
+      Generic drugs starting at $0; $300 deductible for Tier 3, Tier 4, 
+      and Tier 5 drugs (the deductible does not apply to Tier 1 and Tier 2 drugs); 
+      $0 for generic and brand name drugs in the Catastrophic Phase.
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="card-plan-footer">
+    &lt;a href="#" class="internal-link">View Full Plan&lt;/a>
+    &lt;a href="#" class="btn btn-card">Enroll Now&lt;/a>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Large card</h4>
+        <br>
+
+        <div class="card-plan">
+          <div class="card-plan-header">
+            <img src="img/logos/VivaMedicarePlusWhite.svg" alt="Viva Medicare Plus" />
+          </div>
+          <div class="card-plan-banner">
+            <h4>Medicaid Required</h4>
+          </div>
+          <div class="card-plan-prices">
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">Premium:</p>
+              <p class="card-plan-price-val"><sup>$</sup>0<sub>/mo</sub></p>
+            </div>
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">PCP:</p>
+              <p class="card-plan-price-val"><sup>$</sup>0</p>
+            </div>
+            <div class="card-plan-price">
+              <p class="card-plan-price-label">Specialist:</p>
+              <p class="card-plan-price-val"><sup>$</sup>25</p>
+            </div>
+          </div>
+          <div class="card-plan-details">
+            <h4 class="card-plan-headline"><i class="fa-regular fa-capsules"></i> Part D Details:</h4>
+            <p>
+              Generic drugs starting at $0; $300 deductible for Tier 3, Tier 4, 
+              and Tier 5 drugs (the deductible does not apply to Tier 1 and Tier 2 drugs); 
+              $0 for generic and brand name drugs in the Catastrophic Phase.
+            </p>
+          </div>
+          <div class="card-plan-details">
+            <h4 class="card-plan-headline"><img src="icons/health-red.svg" alt="">Additional Benefits:</h4>
+
+            <ul class="list-content">
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Part B Premium Buy-Down</strong>
+                    <span>Lower your Part B premium by $20 a month</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Outpatient Services</strong>
+                    <span>$375 ($0 at an Ambulatory Surgical Center and $0 for  colonoscopies)</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Inpatient Hospital</strong>
+                    <span>$375 per day, days 1-6; $0 additional days</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Over the Counter (OTC)</strong>
+                    <span>$25 allowance per calendar quarter</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Dental</strong>
+                    <span>$900 annual dental allowance</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Eyewear</strong>
+                    <span>$100 annual eyewear allowance</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-content-text">
+                  <i class="fa-solid fa-check text-cadet"></i>
+                  <div>
+                    <strong>Fitness</strong>
+                    <span>The Silver&Fit® Program; No cost</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="card-plan-footer">
+            <a href="#" class="internal-link">View Full Plan</a>
+            <a href="#" class="btn btn-card">Enroll Now</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-plan">
+  &lt;div class="card-plan-header">
+    &lt;img src="img/logos/VivaMedicarePlusWhite.svg" alt="Viva Medicare Plus" />
+  &lt;/div>
+  &lt;div class="card-plan-banner">
+    &lt;h4>Medicaid Required&lt;/h4>
+  &lt;/div>
+  &lt;div class="card-plan-prices">
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">Premium:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>0&lt;sub>/mo&lt;/sub>&lt;/p>
+    &lt;/div>
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">PCP:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>0&lt;/p>
+    &lt;/div>
+    &lt;div class="card-plan-price">
+      &lt;p class="card-plan-price-label">Specialist:&lt;/p>
+      &lt;p class="card-plan-price-val">&lt;sup>$&lt;/sup>25&lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="card-plan-details">
+    &lt;h4 class="card-plan-headline">&lt;i class="fa-regular fa-capsules">&lt;/i> Part D Details:&lt;/h4>
+    &lt;p>
+      Generic drugs starting at $0; $300 deductible for Tier 3, Tier 4, 
+      and Tier 5 drugs (the deductible does not apply to Tier 1 and Tier 2 drugs); 
+      $0 for generic and brand name drugs in the Catastrophic Phase.
+    &lt;/p>
+  &lt;/div>
+  &lt;div class="card-plan-details">
+    &lt;h4 class="card-plan-headline">&lt;img src="icons/health-red.svg" alt="">Additional Benefits:&lt;/h4>
+
+    &lt;ul class="list-content">
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Part B Premium Buy-Down&lt;/strong>
+            &lt;span>Lower your Part B premium by $20 a month&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Outpatient Services&lt;/strong>
+            &lt;span>$375 ($0 at an Ambulatory Surgical Center and $0 for  colonoscopies)&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Inpatient Hospital&lt;/strong>
+            &lt;span>$375 per day, days 1-6; $0 additional days&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Over the Counter (OTC)&lt;/strong>
+            &lt;span>$25 allowance per calendar quarter&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Dental&lt;/strong>
+            &lt;span>$900 annual dental allowance&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Eyewear&lt;/strong>
+            &lt;span>$100 annual eyewear allowance&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+      &lt;li>
+        &lt;div class="list-content-text">
+          &lt;i class="fa-solid fa-check text-cadet&lt;/i>
+          &lt;div>
+            &lt;strong>Fitness&lt;/strong>
+            &lt;span>The Silver&Fit® Program; No cost&lt;/span>
+          &lt;/div>
+        &lt;/div>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+  &lt;div class="card-plan-footer">
+    &lt;a href="#" class="internal-link">View Full Plan&lt;/a>
+    &lt;a href="#" class="btn btn-card">Enroll Now&lt;/a>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Doctor Card</h3>
+      <br>
+      <br>
+
+      <div>
+        <h4>Desktop</h4>
+        <br>
+        <div class="card-doctor">
+          <div class="card-doctor-personal-info">
+            <div class="card-doctor-name vertical">
+              <div class="card-doctor-labels">
+                <span class="badge badge-green">
+                  <i class="fa-regular fa-check"></i>
+                  Accepting New Patients
+                </span>
+                <span class="card-doctor-favorite">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="card-doctor-favorite-text">Favorite</span>
+                </span>
+              </div>
+              <h3>Clark II, Carlos S MD</h3>
+            </div>
+            <div class="card-doctor-specialty">
+              <p class="quote font-brand text-teal">Family Practice</p>
+            </div>
+            <div class="card-doctor-location">
+              <p><i class="fa-regular fa-location-dot"></i> <a href="https://maps.app.goo.gl/x93rXzkCun3nVbes9" target="_blank">201 Doctors Dr. Dothan (Houston), AL 36301-2949</a></p>
+              <p><i class="fa-regular fa-phone"></i><a href="tel:3347946611">(334) 794-6611</a></p>
+            </div>
+            <a href="mailto:" class="inline-link"><i class="fa-regular fa-envelope text-teal-light"></i> Email a Copy</a>
+          </div>
+          <div class="card-doctor-skills">
+            <div class="card-doctor-skill">
+              <div class="card-doctor-skill-label">
+                <i class="fa-regular fa-hospital text-teal-light"></i> Networks: 
+              </div>
+              <p>
+                Baptist Montgomery Employees
+              </p>
+              <p>
+                Commercial (Open Panel)
+              </p>
+              <p>
+                Medical West
+              </p>
+            </div>
+            <div class="card-doctor-skill">
+              <div class="card-doctor-skill-label">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.04375 9.04683L6.45625 7.3735L6.475 7.3535C7.5625 6.06016 8.3375 4.5735 8.79375 3.00016H10.625V1.66683H6.25V0.333496H5V1.66683H0.625V2.9935H7.60625C7.1875 4.28016 6.525 5.50016 5.625 6.56683C5.04375 5.88016 4.5625 5.12683 4.18125 4.3335H2.93125C3.3875 5.42016 4.0125 6.44683 4.79375 7.3735L1.6125 10.7202L2.5 11.6668L5.625 8.3335L7.56875 10.4068L8.04375 9.04683ZM11.5625 5.66683H10.3125L7.5 13.6668H8.75L9.45 11.6668H12.4188L13.125 13.6668H14.375L11.5625 5.66683ZM9.925 10.3335L10.9375 7.44683L11.95 10.3335H9.925V10.3335Z" fill="#66C7C3"/>
+                </svg>
+                Speaks:
+              </div>
+              <p>
+                English
+              </p>
+            </div>
+            <div class="card-doctor-skill">
+              <div class="card-doctor-skill-label">
+                <i class="fa-regular fa-route text-teal-light"></i>
+                Distance:  
+              </div>
+              <p>
+                0.5 miles
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h4>Tablet</h4>
+        <br>
+        <div class="example-tablet">
+          <div class="card-doctor">
+            <div class="card-doctor-personal-info">
+              <div class="card-doctor-name vertical">
+                <div class="card-doctor-labels">
+                  <span class="badge badge-green">
+                    <i class="fa-regular fa-check"></i>
+                    Accepting New Patients
+                  </span>
+                  <span class="card-doctor-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="card-doctor-favorite-text">Favorite</span>
+                  </span>
+                </div>
+                <h3>Clark II, Carlos S MD</h3>
+              </div>
+              <div class="card-doctor-specialty">
+                <p class="quote font-brand text-teal">Family Practice</p>
+              </div>
+              <div class="card-doctor-location">
+                <p><i class="fa-regular fa-location-dot"></i> <a href="https://maps.app.goo.gl/x93rXzkCun3nVbes9" target="_blank">201 Doctors Dr. Dothan (Houston), AL 36301-2949</a></p>
+                <p><i class="fa-regular fa-phone"></i><a href="tel:3347946611">(334) 794-6611</a></p>
+              </div>
+              <a href="mailto:" class="inline-link"><i class="fa-regular fa-envelope text-teal-light"></i> Email a Copy</a>
+            </div>
+            <div class="card-doctor-skills">
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <i class="fa-regular fa-hospital text-teal-light"></i> Networks: 
+                </div>
+                <p>
+                  Baptist Montgomery Employees
+                </p>
+                <p>
+                  Commercial (Open Panel)
+                </p>
+                <p>
+                  Medical West
+                </p>
+              </div>
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.04375 9.04683L6.45625 7.3735L6.475 7.3535C7.5625 6.06016 8.3375 4.5735 8.79375 3.00016H10.625V1.66683H6.25V0.333496H5V1.66683H0.625V2.9935H7.60625C7.1875 4.28016 6.525 5.50016 5.625 6.56683C5.04375 5.88016 4.5625 5.12683 4.18125 4.3335H2.93125C3.3875 5.42016 4.0125 6.44683 4.79375 7.3735L1.6125 10.7202L2.5 11.6668L5.625 8.3335L7.56875 10.4068L8.04375 9.04683ZM11.5625 5.66683H10.3125L7.5 13.6668H8.75L9.45 11.6668H12.4188L13.125 13.6668H14.375L11.5625 5.66683ZM9.925 10.3335L10.9375 7.44683L11.95 10.3335H9.925V10.3335Z" fill="#66C7C3"/>
+                  </svg>
+                  Speaks:
+                </div>
+                <p>
+                  English
+                </p>
+              </div>
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <i class="fa-regular fa-route text-teal-light"></i>
+                  Distance:  
+                </div>
+                <p>
+                  0.5 miles
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h4>Mobile</h4>
+        <br>
+        <div class="example-mobile">
+          <div class="card-doctor">
+            <div class="card-doctor-personal-info">
+              <div class="card-doctor-name vertical">
+                <div class="card-doctor-labels">
+                  <span class="badge badge-green">
+                    <i class="fa-regular fa-check"></i>
+                    Accepting New Patients
+                  </span>
+                  <span class="card-doctor-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="card-doctor-favorite-text">Favorite</span>
+                  </span>
+                </div>
+                <h3>Clark II, Carlos S MD</h3>
+              </div>
+              <div class="card-doctor-specialty">
+                <p class="quote font-brand text-teal">Family Practice</p>
+              </div>
+              <div class="card-doctor-location">
+                <p><i class="fa-regular fa-location-dot"></i> <a href="https://maps.app.goo.gl/x93rXzkCun3nVbes9" target="_blank">201 Doctors Dr. Dothan (Houston), AL 36301-2949</a></p>
+                <p><i class="fa-regular fa-phone"></i><a href="tel:3347946611">(334) 794-6611</a></p>
+              </div>
+              <a href="mailto:" class="inline-link"><i class="fa-regular fa-envelope text-teal-light"></i> Email a Copy</a>
+            </div>
+            <div class="card-doctor-skills">
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <i class="fa-regular fa-hospital text-teal-light"></i> Networks: 
+                </div>
+                <p>
+                  Baptist Montgomery Employees
+                </p>
+                <p>
+                  Commercial (Open Panel)
+                </p>
+                <p>
+                  Medical West
+                </p>
+              </div>
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.04375 9.04683L6.45625 7.3735L6.475 7.3535C7.5625 6.06016 8.3375 4.5735 8.79375 3.00016H10.625V1.66683H6.25V0.333496H5V1.66683H0.625V2.9935H7.60625C7.1875 4.28016 6.525 5.50016 5.625 6.56683C5.04375 5.88016 4.5625 5.12683 4.18125 4.3335H2.93125C3.3875 5.42016 4.0125 6.44683 4.79375 7.3735L1.6125 10.7202L2.5 11.6668L5.625 8.3335L7.56875 10.4068L8.04375 9.04683ZM11.5625 5.66683H10.3125L7.5 13.6668H8.75L9.45 11.6668H12.4188L13.125 13.6668H14.375L11.5625 5.66683ZM9.925 10.3335L10.9375 7.44683L11.95 10.3335H9.925V10.3335Z" fill="#66C7C3"/>
+                  </svg>
+                  Speaks:
+                </div>
+                <p>
+                  English
+                </p>
+              </div>
+              <div class="card-doctor-skill">
+                <div class="card-doctor-skill-label">
+                  <i class="fa-regular fa-route text-teal-light"></i>
+                  Distance:  
+                </div>
+                <p>
+                  0.5 miles
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-doctor">
+  &lt;div class="card-doctor-personal-info">
+    &lt;div class="card-doctor-name vertical">
+      &lt;div class="card-doctor-labels">
+        &lt;span class="badge badge-green">
+          &lt;i class="fa-regular fa-check">&lt;/i>
+          Accepting New Patients
+        &lt;/span>
+        &lt;span class="card-doctor-favorite">
+          &lt;i class="fa-regular fa-heart">&lt;/i>
+          &lt;span class="card-doctor-favorite-text">Favorite&lt;/span>
+        &lt;/span>
+      &lt;/div>
+      &lt;h3>Clark II, Carlos S MD&lt;/h3>
+    &lt;/div>
+    &lt;div class="card-doctor-specialty">
+      &lt;p class="quote font-brand text-teal">Family Practice&lt;/p>
+    &lt;/div>
+    &lt;div class="card-doctor-location">
+      &lt;p>&lt;i class="fa-regular fa-location-dot">&lt;/i>&lt;a href="https://maps.app.goo.gl/x93rXzkCun3nVbes9" target="_blank">201 Doctors Dr. Dothan (Houston), AL 36301-2949&lt;/a>&lt;/p>
+      &lt;p>&lt;i class="fa-regular fa-phone">&lt;/i>&lt;a href="tel:3347946611">(334) 794-6611&lt;/a>&lt;/p>
+    &lt;/div>
+    &lt;a href="mailto:" class="inline-link">&lt;i class="fa-regular fa-envelope text-teal-light">&lt;/i> Email a Copy&lt;/a>
+  &lt;/div>
+  &lt;div class="card-doctor-skills">
+    &lt;div class="card-doctor-skill">
+      &lt;div class="card-doctor-skill-label">
+        &lt;i class="fa-regular fa-hospital text-teal-light">&lt;/i> Networks: 
+      &lt;/div>
+      &lt;p>Baptist Montgomery Employees&lt;/p>
+      &lt;p>Commercial (Open Panel)&lt;/p>
+      &lt;p>Medical West&lt;/p>
+    &lt;/div>
+    &lt;div class="card-doctor-skill">
+      &lt;div class="card-doctor-skill-label">
+        &lt;svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          &lt;path d="M8.04375 9.04683L6.45625 7.3735L6.475 7.3535C7.5625 6.06016 8.3375 4.5735 8.79375 3.00016H10.625V1.66683H6.25V0.333496H5V1.66683H0.625V2.9935H7.60625C7.1875 4.28016 6.525 5.50016 5.625 6.56683C5.04375 5.88016 4.5625 5.12683 4.18125 4.3335H2.93125C3.3875 5.42016 4.0125 6.44683 4.79375 7.3735L1.6125 10.7202L2.5 11.6668L5.625 8.3335L7.56875 10.4068L8.04375 9.04683ZM11.5625 5.66683H10.3125L7.5 13.6668H8.75L9.45 11.6668H12.4188L13.125 13.6668H14.375L11.5625 5.66683ZM9.925 10.3335L10.9375 7.44683L11.95 10.3335H9.925V10.3335Z" fill="#66C7C3"/>
+        &lt;/svg>
+        Speaks:
+      &lt;/div>
+      &lt;p>
+        English
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="card-doctor-skill">
+      &lt;div class="card-doctor-skill-label">
+        &lt;i class="fa-regular fa-route text-teal-light">&lt;/i>
+        Distance:  
+      &lt;/div>
+      &lt;p>
+        0.5 miles
+      &lt;/p>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Benefits Cards (Horizontal)</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="card-benefits horizontal">
+          <div class="card-benefits-video">
+            <img src="img/benefitsList/man.png" alt="">
+            <a href="#" class="card-benfits-video-btn js-modal-btn" data-id="#modal-video-1"></a>
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="card-benefits-label small">Benefits</p>
+              <h3 class="text-teal">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+        <div class="card-benefits horizontal reverse">
+          <div class="card-benefits-video">
+            <img src="img/benefitsList/woman.png" alt="">
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="card-benefits-label small">Benefits</p>
+              <h3 class="text-teal">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+        <div class="card-benefits horizontal">
+          <div class="card-benefits-image">
+            <img src="img/benefitsList/gym.png" alt="">
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="card-benefits-label small">Benefits</p>
+              <h3 class="text-teal">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+        <div class="card-benefits horizontal reverse">
+          <div class="card-benefits-image">
+            <img src="img/benefitsList/gym.png" alt="">
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="card-benefits-label small">Benefits</p>
+              <h3 class="text-teal">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="modal-video-1">
+    <div class="modal-overlay green">
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-video-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Odt2n-Tzcns?si=GLkZRijbOJDX2ujG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/copyText.js"></script>
+</body>
+</html>
