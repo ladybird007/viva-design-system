@@ -37,6 +37,9 @@
 .modal-container:not(.small) {
   max-width: 600px;
 }
+.modal-container.modal-container-video {
+  max-width: calc(720px + 2 * var(--spacing-m));
+}
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -75,4 +78,18 @@
   position: absolute;
   top: var(--spacing-s);
   right: var(--spacing-m);
+}
+
+.modal-video-wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56%;
+}
+.modal-video-wrap video,
+.modal-video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
 }

@@ -58,3 +58,7 @@
 .badge-purple i {
   color: var(--purple);
 } 
+.badge-dark-gray {
+  background-color: var(--med-gray-dark);
+  color: var(--white);
+}

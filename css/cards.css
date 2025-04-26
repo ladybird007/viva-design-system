@@ -361,12 +361,30 @@
   overflow: hidden;
   letter-spacing: -0.01em;
 }
+.card-benefits.bg-light-grass {
+  background-color: var(--light-grass-pale);
+}
 .card-benefits-image {
+  position: relative;
   width: 100%;
-  height: 280px;
+  /*height: 280px;*/
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.card-benefits-image-border-radius {
+  padding-top: var(--spacing-s);
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+}
+.card-benefits-image .badge {
+  position: absolute;
+  top: var(--spacing-s);
+  left: var(--spacing-s);
+}
+.card-benefits-image-border-radius .badge {
+  top: var(--spacing-l);
+  left: var(--spacing-l);
 }
 .card-benefits-image img,
 .card-benefits-video img {
@@ -413,36 +431,57 @@
 .card-benefits-desc {
   padding: var(--spacing-s);
   display: flex;
+  gap: var(--spacing-l);
+}
+.card-benefits-desc:not(.card-benefits-desc-in-line) {
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-l);
+}
+.card-benefits-desc-in-line {
+  align-items: center;
+  justify-content: space-between;
 }
 .card-benefits-text {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
 }
+.card-benefits-desc-in-line .card-benefits-text {
+  gap: var(--spacing-xxs);
+}
 .card-benefits h3 {
   letter-spacing: -0.02em;
 }
+
 .card-benefits.horizontal .card-benefits-desc {
   flex: 1;
 }
-.card-benefits-label {
-  color: var(--med-gray);
+.card-benefits .btns-group {
+  align-items: center;
+  gap: var(--spacing-xs);
 }
 .card-benefits.horizontal + .card-benefits.horizontal {
   margin-top: 50px;
 }
 
+
+@media (max-width: 768px) {
+  .card-benefits-video img {
+    width: 100%;
+  }
+}
 @media (min-width: 769px) {
   .card-benefits.horizontal {
+    max-width: 928px;
     display: flex;
     align-items: center;
   }
   .card-benefits.horizontal.reverse,
   .card-benefits.horizontal:nth-child(2n) {
     flex-direction: row-reverse;
+  }
+  .card-benefits:not(.horizontal) {
+    max-width: 362px;
   }
   .card-benefits.horizontal .card-benefits-image {
     max-width: 300px;

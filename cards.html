@@ -888,14 +888,18 @@
       <br>
 
       <div>
+        <h4>Benefits cards with video</h4>
+
+        <br>
+
         <div class="card-benefits horizontal">
           <div class="card-benefits-video">
             <img src="img/benefitsList/man.png" alt="">
-            <a href="#" class="card-benfits-video-btn js-modal-btn" data-id="#modal-video-1"></a>
+            <a href="#" class="card-benfits-video-btn js-modal-video-btn" data-id="#modal-video" data-src="https://www.youtube.com/embed/Odt2n-Tzcns?si=GLkZRijbOJDX2ujG"></a>
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="card-benefits-label small">Benefits</p>
+              <p class="small text-med-gray">Benefits</p>
               <h3 class="text-teal">Preventive Care</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
@@ -904,14 +908,47 @@
             <a href="#" class="btn btn-primary">Button</a>
           </div>
         </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits horizontal">
+  &lt;div class="card-benefits-video">
+    &lt;img src="img/benefitsList/man.png" alt="">
+    &lt;a href="#" class="card-benfits-video-btn js-modal-video-btn" data-id="#modal-video" data-src="https://www.youtube.com/embed/Odt2n-Tzcns?si=GLkZRijbOJDX2ujG">&lt;/a>
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small text-med-gray">Benefits</p>
+      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
 
         <div class="card-benefits horizontal reverse">
           <div class="card-benefits-video">
             <img src="img/benefitsList/woman.png" alt="">
+            <a href="#" class="card-benfits-video-btn js-modal-video-btn" data-id="#modal-video" data-src="https://www.youtube.com/embed/QF1k5Ll8nW8?si=IqGwInk-zBsrMFlN"></a>
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="card-benefits-label small">Benefits</p>
+              <p class="small text-med-gray">Benefits</p>
               <h3 class="text-teal">Preventive Care</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
@@ -920,6 +957,80 @@
             <a href="#" class="btn btn-primary">Button</a>
           </div>
         </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits horizontal reverse">
+  &lt;div class="card-benefits-video">
+    &lt;img src="img/benefitsList/woman.png" alt="">
+    &lt;a href="#" class="card-benfits-video-btn js-modal-video-btn" data-id="#modal-video" data-src="https://www.youtube.com/embed/Odt2n-Tzcns?si=GLkZRijbOJDX2ujG">&lt;/a>
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small text-med-gray">Benefits</p>
+      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Video in Modal</h4>
+        <br>
+
+        <div class="modal-container modal-container-video">
+          <div class="modal-content">
+            <div class="modal-video-wrap">
+              <iframe id="js-modal-video" width="100%" height="100%" src="https://www.youtube.com/embed/QF1k5Ll8nW8?si=IqGwInk-zBsrMFlN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;class="modal" id="modal-video">
+  &lt;div class="modal-overlay green">
+    &lt;div class="modal-container modal-container-video">
+      &lt;div class="modal-content">
+        &lt;div class="modal-video-wrap">
+          &lt;iframe id="js-modal-video" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h4>Benefits cards with image</h4>
+
+        <br>
 
         <div class="card-benefits horizontal">
           <div class="card-benefits-image">
@@ -927,7 +1038,7 @@
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="card-benefits-label small">Benefits</p>
+              <p class="small text-med-gray">Benefits</p>
               <h3 class="text-teal">Preventive Care</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
@@ -937,13 +1048,44 @@
           </div>
         </div>
 
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits horizontal">
+  &lt;div class="card-benefits-image">
+    &lt;img src="img/benefitsList/gym.png" alt="">
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small text-med-gray">Benefits</p>
+      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
         <div class="card-benefits horizontal reverse">
           <div class="card-benefits-image">
             <img src="img/benefitsList/gym.png" alt="">
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="card-benefits-label small">Benefits</p>
+              <p class="small text-med-gray">Benefits</p>
               <h3 class="text-teal">Preventive Care</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
@@ -954,15 +1096,259 @@
         </div>
       </div>
 
+      <br>
+
+      <div class="example-html bg-white rounded">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits horizontal reverse">
+  &lt;div class="card-benefits-image">
+    &lt;img src="img/benefitsList/gym.png" alt="">
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small text-med-gray">Benefits</p>
+      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Benefits Cards (Vertical)</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="card-benefits">
+          <div class="card-benefits-image">
+            <img src="img/benefitsList/image.png" alt="">
+            <span class="badge badge-dark-gray">Badge (Optional)</span>
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="small">Benefits (Optional)</p>
+              <h3 class="text-semibold">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <div class="btns-group">
+              <a href="#" class="btn btn-primary">Button</a>
+              <a href="#" class="internal-link">Internal Link</a>
+              <a href="#" class="location-link" target="_blank">Hoover Cafe</a>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits">
+  &lt;div class="card-benefits-image">
+    &lt;img src="img/benefitsList/image.png" alt="">
+    &lt;span class="badge badge-dark-gray">Badge (Optional)&lt;/span>
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small">Benefits (Optional)&lt;/p>
+      &lt;h3 class="text-semibold">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="btns-group">
+      &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+      &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;a href="#" class="location-link" target="_blank">Hoover Cafe&lt;/a>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="card-benefits">
+          <div class="card-benefits-image card-benefits-image-border-radius">
+            <img src="img/benefitsList/phones.png" alt="">
+            <span class="badge badge-dark-gray">Badge (Optional)</span>
+          </div>
+          <div class="card-benefits-desc card-benefits-desc-in-line">
+            <div class="card-benefits-text">
+              <h3 class="font-brand text-teal">Preventive Care</h3>
+              <p class="small">Subheading text (Optional)</p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits">
+  &lt;div class="card-benefits-image card-benefits-image-border-radius">
+    &lt;img src="img/benefitsList/phones.png" alt="">
+    &lt;span class="badge badge-dark-gray">Badge (Optional)&lt;/span>
+  &lt;/div>
+  &lt;div class="card-benefits-desc card-benefits-desc-in-line">
+    &lt;div class="card-benefits-text">
+      &lt;h3 class="font-brand text-teal">Preventive Care&lt;/h3>
+      &lt;p class="small">Subheading text (Optional)&lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="card-benefits bg-light-grass">
+          <div class="card-benefits-image">
+            <img src="img/benefitsList/imageGrass.png" alt="">
+            <span class="badge badge-dark-gray">Badge (Optional)</span>
+          </div>
+          <div class="card-benefits-desc">
+            <div class="card-benefits-text">
+              <p class="card-benefits-label small">Benefits (Optional)</p>
+              <h3 class="text-semibold">Preventive Care</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+              </p>
+            </div>
+            <div class="btns-group">
+              <a href="#" class="btn btn-primary">Button</a>
+              <a href="#" class="internal-link">Internal Link</a>
+              <a href="#" class="location-link" target="_blank">Hoover Cafe</a>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits bg-light-grass">
+  &lt;div class="card-benefits-image">
+    &lt;img src="img/benefitsList/imageGrass.png" alt="">
+    &lt;span class="badge badge-dark-gray">Badge (Optional)&lt;/span>
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small">Benefits (Optional)&lt;/p>
+      &lt;h3 class="text-semibold">Preventive Care&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="btns-group">
+      &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+      &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+      &lt;a href="#" class="location-link" target="_blank">Hoover Cafe&lt;/a>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="card-benefits bg-light-grass">
+          <div class="card-benefits-image card-benefits-image-border-radius">
+            <img src="img/benefitsList/medGrass.png" alt="">
+            <span class="badge badge-dark-gray">Badge (Optional)</span>
+          </div>
+          <div class="card-benefits-desc card-benefits-desc-in-line">
+            <div class="card-benefits-text">
+              <p class="text-semibold">Preventive Care</p>
+              <p class="small">
+                Subheading text (Optional)
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary">Button</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits bg-light-grass">
+  &lt;div class="card-benefits-image card-benefits-image-border-radius">
+    &lt;img src="img/benefitsList/medGrass.png" alt="">
+    &lt;span class="badge badge-dark-gray">Badge (Optional)&lt;/span>
+  &lt;/div>
+  &lt;div class="card-benefits-desc card-benefits-desc-in-line">
+    &lt;div class="card-benefits-text">
+      &lt;p class="text-semibold">Preventive Care&lt;/p>
+      &lt;p class="small">Subheading text (Optional)&lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
     </div>
   </div>
 
-  <div class="modal" id="modal-video-1">
+  <div class="modal" id="modal-video">
     <div class="modal-overlay green">
-      <div class="modal-container">
+      <div class="modal-container modal-container-video">
         <div class="modal-content">
           <div class="modal-video-wrap">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Odt2n-Tzcns?si=GLkZRijbOJDX2ujG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe id="js-modal-video" width="100%" height="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>

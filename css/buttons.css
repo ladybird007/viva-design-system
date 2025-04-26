@@ -300,9 +300,11 @@
   border-top: 1px solid var(--cadet-light);
   opacity: 0;
 }
-
 .inline-link:after {
   border-top-color: var(--teal-dark);
+}
+.location-link:focus {
+  color: var(--teal-dark);
 }
 
 .inline-link:focus:after,
@@ -310,6 +312,26 @@
 .internal-link:focus:before,
 .btn-text-only:focus:after {
   opacity: 1;
+}
+
+.location-link {
+  color: var(--med-gray-dark);
+  font-weight: 500;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+  line-height: 1;
+}
+.location-link:before {
+  content: "\f3c5";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  width: 11px;
+}
+.location-link:hover {
+  color: var(--teal);
 }
 
 .btns-group {
