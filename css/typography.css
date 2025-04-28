@@ -135,6 +135,9 @@ h4.card-headline,
 .text-cadet {
   color: var(--cadet);
 }
+.text-white {
+  color: var(--white);
+}
 
 .text-semibold {
   font-weight: 600;
