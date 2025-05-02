@@ -208,15 +208,18 @@
   top: 100%;
   right: 0;
   padding: var(--spacing-xs) var(--spacing-s);
-  text-align: right;
   flex-direction: column;
   align-items: flex-end;
   gap: var(--spacing-xs);
   background-color: var(--white);
-  border-radius: var(--border-radius-xs);
-  box-shadow: var(--shadow-m);
+  border-radius: 0 0 var(--border-radius-xs) var(--border-radius-xs);
+  box-shadow: var(--shadow-l);
   display: none;
   z-index: 5;
+}
+.table-drop-content a {
+  text-decoration: none;
+  color: var(--black);
 }
 .table tr:last-child .table-drop-content {
   top: auto;

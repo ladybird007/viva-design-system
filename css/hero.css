@@ -1,0 +1,141 @@
+.hero.bg-white {
+  background-color: var(--white);
+  color: var(--med-gray-dark);
+}
+.hero.bg-white h1,
+.hero.bg-white .card-headline {
+  color: var(--black);
+}
+
+.hero.bg-purple {
+  background-color: var(--purple-extra-dark);
+  color: var(--white);
+}
+
+.hero h1 .font-brand {
+  display: block;
+}
+.hero div[class*="gap-"] {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text.text-center div[class*="gap-"] {
+  align-items: center;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.hero-media {
+  position: relative;
+}
+.hero-img {
+  display: block;
+}
+.hero-stars,
+.hero-call-out {
+  position: absolute;
+}
+.hero .left-bottom {
+  left: 0;
+  bottom: 0;
+}
+.hero .left-top {
+  left: 0;
+  top: 0;
+}
+.hero .right-bottom {
+  right: 0;
+  bottom: 0;
+}
+.hero .right-top {
+  right: 0;
+  top: 0;
+}
+.hero .btns-group {
+  flex-wrap: wrap;
+}
+.hero-text.text-center .btns-group {
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .hero .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .hero-text {
+    padding-top: 40px;
+    gap: var(--spacing-m);
+  }
+  .hero-call-out {
+    display: none;
+  }
+  .hero-mobile-badge {
+    width: calc(100% + 2 * var(--gap));
+    padding: 11px var(--spacing-s);
+    margin-left: calc(-1 * var(--gap));
+    margin-right: calc(-1 * var(--gap));
+    line-height: 1;
+    color: var(--white);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: var(--mobile-badge-bg);
+    text-align: center;
+  }
+  .hero-media {
+    margin-top: var(--spacing-m);
+  }
+}
+@media (min-width: 769px) {
+  .hero-text {
+    max-width: calc(392px + 2 * var(--spacing-xxl));
+    gap: var(--spacing-l);
+  }
+  .hero-text.text-center { 
+    max-width: calc(380px + 2 * var(--spacing-xxl));
+  }
+  .hero-text-wide,
+  .hero-text-wide.text-center {
+    max-width: calc(472px + 2 * var(--spacing-xxl));
+  }
+  .hero.bg-purple .hero-text-wide,
+  .hero.bg-purple .hero-text-wide.text-center {
+    max-width: calc(504px + 2 * var(--spacing-xxl));
+  }
+  .hero-mobile-badge {
+    display: none;
+  }
+  .hero-media.spacing-m {
+    padding-top: var(--spacing-m);
+    padding-bottom: var(--spacing-m);
+  }
+}
+@media (min-width: 769px) and (max-width: 1215px) {
+  .hero-text,
+  .hero-media {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+}
+@media (min-width: 1216px) {
+  .hero h1 .font-brand {
+    font-size: 1.25em;
+  }
+  .hero-text {
+    padding: 0 var(--spacing-xxl);
+  }
+  .hero-media {
+    padding: 0 var(--spacing-l);
+  }
+  .hero-text {
+    margin-top: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xxl);
+  }
+  .hero-cards {
+    display: flex;
+    gap: var(--spacing-s);
+  }
+}

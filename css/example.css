@@ -1,4 +1,9 @@
+body {
+  background-color: #EEEEEE;
+}
+
 /***** header *****/
+
 
 .example-header {
   height: 174px;
@@ -42,10 +47,9 @@
 
 /***** content *****/
 .example-content {
-  min-height: calc(100vh - 174px);
+  /* min-height: calc(100vh - 174px);*/
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #EEEEEE;
 }
 .example-content.example-footer,
 .example-content.example-content-small {
@@ -77,6 +81,10 @@
 .example-headline small {
   font-weight: 400;
   font-size: 0.75em;
+}
+
+.rounded {
+  border-radius: var(--spacing-xs);
 }
 
 /****** shadow *****/
@@ -954,5 +962,30 @@ code:hover:before {
   max-width: 327px;
 }
 .example-mobile .card-doctor .card-doctor-favorite-text {
+  display: none;
+}
+
+.example-tablet.card-event {
+  max-width: 290px;
+}
+.example-tablet.card-event .card-event-image {
+  padding-left: var(--spacing-s);
+  padding-right: var(--spacing-s);
+}
+.example-tablet.card-event .card-event-image h3 {
+  font-size: 22px;
+}
+
+.example-mobile.card-event {
+  max-width: 100%;
+}
+.example-mobile.card-event .card-event-image {
+  padding: 28px 36px 16px;
+}
+.example-mobile.card-event .card-event-image h3 {
+  font-size: 18px;
+}
+.example-tablet.card-event .tablet-hidden,
+.example-mobile.card-event .tablet-hidden {
   display: none;
 }

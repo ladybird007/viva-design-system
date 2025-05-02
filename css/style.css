@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import url(../css/reset.css);
 @import url(../css/variables.css);
@@ -31,6 +32,7 @@
 @import url(../css/tables.css);
 @import url(../css/cards.css);
 @import url(../components/tabs/tabs.css);
+@import url(../css/hero.css);
 @import url(../css/header.css);
 @import url(../css/footer.css);
 @import url(../css/example.css);
@@ -60,29 +62,14 @@ img {
   height: auto;
 }
 
-/***** Rounded *****/
-.rounded {
-  border-radius: var(--spacing-xs);
+@media (max-width: 1023px) {
+  .tablet-hidden {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
 }
 
-
-/***** Dropdown ******/
-.js-dropdown-btn {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.js-dropdown-content {
-  display: none;
-  transition-timing-function: linear;
-}
-.js-dropdown-icon {
-  color: var(--teal);
-  position: relative;
-  margin-left: var(--spacing-s);
-  transition: all 0.5s;
-}
-.js-dropdown-btn.opened .js-dropdown-icon {
-  transform: rotate(180deg);
-}

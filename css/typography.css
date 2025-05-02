@@ -63,6 +63,9 @@ h5 {
   h1 {
     font-size: 40px;
   }
+  h1.large {
+    font-size: 45px;
+  }
   h2 {
     font-size: 34px;
   }
@@ -83,6 +86,10 @@ h5 {
 .small,
 small {
   font-size: 14px;  
+}
+
+.text-semibold .small-caps {
+  font-weight: 600;
 }
 
 

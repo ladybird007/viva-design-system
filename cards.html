@@ -19,7 +19,7 @@
       </a>
     </div>
   </header>
-  <div class="example-content">
+  <div class="example-content bg-white">
     <div class="container">
       <div class="example-headline">
         <h2>Cards</h2>
@@ -39,13 +39,15 @@
               <p class="small card-preheadline">Eyebrow</p>
               <h3 class="text-teal">What are my <br> plan options?</h3>
             </div>
-            <p>
+            <p class="disclaimer">
               Amet minim mollit non deserunt ullamco est sit.
             </p>
-            <div class="form-group">
-              <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
-            </div>
-            <a href="#" class="btn btn-primary">Learn More</a>  
+            <form action="#">
+              <div class="form-group">
+                <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+              </div>
+            </form>
+            <a href="#" class="btn btn-primary">Learn More</a> 
           </div>
         </div>
 
@@ -58,21 +60,23 @@
           </div>
           <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">&lt;div class="card-simple card-small text-center">
-  &lt;div class="card-simple-body">
-    &lt;div class="card-spacing-xs">
-      &lt;p class="small card-preheadline">Eyebrow&lt;/p>
-      &lt;h3 class="text-teal">What are my &lt;br> plan options?&lt;/h3>
-    &lt;/div>
-    &lt;p>
+<code data-lang="html" class="copy-content">&LT;div class="card-simple card-small text-center">
+  &LT;div class="card-simple-body">
+    &LT;div class="card-spacing-xs">
+      &LT;p class="small card-preheadline">Eyebrow&LT;/p>
+      &LT;h3 class="text-teal">What are my &LT;br> plan options?&LT;/h3>
+    &LT;/div>
+    &LT;p class="disclaimer">
       Amet minim mollit non deserunt ullamco est sit.
-    &lt;/p>
-    &lt;div class="form-group">
-      &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
-    &lt;/div>
-    &lt;a href="#" class="btn btn-primary">Learn More&lt;/a>  
-  &lt;/div>
-&lt;/div>
+    &LT;/p>
+    &LT;form action="#">
+      &LT;div class="form-group">
+        &LT;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+      &LT;/div>
+    &LT;/form>
+    &LT;a href="#" class="btn btn-primary">Learn More&LT;/a>  
+  &LT;/div>
+&LT;/div>
 </code>
 </pre>
           </div>
@@ -96,10 +100,14 @@
             <p>
               Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
             </p>
-            <div class="form-group">
-              <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+            <div class="card-spacing-l">
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
+                </div>
+              </form>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
-            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
 
@@ -112,25 +120,29 @@
           </div>
           <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">&lt;div class="card-simple text-center">
-  &lt;div class="card-simple-media">
-    &lt;img src="img/cards/baking-alabama.png" alt="Placeholder" class="card-simple-image" />
-  &lt;/div>
-  &lt;div class="card-simple-body spacing-s">
-    &lt;h4 class="card-headline">eyebrow&lt;/h4>
-    &lt;div class="card-simple-logo">
-      &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
-    &lt;/div>
-    &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
-    &lt;p>
+<code data-lang="html" class="copy-content">&LT;div class="card-simple text-center">
+  &LT;div class="card-simple-media">
+    &LT;img src="img/cards/baking-alabama.png" alt="Placeholder" class="card-simple-image" />
+  &LT;/div>
+  &LT;div class="card-simple-body card-spacing-s">
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;div class="card-simple-logo">
+      &LT;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+    &LT;/div>
+    &LT;h3 class="text-teal">We make Medicare Easy&LT;/h3>
+    &LT;p>
       Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
-    &lt;/p>
-    &lt;div class="form-group">
-      &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
-    &lt;/div>
-    &lt;a href="#" class="btn btn-primary">Learn More&lt;/a>  
-  &lt;/div>
-&lt;/div>
+    &LT;/p>
+    &LT;div class="card-spacing-l">
+      &LT;form action="#">
+        &LT;div class="form-group">
+          &LT;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+        &LT;/div>
+      &LT;/form>
+      &LT;a href="#" class="btn btn-primary">Learn More&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
 </code>
 </pre>
           </div>
@@ -148,16 +160,18 @@
               <div class="card-simple-logo">
                 <img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
               </div>
-              <h3 class="text-teal">We make Medicare Easy</h3>
+              <h2 class="text-teal">Shop Medicare Advantage Plans</h2>
               <p>
                 Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
               </p>
             </div>
             <div class="card-spacing-m">
-              <div class="form-group">
-                <label class="form-label" for="zip">Your Zip Code <span class="text-red">*</span></label>
-                <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
-              </div>
+              <form action="#">
+                <div class="form-group">
+                  <label class="form-label" for="zip">Your Zip Code <span class="text-red">*</span></label>
+                  <input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
+                </div>
+              </form>
               <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
@@ -172,27 +186,28 @@
           </div>
           <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">&lt;div class="card-simple card-simple-no-media">
-  &lt;div class="card-simple-body">
-    &lt;div class="card-spacing-xs">
-      &lt;h4 class="card-headline">eyebrow&lt;/h4>
-      &lt;div class="card-simple-logo">
-        &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
-      &lt;/div>
-      &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
-      &lt;p>
+<code data-lang="html" class="copy-content">&LT;div class="card-simple card-simple-no-media">
+  &LT;div class="card-simple-body">
+    &LT;div class="card-spacing-xs">
+      &LT;h4 class="card-headline">eyebrow&LT;/h4>
+      &LT;div class="card-simple-logo">
+        &LT;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+      &LT;/div>
+      &LT;h2 class="text-teal">Shop Medicare Advantage Plans&LT;/h2>
+      &LT;p>
         Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
-      &lt;/p>
-    &lt;/div>
-    
-    &lt;div class="card-spacing-m">
-      &lt;div class="form-group">
-        &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
-      &lt;/div>
-      &lt;a href="#" class="btn btn-primary">Learn More&lt;/a> 
-    &lt;/div>
-  &lt;/div>
-&lt;/div>
+      &LT;/p>
+    &LT;/div>
+    &LT;div class="card-spacing-m">
+      &LT;form action="#">
+        &LT;div class="form-group">
+          &LT;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
+        &LT;/div>
+      &LT;/form>
+      &LT;a href="#" class="btn btn-primary">Learn More&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
 </code>
 </pre>
           </div>
@@ -210,7 +225,7 @@
               <div class="card-simple-logo">
                 <img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
               </div>
-              <h3 class="text-teal">We make Medicare Easy</h3>
+              <h2 class="text-teal">Shop Medicare Advantage Plans</h2>
               <p>
                 Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
               </p>
@@ -234,27 +249,27 @@
           </div>
           <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">&lt;div class="card-simple card-simple-no-media">
-  &lt;div class="card-simple-body">
-    &lt;div class="card-spacing-xs">
-      &lt;h4 class="card-headline">eyebrow&lt;/h4>
-      &lt;div class="card-simple-logo">
-        &lt;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
-      &lt;/div>
-      &lt;h3 class="text-teal">We make Medicare Easy&lt;/h3>
-      &lt;p>
+<code data-lang="html" class="copy-content">&LT;div class="card-simple card-simple-no-media">
+  &LT;div class="card-simple-body">
+    &LT;div class="card-spacing-xs">
+      &LT;h4 class="card-headline">eyebrow&LT;/h4>
+      &LT;div class="card-simple-logo">
+        &LT;img src="img/logos/VivaHealthCafe.svg" alt="Viva Medicare Cafe" />
+      &LT;/div>
+      &LT;h2 class="text-teal">Shop Medicare Advantage Plans&LT;/h2>
+      &LT;p>
         Discover how Medicare's Star Rating can guide you in making the right Medicare choice.
-      &lt;/p>
-    &lt;/div>
-    
-    &lt;div class="row align-items-end">
-      &lt;div class="form-group">
-        &lt;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" required />
-      &lt;/div>
-      &lt;a href="#" class="btn btn-primary">Learn More&lt;/a> 
-    &lt;/div>
-  &lt;/div>
-&lt;/div>
+      &LT;/p>
+    &LT;/div>
+    &LT;div class="row align-items-end">
+      &LT;div class="form-group">
+        &LT;label class="form-label" for="zip">Your Zip Code &LT;span class="text-red">*&LT;/span>&LT;/label>
+        &LT;input type="text" id="zip" name="zip" class="form-field" placeholder="Enter Zip or County" />
+      &LT;/div>
+      &LT;a href="#" class="btn btn-primary">Learn More&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
 </code>
 </pre>
           </div>
@@ -614,7 +629,10 @@
                   Accepting New Patients
                 </span>
                 <span class="card-doctor-favorite">
-                  <i class="fa-regular fa-heart"></i>
+                  <span class="card-doctor-favorite-icon js-favorite-icon">
+                    <i class="fa-regular fa-heart favorite-icon"></i>
+                    <i class="fa-solid fa-heart favorite-icon-full"></i>
+                  </span>
                   <span class="card-doctor-favorite-text">Favorite</span>
                 </span>
               </div>
@@ -681,7 +699,10 @@
                     Accepting New Patients
                   </span>
                   <span class="card-doctor-favorite">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="card-doctor-favorite-icon js-favorite-icon">
+                      <i class="fa-regular fa-heart favorite-icon"></i>
+                      <i class="fa-solid fa-heart favorite-icon-full"></i>
+                    </span>
                     <span class="card-doctor-favorite-text">Favorite</span>
                   </span>
                 </div>
@@ -749,7 +770,10 @@
                     Accepting New Patients
                   </span>
                   <span class="card-doctor-favorite">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="card-doctor-favorite-icon js-favorite-icon">
+                      <i class="fa-regular fa-heart favorite-icon"></i>
+                      <i class="fa-solid fa-heart favorite-icon-full"></i>
+                    </span>
                     <span class="card-doctor-favorite-text">Favorite</span>
                   </span>
                 </div>
@@ -821,7 +845,10 @@
           Accepting New Patients
         &lt;/span>
         &lt;span class="card-doctor-favorite">
-          &lt;i class="fa-regular fa-heart">&lt;/i>
+          &lt;span class="card-doctor-favorite-icon js-favorite-icon">
+            &lt;i class="fa-regular fa-heart favorite-icon">&lt;/i>
+            &lt;i class="fa-solid fa-heart favorite-icon-full">&lt;/i>
+          &lt;/span>
           &lt;span class="card-doctor-favorite-text">Favorite&lt;/span>
         &lt;/span>
       &lt;/div>
@@ -899,8 +926,8 @@
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="small text-med-gray">Benefits</p>
-              <h3 class="text-teal">Preventive Care</h3>
+              <p class="small text-med-gray">Eyebrow</p>
+              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -925,8 +952,8 @@
   &lt;/div>
   &lt;div class="card-benefits-desc">
     &lt;div class="card-benefits-text">
-      &lt;p class="small text-med-gray">Benefits</p>
-      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p class="small text-med-gray">Eyebrow</p>
+      &lt;h3 class="text-teal">Title Area Goes Here and Second Line Here&lt;/h3>
       &lt;p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       &lt;/p>
@@ -948,8 +975,8 @@
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="small text-med-gray">Benefits</p>
-              <h3 class="text-teal">Preventive Care</h3>
+              <p class="small text-med-gray">Eyebrow</p>
+              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -974,8 +1001,8 @@
   &lt;/div>
   &lt;div class="card-benefits-desc">
     &lt;div class="card-benefits-text">
-      &lt;p class="small text-med-gray">Benefits</p>
-      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p class="small text-med-gray">Eyebrow</p>
+      &lt;h3 class="text-teal">Title Area Goes Here and Second Line Here&lt;/h3>
       &lt;p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       &lt;/p>
@@ -1050,8 +1077,8 @@
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="small text-med-gray">Benefits</p>
-              <h3 class="text-teal">Preventive Care</h3>
+              <p class="small text-med-gray">Eyebrow</p>
+              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -1075,8 +1102,8 @@
   &lt;/div>
   &lt;div class="card-benefits-desc">
     &lt;div class="card-benefits-text">
-      &lt;p class="small text-med-gray">Benefits</p>
-      &lt;h3 class="text-teal">Preventive Care&lt;/h3>
+      &lt;p class="small text-med-gray">Eyebrow</p>
+      &lt;h3 class="text-teal">Title Area Goes Here and Second Line Here&lt;/h3>
       &lt;p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       &lt;/p>
@@ -1097,8 +1124,8 @@
           </div>
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
-              <p class="small text-med-gray">Benefits</p>
-              <h3 class="text-teal">Preventive Care</h3>
+              <p class="small text-med-gray">Eyebrow</p>
+              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -1108,7 +1135,32 @@
         </div>
 
         <br>
-        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-benefits horizontal reverse">
+  &lt;div class="card-benefits-image">
+    &lt;img src="img/benefitsList/gym.png" alt="">
+  &lt;/div>
+  &lt;div class="card-benefits-desc">
+    &lt;div class="card-benefits-text">
+      &lt;p class="small text-med-gray">Eyebrow</p>
+      &lt;h3 class="text-teal">Title Area Goes Here and Second Line Here&lt;/h3>
+      &lt;p>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      &lt;/p>
+    &lt;/div>
+    &lt;a href="#" class="btn btn-primary">Button&lt;/a>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
 
 
       </div>
@@ -1134,7 +1186,7 @@
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
               <p class="small">Benefits (Optional)</p>
-              <h3 class="text-semibold">Preventive Care</h3>
+              <h3 class="text-semibold">Part D Drug Coverage</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -1164,7 +1216,7 @@
   &lt;div class="card-benefits-desc">
     &lt;div class="card-benefits-text">
       &lt;p class="small">Benefits (Optional)&lt;/p>
-      &lt;h3 class="text-semibold">Preventive Care&lt;/h3>
+      &lt;h3 class="text-semibold">Part D Drug Coverage&lt;/h3>
       &lt;p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       &lt;/p>
@@ -1190,7 +1242,7 @@
           </div>
           <div class="card-benefits-desc card-benefits-desc-in-line">
             <div class="card-benefits-text">
-              <h3 class="font-brand text-teal">Preventive Care</h3>
+              <h5 class="font-brand text-teal">Title Area Goes Here</h5>
               <p class="small">Subheading text (Optional)</p>
             </div>
             <a href="#" class="btn btn-primary">Button</a>
@@ -1213,7 +1265,7 @@
   &lt;/div>
   &lt;div class="card-benefits-desc card-benefits-desc-in-line">
     &lt;div class="card-benefits-text">
-      &lt;h3 class="font-brand text-teal">Preventive Care&lt;/h3>
+      &lt;h5 class="font-brand text-teal">Title Area Goes Here&lt;/h5>
       &lt;p class="small">Subheading text (Optional)&lt;/p>
     &lt;/div>
     &lt;a href="#" class="btn btn-primary">Button&lt;/a>
@@ -1234,7 +1286,7 @@
           <div class="card-benefits-desc">
             <div class="card-benefits-text">
               <p class="card-benefits-label small">Benefits (Optional)</p>
-              <h3 class="text-semibold">Preventive Care</h3>
+              <h3 class="text-semibold">Part D Drug Coverage</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
               </p>
@@ -1264,7 +1316,7 @@
   &lt;div class="card-benefits-desc">
     &lt;div class="card-benefits-text">
       &lt;p class="small">Benefits (Optional)&lt;/p>
-      &lt;h3 class="text-semibold">Preventive Care&lt;/h3>
+      &lt;h3 class="text-semibold">Part D Drug Coverage&lt;/h3>
       &lt;p>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       &lt;/p>
@@ -1453,7 +1505,7 @@
         <br>
         <br>
 
-        <div class="card-call-out bg-violet">
+        <div class="card-call-out bg-purple">
           <div class="row">
             <div class="col-7">
               <div class="card-call-out-text">
@@ -1463,7 +1515,7 @@
                   This study explores VR's role in creating engaging and immersive learning environments, 
                   significantly enhancing student engagement and retention.
                 </p>
-                <a href="#" class="internal-link">Internal Link</a>
+                <a href="#" class="internal-link text-white">Internal Link</a>
               </div>
             </div>
             <div class="col-5">
@@ -1555,7 +1607,7 @@
     &lt;/div>
     &lt;div class="col-5">
       &lt;div class="card-call-out-img align-items-end">
-        &lt;img src="img/callOut/women.png" alt="">
+        &lt;img src="img/callOut/men.png" alt="">
       &lt;/div>
     &lt;/div>
   &lt;/div>
@@ -1709,7 +1761,7 @@
             </div>
             <div>
               <p class="text-semibold">Title Area</p>
-              <p class="small">Subheading text</p>
+              <p class="small text-med-gray">Subheading text</p>
             </div>
           </div>
           <a class="card-action-btn-icon" href="#"><i class="fa-solid fa-chevron-right"></i></a>
@@ -1731,7 +1783,7 @@
     &lt;/div>
     &lt;div>
       &lt;p class="text-semibold">Title Area&lt;/p>
-      &lt;p class="small">Subheading text&lt;/p>
+      &lt;p class="small text-med-gray">Subheading text&lt;/p>
     &lt;/div>
   &lt;/div>
   &lt;a class="card-action-btn-icon" href="#">&lt;i class="fa-solid fa-chevron-right">&lt;/i>&lt;/a>
@@ -1750,7 +1802,7 @@
             </div>
             <div>
               <p class="text-semibold">Title Area</p>
-              <p class="small">Subheading text</p>
+              <p class="small text-med-gray">Subheading text</p>
             </div>
           </div>
           <a class="btn btn-primary" href="#">Button</a>
@@ -1772,7 +1824,7 @@
     &lt;/div>
     &lt;div>
       &lt;p class="text-semibold">Title Area&lt;/p>
-      &lt;p class="small">Subheading text&lt;/p>
+      &lt;p class="small text-med-gray">Subheading text&lt;/p>
     &lt;/div>
   &lt;/div>
   &lt;a class="btn btn-primary" href="#">Button&lt;/a>
@@ -1791,7 +1843,7 @@
             </div>
             <div>
               <p class="text-semibold">Title Area</p>
-              <p class="small">
+              <p class="small text-med-gray">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia 
                 consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
               </p>
@@ -1816,7 +1868,7 @@
     &lt;/div>
     &lt;div>
       &lt;p class="text-semibold">Title Area&lt;/p>
-      &lt;p class="small">
+      &lt;p class="small text-med-gray">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia 
         consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
       &lt;/p>
@@ -1924,7 +1976,7 @@
               </p>
             </div>
           </div>
-          <a class="internal-link" href="#">Internal link</a>
+          <a class="internal-link text-white" href="#">Internal link</a>
         </div>
 
         <br>
@@ -1947,6 +1999,45 @@
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia 
         consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
       &lt;/p>
+    &lt;/div>
+  &lt;/div>
+  &lt;a class="internal-link text-white" href="#">Internal link&lt;/a>
+&lt;/div></code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="card-action bg-white shadow-m">
+          <div class="card-action-text align-items-center">
+            <div class="card-action-img">
+              <img src="img/actions/gym.png" alt="">
+            </div>
+            <div>
+              <p class="text-semibold">Title Area Goes Here</p>
+            </div>
+          </div>
+          <a class="internal-link" href="#">Internal link</a>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="card-action bg-white shadow-m">
+  &lt;div class="card-action-text align-items-center">
+    &lt;div class="card-action-icon">
+      &lt;img src="img/actions/gym.png" alt="">
+    &lt;/div>
+    &lt;div>
+      &lt;p class="text-semibold">Title Area Goes Here&lt;/p>
     &lt;/div>
   &lt;/div>
   &lt;a class="internal-link" href="#">Internal link&lt;/a>
@@ -1994,44 +2085,7 @@
           </div>
         </div>
 
-        <br>
-        <br>
-
-        <div class="card-action bg-white shadow-m">
-          <div class="card-action-text align-items-center">
-            <div class="card-action-img">
-              <img src="img/actions/gym.png" alt="">
-            </div>
-            <div>
-              <p class="text-semibold">Title Area Goes Here</p>
-            </div>
-          </div>
-          <a class="internal-link" href="#">Internal link</a>
-        </div>
-
-        <br>
-
-        <div class="example-html bg-white rounded">
-          <div class="example-html-head">
-            <div>HTML</div>
-            <button class="copy-btn" onclick="copyText(this)">Copy</button>
-          </div>
-          <div class="example-html-body">
-<pre>
-<code data-lang="html" class="copy-content">&lt;div class="card-action bg-white shadow-m">
-  &lt;div class="card-action-text align-items-center">
-    &lt;div class="card-action-icon">
-      &lt;img src="img/actions/gym.png" alt="">
-    &lt;/div>
-    &lt;div>
-      &lt;p class="text-semibold">Title Area Goes Here&lt;/p>
-    &lt;/div>
-  &lt;/div>
-  &lt;a class="internal-link" href="#">Internal link&lt;/a>
-&lt;/div></code>
-</pre>
-          </div>
-        </div>
+        
 
       </div>
 
@@ -2071,6 +2125,41 @@
                 </div>
               </div>
             </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action vertical bg-light-grass">
+  &LT;div class="card-action-img">
+    &LT;img src="img/actions/woman.png" alt="">
+    &LT;span class="badge badge-dark-gray">Badge (optional)&LT;/span>
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;p class="small">Subheading (Optional)&LT;/p>
+    &LT;h3>
+      Title Area Goes Here and Second Line Here
+    &LT;/h3>
+    &LT;p class="disclaimer">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    &LT;/p>
+    &LT;div class="card-action-btns">
+      &LT;a href="#" class="btn btn-primary">Learn more&LT;/a>
+      &LT;a href="" class="location-link text-teal-dark" target="_blank">Text&LT;/a>
+      &LT;a href="#" class="inline-link" target="_blank">Internal Link&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
           </div>
           <div class="col-4">
             <div class="card-action vertical bg-light-grass">
@@ -2089,9 +2178,44 @@
                 </p>
                 <div class="card-action-btns">
                   <a href="#" class="btn btn-primary">Learn more</a>
-                  <a href="" class="location-link" target="_blank">Accent Text</a>
+                  <a href="" class="location-link text-teal-dark" target="_blank">Accent Text</a>
                   <a href="#" class="inline-link" target="_blank">Internal Link</a>
                 </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action vertical bg-light-grass">
+  &LT;div class="card-action-img">
+    &LT;img src="img/actions/woman.png" alt="">
+    &LT;span class="badge badge-dark-gray">Badge (optional)&LT;/span>
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;p class="small">Subheading (Optional)&LT;/p>
+    &LT;h3>
+      Title Area Goes Here and Second Line Here
+    &LT;/h3>
+    &LT;p class="disclaimer">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    &LT;/p>
+    &LT;div class="card-action-btns">
+      &LT;a href="#" class="btn btn-primary">Learn more&LT;/a>
+      &LT;a href="" class="location-link text-teal-dark" target="_blank">Text&LT;/a>
+      &LT;a href="#" class="inline-link" target="_blank">Internal Link&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
@@ -2114,6 +2238,35 @@
                 <p class="small">
                   Subheading text
                 </p>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action bg-image vertical">
+  &LT;div class="card-action-img">
+    &LT;img src="img/actions/woman.png" alt="">
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;p class="small">Subheading (Optional)&LT;/p>
+    &LT;h3>
+      Title Area Goes Here and Second Line Here
+    &LT;/h3>
+    &LT;p class="small">
+      Subheading text
+    &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
@@ -2139,14 +2292,48 @@
                 <div class="card-action-btns">
                   <a href="#" class="btn btn-secondary btn-secondary-white">Learn more</a>
                   <a href="#" class="location-link text-white" target="_blank">Text</a>
-                  <a href="#" class="inline-link text-white" target="_blank">Internal Link</a>
+                  <a href="#" class="internal-link text-white" target="_blank">Internal Link</a>
                 </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action bg-gradient vertical">
+  &LT;div class="card-action-desc">
+    &LT;div>
+      &LT;img class="health-logo" src="img/logos/VivaHealthWhite.svg" alt="">
+    &LT;/div>
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;p class="small">Subheading (Optional)&LT;/p>
+    &LT;h3>
+      Title Area Goes Here and Second Line Here
+    &LT;/h3>
+    &LT;p class="disclaimer">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    &LT;/p>
+    &LT;div class="card-action-btns">
+      &LT;a href="#" class="btn btn-secondary btn-secondary-white">Learn more&LT;/a>
+      &LT;a href="#" class="location-link text-white" target="_blank">Text&LT;/a>
+      &LT;a href="#" class="internal-link text-white" target="_blank">Internal Link&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
           <div class="col-4">
             <div class="card-action bg-teal vertical">
-              <div class="card-action-desc">
+              <div class="card-action-desc gap-s">
                 <div class="card-action-text align-items-center">
                   <div class="card-action-icon">
                     <i class="fa-regular fa-heart-pulse"></i>
@@ -2167,8 +2354,48 @@
                 <div class="card-action-btns">
                   <a href="#" class="btn btn-secondary btn-secondary-white">Learn more</a>
                   <a href="#" class="location-link text-white" target="_blank">Text</a>
-                  <a href="#" class="inline-link text-white" target="_blank">Internal Link</a>
+                  <a href="#" class="internal-link text-white" target="_blank">Internal Link</a>
                 </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action bg-teal vertical">
+  &LT;div class="card-action-desc gap-s">
+    &LT;div class="card-action-text align-items-center">
+      &LT;div class="card-action-icon">
+        &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+      &LT;/div>
+      &LT;div>
+        &LT;p>Eyebrow&LT;/p>
+      &LT;/div>
+      &LT;div>
+        &LT;span class="badge badge-purple">Label&LT;/span>
+      &LT;/div>
+    &LT;/div>
+    &LT;h3>
+      Title Area Goes Here and Second Line Here
+    &LT;/h3>
+    &LT;p class="disclaimer">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    &LT;/p>
+    &LT;div class="card-action-btns">
+      &LT;a href="#" class="btn btn-secondary btn-secondary-white">Learn more&LT;/a>
+      &LT;a href="#" class="location-link text-white" target="_blank">Text&LT;/a>
+      &LT;a href="#" class="internal-link text-white" target="_blank">Internal Link&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
@@ -2193,8 +2420,46 @@
                 <div class="card-action-btns">
                   <a href="#" class="btn btn-secondary">Learn more</a>
                   <a href="#" class="location-link text-teal-dark" target="_blank">Text</a>
-                  <a href="#" class="inline-link" target="_blank">Internal Link</a>
+                  <a href="#" class="internal-link" target="_blank">Internal Link</a>
                 </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action bg-light-grass vertical">
+  &LT;div class="card-action-desc">
+    &LT;div class="card-action-text">
+      &LT;div class="card-action-icon">
+        &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+      &LT;/div>
+      &LT;div>
+        &LT;p>Eyebrow&LT;/p>
+        &LT;h3 class="text-teal">Title Area Goes Here and Second Line &LT;/h3>
+      &LT;/div>
+      &LT;div>
+        &LT;span class="badge badge-purple">Label&LT;/span>
+      &LT;/div>
+    &LT;/div>
+    &LT;p class="disclaimer">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    &LT;/p>
+    &LT;div class="card-action-btns">
+      &LT;a href="#" class="btn btn-secondary">Learn more&LT;/a>
+      &LT;a href="#" class="location-link text-teal-dark" target="_blank">Text&LT;/a>
+      &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
@@ -2209,10 +2474,34 @@
                 <i class="fa-regular fa-heart-pulse"></i>
               </div>
               <h4 class="card-headline">eyebrow</h4>
-              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
+              <h3>Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
               </p>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-action-big-space vertical bg-white border-cadet text-center">
+  &LT;div class="card-action-icon-big text-teal">
+    &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+  &LT;/div>
+  &LT;h4 class="card-headline">eyebrow&LT;/h4>
+  &LT;h3>Title Area Goes Here and Second Line Here&LT;/h3>
+  &LT;p>
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+  &LT;/p>
+&LT;/div>
+</code>
+</pre>
+              </div>
             </div>
           </div>
           <div class="col-3">
@@ -2221,7 +2510,7 @@
                 <i class="fa-regular fa-heart-pulse"></i>
               </div>
               <h4 class="card-headline">eyebrow</h4>
-              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
+              <h3>Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
               </p>
@@ -2229,6 +2518,33 @@
                 <a href="#" class="btn btn-primary">Primary Button</a>
               </div>
             </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-action-big-space vertical bg-white border-cadet text-center">
+  &LT;div class="card-action-icon-big text-teal">
+    &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+  &LT;/div>
+  &LT;h4 class="card-headline">eyebrow&LT;/h4>
+  &LT;h3>Title Area Goes Here and Second Line Here&LT;/h3>
+  &LT;p>
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+  &LT;/p>
+  &LT;div class="btns-group vertical">
+    &LT;a href="#" class="btn btn-primary">Primary Button&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
           </div>
           <div class="col-3">
             <div class="card-action card-action-big-space vertical bg-white border-cadet text-center">
@@ -2236,7 +2552,7 @@
                 <i class="fa-regular fa-heart-pulse"></i>
               </div>
               <h4 class="card-headline">eyebrow</h4>
-              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
+              <h3>Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
               </p>
@@ -2245,20 +2561,76 @@
                 <a href="#" class="btn btn-secondary">Outline Button</a>
               </div>
             </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-action-big-space vertical bg-white border-cadet text-center">
+  &LT;div class="card-action-icon-big text-teal">
+    &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+  &LT;/div>
+  &LT;h4 class="card-headline">eyebrow&LT;/h4>
+  &LT;h3>Title Area Goes Here and Second Line Here&LT;/h3>
+  &LT;p>
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+  &LT;/p>
+  &LT;div class="btns-group vertical">
+    &LT;a href="#" class="btn btn-primary">Primary Button&LT;/a>
+    &LT;a href="#" class="btn btn-secondary">Outline Button&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
           </div>
           <div class="col-3">
-            <div class="card-action card-action-big-space vertical bg-white border-cadet text-center">
+            <div class="card-action card-action-middle-space vertical bg-white border-cadet text-center">
               <div class="card-action-icon">
                 <i class="fa-regular fa-heart-pulse"></i>
               </div>
               <h4 class="card-headline">eyebrow</h4>
-              <h3 class="text-teal">Title Area Goes Here and Second Line Here</h3>
+              <h3>Title Area Goes Here and Second Line Here</h3>
               <p>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
               </p>
               <div class="btns-group vertical">
                 <a href="#" class="btn btn-primary">Primary Button</a>
                 <a href="#" class="btn btn-secondary">Outline Button</a>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-action-middle-space vertical bg-white border-cadet text-center">
+  &LT;div class="card-action-icon">
+    &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+  &LT;/div>
+  &LT;h4 class="card-headline">eyebrow&LT;/h4>
+  &LT;h3>Title Area Goes Here and Second Line Here&LT;/h3>
+  &LT;p>
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+  &LT;/p>
+  &LT;div class="btns-group vertical">
+    &LT;a href="#" class="btn btn-primary">Primary Button&LT;/a>
+    &LT;a href="#" class="btn btn-secondary">Outline Button&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
@@ -2269,8 +2641,10 @@
         <div class="row">
           <div class="col-4">
             <div class="card-action vertical bg-white border-cadet">
-              <div class="card-action-desc">
-                <span class="badge badge-dark-gray">Badge (optional)</span>
+              <div class="card-action-desc gap-s">
+                <div class="card-action-badge-wrap">
+                  <span class="badge badge-dark-gray">Badge (optional)</span>
+                </div>
                 <h4 class="card-headline">eyebrow</h4>
                 <h4>Title Area Goes Here</h4>
                 <p>
@@ -2280,43 +2654,191 @@
                 </p>
                 <ul class="simple-list">
                   <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
+                    <div class="card-file">
+                      <div class="card-file-icon">
+                        <i class="fa-regular fa-file"></i>
+                      </div>
+                      <div class="card-file-text">
+                        <p class="small text-semibold">Provider Manual.pdf</p>
+                        <p class="small">200 KB</p>
+                      </div>
+                      <a href="#" class="btn btn-icon">
+                        <i class="fa-regular fa-download"></i>
+                      </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
+                    <div class="card-file">
+                      <div class="card-file-icon">
+                        <i class="fa-regular fa-file"></i>
+                      </div>
+                      <div class="card-file-text">
+                        <p class="small text-semibold">Provider Manual.pdf</p>
+                        <p class="small">200 KB</p>
+                      </div>
+                      <a href="#" class="btn btn-icon">
+                        <i class="fa-regular fa-download"></i>
+                      </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
+                    <div class="card-file">
+                      <div class="card-file-icon">
+                        <i class="fa-regular fa-file"></i>
+                      </div>
+                      <div class="card-file-text">
+                        <p class="small text-semibold">Provider Manual.pdf</p>
+                        <p class="small">200 KB</p>
+                      </div>
+                      <a href="#" class="btn btn-icon">
+                        <i class="fa-regular fa-download"></i>
+                      </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
+                    <div class="card-file">
+                      <div class="card-file-icon">
+                        <i class="fa-regular fa-file"></i>
+                      </div>
+                      <div class="card-file-text">
+                        <p class="small text-semibold">Provider Manual.pdf</p>
+                        <p class="small">200 KB</p>
+                      </div>
+                      <a href="#" class="btn btn-icon">
+                        <i class="fa-regular fa-download"></i>
+                      </a>
+                    </div>
                   </li>
                   <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
-                  </li>
-                  <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
-                  </li>
-                  <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
-                  </li>
-                  <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
-                  </li>
-                  <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
-                  </li>
-                  <li>
-                    <a href="#" class="internal-link" target="_blank">Internal Link</a>
+                    <div class="card-file">
+                      <div class="card-file-icon">
+                        <i class="fa-regular fa-file"></i>
+                      </div>
+                      <div class="card-file-text">
+                        <p class="small text-semibold">Provider Manual.pdf</p>
+                        <p class="small">200 KB</p>
+                      </div>
+                      <a href="#" class="btn btn-icon">
+                        <i class="fa-regular fa-download"></i>
+                      </a>
+                    </div>
                   </li>
                 </ul>
+                <div class="btns-group vertical">
+                  <a href="#" class="btn btn-primary">Primary Button</a>
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action vertical bg-white border-cadet">
+  &LT;div class="card-action-desc gap-s">
+    &LT;div class="card-action-badge-wrap">
+      &LT;span class="badge badge-dark-gray">Badge (optional)&LT;/span>
+    &LT;/div>
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;h4>Title Area Goes Here&LT;/h4>
+    &LT;p>
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+      Velit officia consequat duis enim velit mollit. Exercitation veniam 
+      consequat sunt nostrud amet.
+    &LT;/p>
+    &LT;ul class="simple-list">
+      &LT;li>
+        &LT;div class="card-file">
+          &LT;div class="card-file-icon">
+            &LT;i class="fa-regular fa-file">&LT;/i>
+          &LT;/div>
+          &LT;div class="card-file-text">
+            &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+            &LT;p class="small">200 KB&LT;/p>
+          &LT;/div>
+          &LT;a href="#" class="btn btn-icon">
+            &LT;i class="fa-regular fa-download">&LT;/i>
+          &LT;/a>
+        &LT;/div>
+      &LT;/li>
+      &LT;li>
+        &LT;div class="card-file">
+          &LT;div class="card-file-icon">
+            &LT;i class="fa-regular fa-file">&LT;/i>
+          &LT;/div>
+          &LT;div class="card-file-text">
+            &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+            &LT;p class="small">200 KB&LT;/p>
+          &LT;/div>
+          &LT;a href="#" class="btn btn-icon">
+            &LT;i class="fa-regular fa-download">&LT;/i>
+          &LT;/a>
+        &LT;/div>
+      &LT;/li>
+      &LT;li>
+        &LT;div class="card-file">
+          &LT;div class="card-file-icon">
+            &LT;i class="fa-regular fa-file">&LT;/i>
+          &LT;/div>
+          &LT;div class="card-file-text">
+            &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+            &LT;p class="small">200 KB&LT;/p>
+          &LT;/div>
+          &LT;a href="#" class="btn btn-icon">
+            &LT;i class="fa-regular fa-download">&LT;/i>
+          &LT;/a>
+        &LT;/div>
+      &LT;/li>
+      &LT;li>
+        &LT;div class="card-file">
+          &LT;div class="card-file-icon">
+            &LT;i class="fa-regular fa-file">&LT;/i>
+          &LT;/div>
+          &LT;div class="card-file-text">
+            &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+            &LT;p class="small">200 KB&LT;/p>
+          &LT;/div>
+          &LT;a href="#" class="btn btn-icon">
+            &LT;i class="fa-regular fa-download">&LT;/i>
+          &LT;/a>
+        &LT;/div>
+      &LT;/li>
+      &LT;li>
+        &LT;div class="card-file">
+          &LT;div class="card-file-icon">
+            &LT;i class="fa-regular fa-file">&LT;/i>
+          &LT;/div>
+          &LT;div class="card-file-text">
+            &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+            &LT;p class="small">200 KB&LT;/p>
+          &LT;/div>
+          &LT;a href="#" class="btn btn-icon">
+            &LT;i class="fa-regular fa-download">&LT;/i>
+          &LT;/a>
+        &LT;/div>
+      &LT;/li>
+    &LT;/ul>
+    &LT;div class="btns-group vertical">
+      &LT;a href="#" class="btn btn-primary">Primary Button&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
               </div>
             </div>
           </div>
           <div class="col-4">
             <div class="card-action vertical bg-white border-cadet">
-              <div class="card-action-desc">
-                <span class="badge badge-dark-gray">Badge (optional)</span>
+              <div class="card-action-desc gap-s">
+                <div class="card-action-badge-wrap">
+                  <span class="badge badge-dark-gray">Badge (optional)</span>
+                </div>
                 <h4 class="card-headline">eyebrow</h4>
                 <h4>Title Area Goes Here</h4>
                 <p>
@@ -2369,11 +2891,84 @@
                 </form>
               </div>
             </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action vertical bg-white border-cadet">
+  &LT;div class="card-action-desc gap-s">
+    &LT;div class="card-action-badge-wrap">
+      &LT;span class="badge badge-dark-gray">Badge (optional)&LT;/span>
+    &LT;/div>
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;h4>Title Area Goes Here&LT;/h4>
+    &LT;p>
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+      Velit officia consequat duis enim velit mollit. Exercitation veniam 
+      consequat sunt nostrud amet.
+    &LT;/p>
+    &LT;form action="#">
+      &LT;div class="form-group">
+        &LT;label class="form-label" for="default-input">First Name &LT;span class="text-red">*&LT;/span>&LT;/label>
+        &LT;input type="text" id="first-name" name="first-name" class="form-field" placeholder="Placeholder Text" required />  
+      &LT;/div>
+      &LT;div class="form-group">
+        &LT;label class="form-label" for="default-input">Last Name &LT;span class="text-red">*&LT;/span>&LT;/label>
+        &LT;input type="text" id="last-name" name="last-name" class="form-field" placeholder="Placeholder Text" required />  
+      &LT;/div>
+      &LT;div class="form-group">
+        &LT;label class="form-label" for="default-input">Phone or Email &LT;span class="text-red">*&LT;/span>&LT;/label>
+        &LT;input type="text" id="first-name" name="first-name" class="form-field" placeholder="Placeholder Text" required />  
+      &LT;/div>
+      &LT;div class="form-group">
+        &LT;label class="form-label">Are you a current Viva Medicare member? &LT;span class="text-red">*&LT;/span>&LT;/label> 
+        &LT;div class="form-row">
+          &LT;div class="form-col">
+            &LT;label class="custom-radio">
+              &LT;input type="radio" name="default-radio" />
+              &LT;span class="custom-radio-icon">&LT;/span>
+              Yes
+            &LT;/label>
+          &LT;/div>
+          &LT;div class="form-col">
+            &LT;label class="custom-radio">
+              &LT;input type="radio" name="default-radio" />
+              &LT;span class="custom-radio-icon">&LT;/span>
+              No
+            &LT;/label>
+          &LT;/div>
+        &LT;/div>
+      &LT;/div>
+      &LT;div class="form-group">
+        &LT;label class="custom-checkbox">
+          &LT;input type="checkbox" name="default-checkbox" /> 
+          &LT;span class="custom-checkbox-icon">&LT;/span>
+          Default Checkbox Option
+        &LT;/label>
+      &LT;/div>
+      &LT;div class="btns-group vertical">
+        &LT;button class="btn btn-primary">Primary Button&LT;/button>
+      &LT;/div>
+    &LT;/form>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
           </div>
           <div class="col-4">
             <div class="card-action vertical bg-white border-cadet">
-              <div class="card-action-desc">
-                <span class="badge badge-dark-gray">Badge (optional)</span>
+              <div class="card-action-desc gap-s">
+                <div class="card-action-badge-wrap">
+                  <span class="badge badge-dark-gray">Badge (optional)</span>
+                </div>
                 <h4 class="card-headline">eyebrow</h4>
                 <h4>Title Area Goes Here</h4>
                 <p>
@@ -2409,9 +3004,834 @@
                 </ul>
               </div>
             </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action vertical bg-white border-cadet">
+  &LT;div class="card-action-desc gap-s">
+    &LT;div class="card-action-badge-wrap">
+      &LT;span class="badge badge-dark-gray">Badge (optional)&LT;/span>
+    &LT;/div>
+    &LT;h4 class="card-headline">eyebrow&LT;/h4>
+    &LT;h4>Title Area Goes Here&LT;/h4>
+    &LT;p>
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+      Velit officia consequat duis enim velit mollit. Exercitation veniam 
+      consequat sunt nostrud amet.
+    &LT;/p>
+    &LT;ul class="simple-list">
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+      &LT;li>
+        &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+      &LT;/li>
+    &LT;/ul>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Action Cards (Small)</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="card-action card-small shadow-m">
+          <div class="card-action-image img-object-fit">
+            <img src="img/actions/woman.png" alt="">
+          </div>
+          <div class="card-action-desc">
+            <h5 class="text-semi-bold">
+              Title Area Goes Here
+            </h5>
+            <p class="small disclaimer">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-small shadow-m">
+  &LT;div class="card-action-image img-object-fit">
+    &LT;img src="img/actions/woman.png" alt="">
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;h5 class="text-semi-bold">
+      Title Area Goes Here
+    &LT;/h5>
+    &LT;p class="small disclaimer">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card-action card-small vertical">
+              <div class="card-action-image img-object-fit">
+                <img src="img/actions/man.png" alt="">
+              </div>
+              <div class="card-action-desc">
+                <p class="small text-med-gray">Subheading</p>
+                <h5>
+                  Title Area Goes Here
+                </h5>
+                <p class="small text-med-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-small vertical">
+  &LT;div class="card-action-image img-object-fit">
+    &LT;img src="img/actions/man.png" alt="">
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;p class="small text-med-gray">Subheading&LT;/p>
+    &LT;h5>
+      Title Area Goes Here
+    &LT;/h5>
+    &LT;p class="small text-med-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-action card-small vertical">
+              <div class="card-action-image img-object-fit">
+                <img src="img/actions/man.png" alt="">
+              </div>
+              <div class="card-action-desc">
+                <div class="card-action-icon">
+                  <i class="fa-regular fa-heart-pulse"></i>
+                </div>
+                <h5>
+                  Title Area Goes Here
+                </h5>
+                <p class="small text-med-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+              </div>
+              <div class="card-action-bottom">
+                <a href="#" class="internal-link" target="_blank">Internal Link</a>
+              </div>
+            </div>
+
+            <br>
+            
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-action card-small vertical">
+  &LT;div class="card-action-image img-object-fit">
+    &LT;img src="img/actions/man.png" alt="">
+  &LT;/div>
+  &LT;div class="card-action-desc">
+    &LT;div class="card-action-icon">
+      &LT;i class="fa-regular fa-heart-pulse">&LT;/i>
+    &LT;/div>
+    &LT;h5>
+      Title Area Goes Here
+    &LT;/h5>
+    &LT;p class="small text-med-gray">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. &LT;/p>
+  &LT;/div>
+  &LT;div class="card-action-bottom">
+    &LT;a href="#" class="internal-link" target="_blank">Internal Link&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>File Cards</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="row">
+          <div class="col-4">
+            <div class="card-file">
+              <div class="card-file-icon">
+                <i class="fa-regular fa-file"></i>
+              </div>
+              <div class="card-file-text">
+                <p class="small text-semibold">Provider Manual.pdf</p>
+                <p class="small">200 KB</p>
+              </div>
+              <a href="#" class="btn btn-icon">
+                <i class="fa-regular fa-download"></i>
+              </a>
+            </div>
+
+            <br>
+            
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-file">
+  &LT;div class="card-file-icon">
+    &LT;i class="fa-regular fa-file">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-file-text">
+    &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+    &LT;p class="small">200 KB&LT;/p>
+  &LT;/div>
+  &LT;a href="#" class="btn btn-icon">
+    &LT;i class="fa-regular fa-download">&LT;/i>
+  &LT;/a>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="card-file">
+              <div class="card-file-icon">
+                <i class="fa-regular fa-file"></i>
+              </div>
+              <div class="card-file-text">
+                <p class="small text-semibold">Provider Manual.pdf</p>
+                <p class="small">200 KB</p>
+              </div>
+              <a href="#" class="btn btn-icon">
+                <i class="fa-regular fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <br>
+            
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-file">
+  &LT;div class="card-file-icon">
+    &LT;i class="fa-regular fa-file">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-file-text">
+    &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+    &LT;p class="small">200 KB&LT;/p>
+  &LT;/div>
+  &LT;a href="#" class="btn btn-icon">
+    &LT;i class="fa-regular fa-arrow-up-right-from-square">&LT;/i>
+  &LT;/a>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="card-file">
+              <div class="card-file-icon">
+                <i class="fa-regular fa-file"></i>
+              </div>
+              <div class="card-file-text">
+                <p class="small text-semibold">Provider Manual.pdf</p>
+                <p class="small">200 KB</p>
+              </div>
+              <div class="card-file-drop">
+                <span class="card-file-drop-btn">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </span>
+                <div class="card-file-drop-content">
+                  <a href="#">Download</a>
+                  <a href="#">Save</a>
+                  <a href="#">Delete</a>
+                  <a href="#">Share</a>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-file">
+  &LT;div class="card-file-icon">
+    &LT;i class="fa-regular fa-file">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-file-text">
+    &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+    &LT;p class="small">200 KB&LT;/p>
+  &LT;/div>
+  &LT;div class="card-file-drop">
+    &LT;span class="card-file-drop-btn">
+      &LT;i class="fa-solid fa-ellipsis">&LT;/i>
+    &LT;/span>
+    &LT;div class="card-file-drop-content">
+      &LT;a href="#">Download&LT;/a>
+      &LT;a href="#">Save&LT;/a>
+      &LT;a href="#">Delete&LT;/a>
+      &LT;a href="#">Share&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="card-file">
+              <div class="card-file-image img-object-fit">
+                <img src="img/actions/woman.png" alt="">
+              </div>
+              <div class="card-file-text">
+                <span class="badge badge-dark-gray">Badge (Optional)</span>
+                <p class="small text-semibold">Provider Manual.pdf</p>
+                <p class="small">200 KB</p>
+              </div>
+              <a href="#" class="btn btn-icon">
+                <i class="fa-regular fa-download"></i>
+              </a>
+            </div>
+
+            <br>
+            
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-file">
+  &LT;div class="card-file-image img-object-fit">
+    &LT;img src="img/actions/woman.png" alt="">
+  &LT;/div>
+  &LT;div class="card-file-text">
+    &LT;span class="badge badge-dark-gray">Badge (Optional)&LT;/span>
+    &LT;p class="small text-semibold">Provider Manual.pdf&LT;/p>
+    &LT;p class="small">200 KB&LT;/p>
+  &LT;/div>
+  &LT;a href="#" class="btn btn-icon">
+    &LT;i class="fa-regular fa-download">&LT;/i>
+  &LT;/a>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Event Cards</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="row">
+          <div class="col-4">
+            <h4>Desktop</h4>
+            <br>
+            <div class="card-event">
+              <div class="card-event-image img-object-fit">
+                <img src="img/events/Logomark.png" alt="">
+                <h3>Cybersecurity with Lynn Murphree, Viva Health's Data Security Officer</h3>
+              </div>
+              <div class="card-event-desc">
+                <div class="card-event-date">
+                  <div class="card-event-month">Apr</div>
+                  <div class="card-event-day">09</div>
+                </div>
+                <div class="card-event-text">
+                  <h5 class="text-semibold"><span class="small-caps">Viva Health</span> Cafe Montgomery</h5>
+                  <p class="small">
+                    April 9, 2025 <br>
+                    10:00 AM
+                  </p>
+                </div>
+              </div>
+              <div class="card-event-bottom">
+                <div class="btns-group justify-content-between">
+                  <a href="#" class="btn btn-primary">Attend<span class="tablet-hidden"> This Event</span></a>
+                  <a href="#" class="internal-link">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h4>Tablet</h4>
+            <br>
+            <div class="card-event example-tablet">
+              <div class="card-event-image img-object-fit">
+                <img src="img/events/Logomark.png" alt="">
+                <h3>Cybersecurity with Lynn Murphree, Viva Health's Data Security Officer</h3>
+              </div>
+              <div class="card-event-desc">
+                <div class="card-event-date">
+                  <div class="card-event-month">Apr</div>
+                  <div class="card-event-day">09</div>
+                </div>
+                <div class="card-event-text">
+                  <h5 class="text-semibold"><span class="small-caps">Viva Health</span> Cafe Montgomery</h5>
+                  <p class="small">
+                    April 9, 2025 <br>
+                    10:00 AM
+                  </p>
+                </div>
+              </div>
+              <div class="card-event-bottom">
+                <div class="btns-group justify-content-between">
+                  <a href="#" class="btn btn-primary">Attend<span class="tablet-hidden"> This Event</span></a>
+                  <a href="#" class="internal-link">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h4>Mobile</h4>
+            <br>
+            <div class="card-event example-mobile">
+              <div class="card-event-image img-object-fit">
+                <img src="img/events/Logomark.png" alt="">
+                <h3>Cybersecurity with Lynn Murphree, Viva Health's Data Security Officer</h3>
+              </div>
+              <div class="card-event-desc">
+                <div class="card-event-date">
+                  <div class="card-event-month">Apr</div>
+                  <div class="card-event-day">09</div>
+                </div>
+                <div class="card-event-text">
+                  <h5 class="text-semibold"><span class="small-caps">Viva Health</span> Cafe Montgomery</h5>
+                  <p class="small">
+                    April 9, 2025 <br>
+                    10:00 AM
+                  </p>
+                </div>
+              </div>
+              <div class="card-event-bottom">
+                <div class="btns-group justify-content-between">
+                  <a href="#" class="btn btn-primary">Attend<span class="tablet-hidden"> This Event</span></a>
+                  <a href="#" class="internal-link">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+            
+        <div class="example-html bg-white rounded">
+          <div class="example-html-head">
+            <div>HTML</div>
+            <button class="copy-btn" onclick="copyText(this)">Copy</button>
+          </div>
+          <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-event">
+  &LT;div class="card-event-image img-object-fit">
+    &LT;img src="img/events/Logomark.png" alt="">
+    &LT;h3>Cybersecurity with Lynn Murphree, Viva Health's Data Security Officer&LT;/h3>
+  &LT;/div>
+  &LT;div class="card-event-desc">
+    &LT;div class="card-event-date">
+      &LT;div class="card-event-month">Apr&LT;/div>
+      &LT;div class="card-event-day">09&LT;/div>
+    &LT;/div>
+    &LT;div class="card-event-text">
+      &LT;h5 class="text-semibold">&LT;span class="small-caps">Viva Health&LT;/span> Cafe Montgomery&LT;/h5>
+      &LT;p class="small">
+        April 9, 2025 &LT;br>
+        10:00 AM
+      &LT;/p>
+    &LT;/div>
+  &LT;/div>
+  &LT;div class="card-event-bottom">
+    &LT;div class="btns-group justify-content-between">
+      &LT;a href="#" class="btn btn-primary">Attend&LT;span class="tablet-hidden"> This Event&LT;/span>&LT;/a>
+      &LT;a href="#" class="internal-link">View Details&LT;/a>
+    &LT;/div>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+          </div>
+        </div>
+        
+      </div>
+
+      <br>
+      <br>
+
+      <hr class="hr-m" />
+
+      <br>
+      <br>
+
+      <h3>Contact Cards</h3>
+      <br>
+      <br>
+
+      <div>
+        <div class="row">
+          <div class="col-4">
+            <h4>Large</h4>
+            <br>
+            <div class="card-contact">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+            </div>
+
+            
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand text-teal">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <h4>Medium</h4>
+            <br>
+            <div class="card-contact card-medium">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+            </div>
+
+            
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact card-medium">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand text-teal">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <h4>Small</h4>
+            <br>
+            <div class="card-contact card-small">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact card-small">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <h4>Large</h4>
+            <br>
+            <div class="card-contact">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+              <div class="card-contact-detail">
+                <a href="tel:1234567890" class="inline-link">(123) 456-7890</a>
+                <a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com</a>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand text-teal">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+  &LT;div class="card-contact-detail">
+    &LT;a href="tel:1234567890" class="inline-link">(123) 456-7890&LT;/a>
+    &LT;a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h4>Medium</h4>
+            <br>
+            <div class="card-contact card-medium">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+              <div class="card-contact-detail">
+                <a href="tel:1234567890" class="inline-link">(123) 456-7890</a>
+                <a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com</a>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact card-medium">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand text-teal">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+  &LT;div class="card-contact-detail">
+    &LT;a href="tel:1234567890" class="inline-link">(123) 456-7890&LT;/a>
+    &LT;a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <h4>Small</h4>
+            <br>
+            <div class="card-contact card-small">
+              <div class="card-contact-icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="card-contact-text">
+                <h4 class="font-brand text-teal">Title Area Goes Here</h4>
+                <p class="small">Subheading</p>
+                <p class="disclaimer">Amet minim mollit non deserunt </p>
+              </div>
+              <div class="card-contact-detail">
+                <a href="tel:1234567890" class="inline-link">(123) 456-7890</a>
+                <a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com</a>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="example-html bg-white rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&LT;div class="card-contact card-small">
+  &LT;div class="card-contact-icon">
+    &LT;i class="fa-regular fa-envelope">&LT;/i>
+  &LT;/div>
+  &LT;div class="card-contact-text">
+    &LT;h4 class="font-brand text-teal">Title Area Goes Here&LT;/h4>
+    &LT;p class="small">Subheading&LT;/p>
+    &LT;p class="disclaimer">Amet minim mollit non deserunt &LT;/p>
+  &LT;/div>
+  &LT;div class="card-contact-detail">
+    &LT;a href="tel:1234567890" class="inline-link">(123) 456-7890&LT;/a>
+    &LT;a href="mailto:contact@vivahealth.com" class="inline-link">contact@vivahealth.com&LT;/a>
+  &LT;/div>
+&LT;/div>
+</code>
+</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </div>
@@ -2419,5 +3839,6 @@
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/modals.js"></script>
   <script src="js/copyText.js"></script>
+  <script src="js/favorite.js"></script>
 </body>
 </html>

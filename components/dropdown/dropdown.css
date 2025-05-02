@@ -334,6 +334,27 @@
 }
 
 
+.js-dropdown-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.js-dropdown-content {
+  display: none;
+  transition-timing-function: linear;
+}
+.js-dropdown-icon {
+  color: var(--teal);
+  position: relative;
+  margin-left: var(--spacing-s);
+  transition: all 0.5s;
+}
+.js-dropdown-btn.opened .js-dropdown-icon {
+  transform: rotate(180deg);
+}
+
+
 /*.multi-select .multi-select-header, 
 .multi-select .multi-select-option, 
 .multi-select .multi-select-all {
