@@ -26,6 +26,7 @@ div[class*="row-cols-"] {
   justify-content: center;
 }
 .align-items-center {
+  display: flex;
   align-items: center;
 }
 .align-items-end {
@@ -56,6 +57,9 @@ div[class*="row-cols-"] {
 
 .gap-s {
   gap: var(--spacing-s);
+}
+.gap-xl {
+  gap: var(--spacing-xl);
 }
 
 @media (max-width: 768px) {

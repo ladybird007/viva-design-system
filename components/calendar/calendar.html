@@ -37,7 +37,7 @@
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>HTML</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -56,29 +56,31 @@
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>JS</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
             </div>
             <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">const singleCalendar = document.querySelector('.single-calendar');
+<code data-lang="html" class="copy-content">const singleCalendar = document.querySelectorAll('.single-calendar');
 
-new AirDatepicker(singleCalendar, {
-  autoClose: true,
-  dateFormat: 'MM/dd/yyyy',
-  navTitles: {
-    days: 'MMMM yyyy',
-  },
-  locale: {
-    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+singleCalendar.forEach((calendarItem) => {
+  new AirDatepicker(calendarItem, {
+    autoClose: true,
     dateFormat: 'MM/dd/yyyy',
-  }
+    navTitles: {
+      days: 'MMMM yyyy',
+    },
+    locale: {
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      dateFormat: 'MM/dd/yyyy',
+    }
+  });
 });</code>
 </pre>
             </div>
@@ -95,7 +97,7 @@ new AirDatepicker(singleCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>HTML</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -114,33 +116,35 @@ new AirDatepicker(singleCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>JS</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
             </div>
             <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">const rangeCalendar = document.querySelector('.range-calendar');
+<code data-lang="html" class="copy-content">const rangeCalendar = document.querySelectorAll('.range-calendar');
   
-new AirDatepicker(rangeCalendar, {
-  range: true,
-  buttons: ['clear', 'apply'],
-  multipleDatesSeparator: ' - ',
-  dateFormat: 'MM/dd/yyyy',
-  navTitles: {
-    days: 'MMMM yyyy',
-  },
-  locale: {
-    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    apply: 'Apply',
-    clear: 'Clear',
-    dateFormat: 'MM/dd/yyyy'
-  }
+rangeCalendar.forEach((calendarItem) => {
+  new AirDatepicker(calendarItem, {
+    range: true,
+    buttons: ['clear', 'apply'],
+    multipleDatesSeparator: ' - ',
+    dateFormat: 'MM/dd/yyyy',
+    navTitles: {
+      days: 'MMMM yyyy',
+    },
+    locale: {
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      apply: 'Apply',
+      clear: 'Clear',
+      dateFormat: 'MM/dd/yyyy'
+    }
+  });
 });</code>
 </pre>
             </div>
@@ -163,7 +167,7 @@ new AirDatepicker(rangeCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>HTML</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -182,34 +186,36 @@ new AirDatepicker(rangeCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>JS</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
             </div>
             <div class="example-html-body">
 <pre>
-<code data-lang="html" class="copy-content">const singleTimelineCalendar = document.querySelector('.single-timeline-calendar');
+<code data-lang="html" class="copy-content">const singleTimelineCalendar = document.querySelectorAll('.single-timeline-calendar');
   
-new AirDatepicker(singleTimelineCalendar, {  
-  timepicker: true,
-  buttons: ['clear', 'apply'],
-  dateFormat: 'MM/dd/yyyy',
-  navTitles: {
-    days: 'MMMM yyyy',
-  },
-  locale: {
-    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-    apply: 'Apply',
-    clear: 'Clear',
+singleTimelineCalendar.forEach((calendarItem) => {
+  new AirDatepicker(calendarItem, {  
+    timepicker: true,
+    buttons: ['clear', 'apply'],
     dateFormat: 'MM/dd/yyyy',
-    timeFormat: 'HH:mm',
-    firstDay: 1
-  }
+    navTitles: {
+      days: 'MMMM yyyy',
+    },
+    locale: {
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+      apply: 'Apply',
+      clear: 'Clear',
+      dateFormat: 'MM/dd/yyyy',
+      timeFormat: 'HH:mm',
+      firstDay: 1
+    }
+  });
 });</code>
 </pre>
             </div>
@@ -226,7 +232,7 @@ new AirDatepicker(singleTimelineCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>HTML</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -245,7 +251,7 @@ new AirDatepicker(singleTimelineCalendar, {
 
           <br>
 
-          <div class="example-html bg-white rounded">
+          <div class="example-html">
             <div class="example-html-head">
               <div>JS</div>
               <button class="copy-btn" onclick="copyText(this)">Copy</button>
@@ -284,6 +290,7 @@ new AirDatepicker(rangeTimelineCalendar, {
   </div>
   
   <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/copyText.js"></script>
   <!-- <script src="./js/moment.min.js"></script> -->
   <!-- <script src="./js/daterangepicker.min.js"></script> -->
   <script src="./js/air-datepicker.js"></script>  

@@ -100,13 +100,32 @@ ol:not([class]) > li > ol:not([class]) > li > ol:not([class]) {
   list-style: none;
 }
 
-.simple-list {
+.simple-list,
+.check-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .simple-list li + li {
   margin-top: var(--spacing-s);
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 31px;
+  text-align: left;
+}
+.check-list li + li {
+  margin-top: var(--spacing-xxs);
+}
+.check-list li:before {
+  content: '\f00c';
+  position: absolute;
+  left: 0;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--cadet-dark); 
+  flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {

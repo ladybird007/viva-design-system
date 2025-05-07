@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Accordion - Viva Design System</title>
+     
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="example-header">
+    <div class="container">
+      <h1>Accordion</h1>
+      <p>
+        The <strong>Accordion</strong> component is used to show and hide text, lists or links and can be expanded or collapsed 
+        as needed. This is used when long form information is needed on a single page to make it easily scannable. 
+      </p>
+      <a href="index.html">
+        <img src="img/Logomark.png" alt="">
+      </a>
+    </div>
+  </header>
+
+  <div class="example-content">
+    <div class="container">
+      <div class="example-headline">
+        <h2>Accordion</h2>
+        <p>
+          Used to give high-level, high-impact alerts to users.
+        </p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item js-dropdown">
+          <h3 class="accordion-header js-dropdown-btn">
+            Accordion Header
+            <i class="fa-solid fa-chevron-up js-dropdown-icon"></i>
+          </h3>
+          <div class="js-dropdown-content">
+            <div class="accordion-content">
+              <p>
+                This is an example of the text that displays when the accordion is expanded. 
+                It can also includes <a class="inline-link" href="#">links that will look like this</a>.
+              </p>
+              <div class="accordion-sub-content">
+                <h4>Nested Element Header</h4>
+                <hr class="hr-m" />
+                <div class="align-items-center gap-s">
+                  <span data-tippy-content="This is a Tooltip" data-tippy-theme="green" data-tippy-placement="top">
+                    <i class="fa-regular fa-circle-question text-teal"></i>
+                  </span>
+                  This is an example of nested element copy.
+                </div>
+                <hr class="hr-s" />
+                <div>
+                  <label class="custom-checkbox">
+                    <input type="checkbox">
+                    <span class="custom-checkbox-icon"></span>
+                    Default Checkbox Option
+                  </label>
+                </div>
+                <hr class="hr-s" />
+                <div>
+                  <div class="js-dropdown">
+                    <div class="js-dropdown-btn">
+                      This is an example of nested element copy.
+                      <i class="fa-solid fa-chevron-up js-dropdown-icon"></i>
+                    </div>
+                    <div class="js-dropdown-content">
+                      <div class="accordion-sub-content">
+                        <p>This is an example of child nested copy that is nested within the nested element.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="hr-s" />
+                <div class="row justify-content-between">
+                  This is an example of nested element copy.
+                  <a href="#" class="internal-link">Internal Link</a>
+                </div>
+                <hr class="hr-s" />
+                <div class="row justify-content-between">
+                  This is an example of nested element copy.
+                  <a href="#" class="external-link" target="_blank">
+                    External Link
+                  </a>
+                </div>
+              </div>
+              <div class="alert">
+                <div>
+                  <strong>Remember:</strong> Only your children are eligible for coverage. 
+                  The children of your dependent children are not eligible for coverage 
+                  under your plan unless you or your spouse is the child's court-appointed, 
+                  legal guardian. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item js-dropdown">
+          <h3 class="accordion-header js-dropdown-btn">
+            Accordion Header 2
+            <i class="fa-solid fa-chevron-up js-dropdown-icon"></i>
+          </h3>
+          <div class="js-dropdown-content">
+            <div class="accordion-content">
+              <p>
+                This is an example of the text that displays when the accordion is expanded. 
+                It can also includes <a class="inline-link" href="#">links that will look like this</a>.
+              </p>
+              <div class="alert">
+                <div>
+                  <strong>Remember:</strong> Only your children are eligible for coverage. 
+                  The children of your dependent children are not eligible for coverage 
+                  under your plan unless you or your spouse is the child's court-appointed, 
+                  legal guardian. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item js-dropdown">
+          <h3 class="accordion-header js-dropdown-btn">
+            Accordion Header 3
+            <i class="fa-solid fa-chevron-up js-dropdown-icon"></i>
+          </h3>
+          <div class="js-dropdown-content">
+            <div class="accordion-content">
+              <p>
+                This is an example of the text that displays when the accordion is expanded. 
+                It can also includes <a class="inline-link" href="#">links that will look like this</a>.
+              </p>
+              <div class="alert">
+                <div>
+                  <strong>Remember:</strong> Only your children are eligible for coverage. 
+                  The children of your dependent children are not eligible for coverage 
+                  under your plan unless you or your spouse is the child's court-appointed, 
+                  legal guardian. 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="example-html">
+        <div class="example-html-head">
+          <div>HTML</div>
+          <button class="copy-btn" onclick="copyText(this)">Copy</button>
+        </div>
+        <div class="example-html-body">
+<pre>
+<code data-lang="html" class="copy-content">&lt;div class="accordion">
+  &lt;div class="accordion-item js-dropdown">
+    &lt;h3 class="accordion-header js-dropdown-btn">
+      Accordion Header
+      &lt;i class="fa-solid fa-chevron-up js-dropdown-icon">&lt;/i>
+    &lt;/h3>
+    &lt;div class="js-dropdown-content">
+      &lt;div class="accordion-content">
+        &lt;p>
+          This is an example of the text that displays when the accordion is expanded. 
+          It can also includes &lt;a class="inline-link" href="#">links that will look like this&lt;/a>.
+        &lt;/p>
+        &lt;div class="accordion-sub-content">
+          &lt;h4>Nested Element Header&lt;/h4>
+          &lt;div class="align-items-center gap-s">
+            &lt;span data-tippy-content="This is a Tooltip" data-tippy-theme="green" data-tippy-placement="top">
+              &lt;i class="fa-regular fa-circle-question text-teal">&lt;/i>
+            &lt;/span>
+            This is an example of nested element copy.
+          &lt;/div>
+          &lt;hr>
+          &lt;div>
+            &lt;label class="custom-checkbox">
+              &lt;input type="checkbox">
+              &lt;span class="custom-checkbox-icon">&lt;/span>
+              Default Checkbox Option
+            &lt;/label>
+          &lt;/div>
+          &lt;hr>
+          &lt;div>
+            &lt;div class="js-dropdown">
+              &lt;div class="js-dropdown-btn">
+                This is an example of nested element copy.
+                &lt;i class="fa-solid fa-chevron-up js-dropdown-icon">&lt;/i>
+              &lt;/div>
+              &lt;div class="js-dropdown-content">
+                &lt;div class="accordion-sub-content">
+                  &lt;p>This is an example of child nested copy that is nested within the nested element.&lt;/p>
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+          &lt;hr>
+          &lt;div class="row justify-content-between">
+            This is an example of nested element copy.
+            &lt;a href="#" class="internal-link">Internal Link&lt;/a>
+          &lt;/div>
+          &lt;hr>
+          &lt;div class="row justify-content-between">
+            This is an example of nested element copy.
+            &lt;a href="#" class="external-link" target="_blank">
+              External Link
+            &lt;/a>
+          &lt;/div>
+        &lt;/div>
+        &lt;div class="alert">
+          &lt;div>
+            &lt;strong>Remember:&lt;/strong> Only your children are eligible for coverage. 
+            The children of your dependent children are not eligible for coverage 
+            under your plan unless you or your spouse is the child's court-appointed, 
+            legal guardian. 
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="accordion-item js-dropdown">
+    &lt;h3 class="accordion-header js-dropdown-btn">
+      Accordion Header 2
+      &lt;i class="fa-solid fa-chevron-up js-dropdown-icon">&lt;/i>
+    &lt;/h3>
+    &lt;div class="js-dropdown-content">
+      &lt;div class="accordion-content">
+        &lt;p>
+          This is an example of the text that displays when the accordion is expanded. 
+          It can also includes &lt;a class="inline-link" href="#">links that will look like this&lt;/a>.
+        &lt;/p>
+        &lt;div class="alert">
+          &lt;div>
+            &lt;strong>Remember:&lt;/strong> Only your children are eligible for coverage. 
+            The children of your dependent children are not eligible for coverage 
+            under your plan unless you or your spouse is the child's court-appointed, 
+            legal guardian. 
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="accordion-item js-dropdown">
+    &lt;h3 class="accordion-header js-dropdown-btn">
+      Accordion Header 3
+      &lt;i class="fa-solid fa-chevron-up js-dropdown-icon">&lt;/i>
+    &lt;/h3>
+    &lt;div class="js-dropdown-content">
+      &lt;div class="accordion-content">
+        &lt;p>
+          This is an example of the text that displays when the accordion is expanded. 
+          It can also includes &lt;a class="inline-link" href="#">links that will look like this&lt;/a>.
+        &lt;/p>
+        &lt;div class="alert">
+          &lt;div>
+            &lt;strong>Remember:&lt;/strong> Only your children are eligible for coverage. 
+            The children of your dependent children are not eligible for coverage 
+            under your plan unless you or your spouse is the child's court-appointed, 
+            legal guardian. 
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/div></code>
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/copyText.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="components/tooltips/toastify/popper.min.js"></script>
+  <script src="components/tooltips/toastify/tippy-bundle.umd.js"></script>
+  <script src="components/tooltips/tooltips.js"></script>
+</body>
+</html>

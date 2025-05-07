@@ -10,9 +10,9 @@
 @import url(../css/banners.css);
 @import url(../css/buttons.css);
 @import url(../css/colors.css);
-@import url(../components/accordion/accordion.css);
-@import url(../components/alert/alerts.css);
-@import url(../components/breadcrumbs/breadcrumbs.css);
+@import url(../css/accordion.css);
+@import url(../css/alerts.css);
+@import url(../css/breadcrumbs.css);
 @import url(../components/calendar/calendar.css);
 @import url(../components/carousel/carousel.css);
 @import url(../components/dropdown/dropdown.css);
@@ -60,6 +60,13 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
 }
 
 @media (max-width: 1023px) {

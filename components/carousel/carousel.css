@@ -85,6 +85,11 @@
   width: auto;
 }
 
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+}
+
 .testimonial-text {
   display: flex;
   flex-direction: column;

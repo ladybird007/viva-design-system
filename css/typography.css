@@ -77,6 +77,23 @@ h5 {
   }
 }
 
+.headline-underline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: var(--spacing-s);
+}
+.headline-underline:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70px;
+  border-bottom: 1px solid var(--teal-light);
+}
 
 .small-caps {
   font-weight: 400;
@@ -127,6 +144,9 @@ h4.card-headline,
 .text-teal-light {
   color: var(--teal-light);
 }
+.text-teal-pale {
+  color: var(--teal-pale);
+}
 .text-gray {
   color: var(--gray);
 }
@@ -144,6 +164,9 @@ h4.card-headline,
 }
 .text-white {
   color: var(--white);
+}
+.text-cadet-light {
+  color: var(--cadet-light);
 }
 
 .text-semibold {
