@@ -1,6 +1,6 @@
 .table-wrap {
   background-color: var(--white);
-  border: 1px solid var(--table-stroke);
+  border: 0.0625rem solid var(--table-stroke);
   box-shadow: var(--shadow-m);
   overflow: hidden;
 }
@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   background-color: var(--gray-pale);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   padding: var(--spacing-xs);
 }
 .table-year span {
@@ -31,7 +31,7 @@
   transition: all 0.3s;
   color: var(--med-gray);
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--middle-font-size);
   cursor: pointer;
 }
 .table-year input {
@@ -46,10 +46,10 @@
 .table {
   width: 100%;
   letter-spacing: -0.01em;
-  font-size: 14px;
+  font-size: var(--middle-font-size);
 }
 .table tbody tr {
-  border-top: 1px solid var(--table-stroke);
+  border-top: 0.0625rem solid var(--table-stroke);
 }
 .table td,
 .table th {
@@ -84,14 +84,14 @@
 }
 
 .table-headline {
-  padding: 20px var(--spacing-m);
+  padding: 1.25rem var(--spacing-m);
   color: #181D27;
 }
 .table-filters-bar .table-headline {
-  padding: 4px 8px;
+  padding: var(--spacing-xxs) var(--spacing-xs);
 }
 .table-filters-bar .btns-group {
-  padding-right: 4px;
+  padding-right: var(--spacing-xxs);
 }
 
 .table.table-simple {
@@ -165,19 +165,19 @@
   flex-direction: column;
 }
 .table .row {
-  gap: 12px;
+  gap: 0.75rem;
   align-items: center;
 }
 .table-photo {
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: var(--spacing-l);
+  height: var(--spacing-l);
   border-radius: 50%;
 }
 .table-photo-big {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
 }
 .table-photo img,
@@ -194,7 +194,7 @@
   align-items: center;
 }
 .table-drop-btn {
-  width: 20px;
+  width: 1.25rem;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -231,9 +231,9 @@
 
 
 .table-pagination {
-  padding-top: 12px;
+  padding-top: 0.75rem;
   padding-bottom: var(--spacing-s);
-  border-top: 1px solid var(--table-stroke); 
+  border-top: 0.0625rem solid var(--table-stroke); 
 }
 
 .table-filters:not(.table-striped) th {
@@ -241,15 +241,15 @@
 }
 
 .table-file-icon {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   display: flex;  
   align-items: center;
   justify-content: center;  
   background-color: var(--cadet-pale);
   color: var(--teal);
-  font-size: 18px;
+  font-size: var(--big-font-size);
 }
 
 
@@ -259,10 +259,10 @@
   gap: var(--spacing-xxs);
 }
 .rating-star {
-  width: 20px;
+  width: 1.25rem;
   display: flex;
   justify-content: center;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   transition: all 0.3s;
 }
 .rating-star:not(.rating-star-gray) {
@@ -276,25 +276,25 @@
   display: flex;
 }
 .table-users-item {
-  width: 20px;
+  width: 1.25rem;
 }
 .table-users .table-photo {
-  width: 24px;
-  height: 24px;
-  border: 2px solid var(--white);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.125rem solid var(--white);
 } 
 .table-users-count {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background-color: var(--cadet-pale);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: var(--small-font-size);
   font-weight: 500;
   color: var(--teal);
-  border: 2px solid var(--white);
+  border: 0.125rem solid var(--white);
 }
 
 .tr-disabled .inline-link,
@@ -357,17 +357,15 @@
     width: 140px;
   }
 
-  
   .table-mobile-filtres-btn {
-    width: 42px;
-    height: 36px;
+    width: 2.625rem;
+    height: 2.25rem;
     display: flex;
     justify-content: center; 
     align-items: center;
     border-radius: var(--border-radius-xs);
-    border: 1px solid var(--gray);
+    border: 0.0625rem solid var(--gray);
   }
-
 
   .table-filters-bar .table-search-wrap {
     display: none;
@@ -384,7 +382,7 @@
   }
   
   .table-filters-bar .btn {
-    height: 36px;
+    height: 2.25rem;
   }
   .js-table-filters {
     position: fixed;
@@ -444,7 +442,7 @@
 }
 @media (min-width: 1280px) {
   .table-wrap {
-    border-radius: 12px
+    border-radius: 0.75rem;
   }
 }
 

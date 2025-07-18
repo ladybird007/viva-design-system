@@ -1,12 +1,12 @@
 .badge {
   display: inline-flex;
-  gap: 6px;
+  gap: 0.375rem;
   align-items: center;
-  padding: 1px var(--spacing-xs);
+  padding: 0.0625rem var(--spacing-xs);
   border-radius: var(--border-radius-s);
-  font-size: 12px;
+  font-size: var(--small-font-size);
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.67;
   white-space: nowrap;
 }
 .badge i {

@@ -12,12 +12,12 @@
 }
 .toggle-text {
   color: var(--teal);
-  font-size: 16px;
+  font-size: var(--main-font-size);
 }
 .toggle-icon {
   position: relative;
   background-color: var(--gray-light);
-  border-radius: 22px;
+  border-radius: 1.375rem;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -28,28 +28,28 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 2px;
+  left: 0.125rem;
   content: '';
   background-color: var(--white);
-  box-shadow: 0 1px 3px rgba(10, 13, 18, 0.1), 0 1px 2px rgba(10,13, 18, 0.06);
+  box-shadow: 0 0.0625rem 0.1875rem rgba(10, 13, 18, 0.1), 0 0.0625rem 0.125rem rgba(10,13, 18, 0.06);
   border-radius: 50%;
   transition: all 0.3s;
 }
 .toggle-small .toggle-icon {
-  width: 36px;
-  height: 20px;
+  width: 2.25rem;
+  height: 1.25rem;
 }
 .toggle-small .toggle-icon:after {
-  width: 16px;
-  height: 16px;
+  width: var(--spacing-s);
+  height: var(--spacing-s);
 }
 .toggle-medium .toggle-icon {
-  width: 44px;
-  height: 24px;
+  width: 2.75rem;
+  height: var(--spacing-m);
 }
 .toggle-medium .toggle-icon:after {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 .toggle input:checked + .toggle-icon {
   background-color: var(--teal-dark); 
@@ -58,10 +58,10 @@
   background-color: var(--teal);
 }
 .toggle-small input:checked + .toggle-icon:after {
-  left: calc(100% - 2px - 16px);
+  left: calc(100% - 0.125rem - 1rem);
 }
 .toggle-medium input:checked + .toggle-icon:after {
-  left: calc(100% - 2px - 20px);
+  left: calc(100% - 0.125rem - 1.25rem);
 }
 .toggle:focus-within .toggle-icon {
   box-shadow: var(--shadow-focus);

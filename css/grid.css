@@ -9,7 +9,7 @@
   display: flex;
   gap: var(--gutter);
 }
-div[class*="row-cols-"] {
+.row[class*="row-cols-"] {
   flex-wrap: wrap;
 }
 
@@ -36,6 +36,9 @@ div[class*="row-cols-"] {
 
 .col {
   flex: 1;
+}
+.row[class*="row-cols-"] > .col {
+  flex: auto;
 }
 .row.row-cols-4 > .col {
   width: calc(100% / 4 - var(--gutter) / 4 * 3);

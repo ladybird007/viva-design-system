@@ -24,14 +24,14 @@
   color: var(--white);
 }
 .tippy-box[data-placement^=top]>.tippy-arrow {
-  bottom: 1px;
+  bottom: 0.0625rem;
 }
 .tippy-box[data-placement^=bottom]>.tippy-arrow {
-  top: 1px;
+  top: 0.0625rem;
 }
 .tippy-content {
   padding: var(--spacing-s);
-  font-size: 14px;
+  font-size: var(--middle-font-size);
 }
 .tippy-content p + p {
   margin-top: var(--spacing-s);

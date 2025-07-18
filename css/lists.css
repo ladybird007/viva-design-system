@@ -15,7 +15,7 @@
 
 .list-content i,
 .list-content .badge{
-  margin-top: 2px;
+  margin-top: 0.125rem;
 }
 
 .list-content strong,
@@ -30,14 +30,14 @@
   line-height: 1.2;
 }
 .list-content strong {
-  font-size: 16px;
+  font-size: var(--main-font-size);
   font-weight: 600;
 }
 .list-content span:not(.badge) {
-  font-size: 14px;
+  font-size: var(--middle-font-size);
 }
 .list-content small {
-  font-size: 12px;
+  font-size: var(--small-font-size);
   color: var(--med-gray);
   letter-spacing: -0.05em;
   line-height: 1.4;
@@ -53,7 +53,7 @@ ol:not([class]) {
   margin-top: var(--spacing-m);
   margin-bottom: var(--spacing-m);
   line-height: 1.4;
-  font-size: 16px;
+  font-size: var(--main-font-size);
 }
 
 ul:not([class]) li,
@@ -112,7 +112,7 @@ ol:not([class]) > li > ol:not([class]) > li > ol:not([class]) {
 
 .check-list li {
   position: relative;
-  padding-left: 31px;
+  padding-left: 1.9375rem;
   text-align: left;
 }
 .check-list li + li {
@@ -142,14 +142,14 @@ ol:not([class]) > li > ol:not([class]) > li > ol:not([class]) {
 @media (min-width: 640px) and (max-width: 1024px) {
   .benefits-list {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 1.25rem;
   }
 }
 @media (min-width: 1025px) {
   .benefits-list {
-    padding: 20px;
+    padding: 1.25rem;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-    row-gap: 70px;
+    column-gap: 2.5rem;
+    row-gap: 4.375rem;
   }
 }

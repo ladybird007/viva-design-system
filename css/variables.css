@@ -69,7 +69,7 @@
   --white: #fff;
   --black: #000;
 
-  --alert-font-size: 16px;
+  --alert-font-size: 1rem;
 
   --alert-info: #48A3FC;
   --alert-info-pale: #F0F7FF;
@@ -109,48 +109,58 @@
 
   --placeholder: #979797;
 
-  --spacing-xxs: 4px;
-  --spacing-xs: 8px;
-  --spacing-s: 16px; 
-  --spacing-m: 24px;
-  --spacing-l: 32px;
-  --spacing-xl: 48px;
-  --spacing-xxl: 64px;
-  --spacing-3xl: 80px;
-  --spacing-4xl: 96px;
-  --spacing-5xl: 128px;
-  --spacing-6xl: 160px;
-  --spacing-7xl: 192px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem; 
+  --spacing-m: 1.5rem;
+  --spacing-l: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  --spacing-3xl: 5rem;
+  --spacing-4xl: 6rem;
+  --spacing-5xl: 8rem;
+  --spacing-6xl: 10rem;
+  --spacing-7xl: 12rem;
 
-  --shadow-focus: 0 0 0 2px #8BD8D5;
-  --shadow-s: 0 0 10px rgba(21, 21, 21, 0.02), 0 2px 4px rgba(21,21, 21, 0.08); 
-  --shadow-m: 0 1px 2px rgba(21, 21, 21, 0.02), 0 4px 8px rgba(0, 0, 0, 0.08);
-  --shadow-l: 0 1px 4px rgba(21, 21, 21, 0.02), 0 8px 12px rgba(0, 0, 0, 0.08);
-  --shadow-xl: 0 0 20px rgba(21, 21, 21, 0.05), 0 10px 20px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 0.125rem #8BD8D5;
+  --shadow-s: 0 0 0.625rem rgba(21, 21, 21, 0.02), 0 0.125rem 0.25rem rgba(21,21, 21, 0.08); 
+  --shadow-m: 0 0.0625rem 0.125rem rgba(21, 21, 21, 0.02), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+  --shadow-l: 0 0.0625rem 0.25rem rgba(21, 21, 21, 0.02), 0 0.5rem 0.75rem rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 0 1.25rem rgba(21, 21, 21, 0.05), 0 0.625rem 1.25rem rgba(0, 0, 0, 0.12);
 
-  --border-radius-xxs: 4px;
-  --border-radius-xs: 8px;
-  --border-radius-s: 16px;
-  --border-radius-m: 24px;
+  --border-radius-xxs: 0.25rem;
+  --border-radius-xs: 0.5rem;
+  --border-radius-s: 1rem;
+  --border-radius-m: 1.5rem;
   
+  --extra-huge-font-size: 2.5rem;
+  --huge-font-size: 2rem;
+  --extra-large-font-size: 1.75rem;
+  --large-font-size: 1.5rem;
+  --extra-big-font-size: 1.375rem;
+  --big-font-size: 1.125rem;
+  --main-font-size: 1rem;
+  --middle-font-size: 0.875rem;
+  --small-font-size: 0.75rem;
+  --extra-small-font-size: 0.625rem;
 }
 @media (max-width: 1024px) {
   :root {
-    --gap: 24px;
+    --gap: 1.5rem;
   }
 } 
 @media (max-width: 768px) {
   :root {
-    --gutter: 16px;
+    --gutter: 1rem;
   }
 }
 @media (min-width: 769px) {
   :root {
-    --gutter: 24px;
+    --gutter: 1.5rem;
   }
 }
 @media (min-width: 1024px) {
   :root {
-    --gap: 32px;
+    --gap: 2rem;
   }
 } 

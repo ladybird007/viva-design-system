@@ -28,7 +28,7 @@
       </div>
 
       <div class="example-toasts">
-        <button class="btn-toast-info">Click to seee <strong>Info Toast</strong></button>
+        <button class="btn-toast-info btn btn-simple">Click to seee <strong>Info Toast</strong></button>
         <br>
         <br>
         <div class="toast-text-hidden">
@@ -37,36 +37,42 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <div class="bg-gray rounded example-toasts-copy">
-          <div class="row">
-            <div class="col">
-              <p class="text-center"><strong>JS init</strong></p>
+        <div class="row">
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>JS</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  const toastInfo = Toastify({  
-    node: document.getElementById('toast-text-info'),  
-    className: "info",
-    close: true,
-    duration: 5000
-  }).showToast();
-
-</code>
+<code data-lang="html" class="copy-content">const toastInfo = Toastify({  
+  node: document.getElementById('toast-text-info'),  
+  className: "info",
+  close: true,
+  duration: 5000
+}).showToast();</code>
 </pre>
-            </div>
-            <div class="col">
-              <p class="text-center"><strong>Text of Toast</strong></p>
+</div>
+</div>
+          </div>
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  &lt;div class="toast-text-hidden">
-    &lt;div id="toast-text-info" class="toast-text">
-      &lt;strong>Toast Info&lt;/strong>
-      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
-    &lt;/div>
+<code data-lang="html" class="copy-content">&lt;div class="toast-text-hidden">
+  &lt;div id="toast-text-info" class="toast-text">
+    &lt;strong>Toast Info&lt;/strong>
+    &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
   &lt;/div>
-
-</code>
+&lt;/div></code>
 </pre>
-            </div>
+</div>
+</div>
           </div>
         </div>
         <br>
@@ -78,39 +84,45 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <button class="btn-toast-danger">Click to seee <strong>Danger Toast</strong></button> 
+        <button class="btn-toast-danger btn btn-simple">Click to seee <strong>Danger Toast</strong></button> 
         <br>
         <br>
-        <div class="bg-gray rounded example-toasts-copy">
-          <div class="row">
-            <div class="col">
-              <p class="text-center"><strong>JS init</strong></p>
+        <div class="row">
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>JS</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  const toastSucces = Toastify({  
-    node: document.getElementById('toast-text-danger'),  
-    className: "success",
-    close: true,
-    duration: 5000
-  }).showToast();
-
-</code>
+<code data-lang="html" class="copy-content">const toastSucces = Toastify({  
+  node: document.getElementById('toast-text-danger'),  
+  className: "success",
+  close: true,
+  duration: 5000
+}).showToast();</code>
 </pre>
-            </div>
-            <div class="col">
-              <p class="text-center"><strong>Text of Toast</strong></p>
+</div>
+</div>
+          </div>
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  &lt;div class="toast-text-hidden">
-    &lt;div id="toast-text-danger" class="toast-text">
-      &lt;strong>Toast Danger&lt;/strong>
-      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
-    &lt;/div>
+<code data-lang="html" class="copy-content">&lt;div class="toast-text-hidden">
+  &lt;div id="toast-text-danger" class="toast-text">
+    &lt;strong>Toast Danger&lt;/strong>
+    &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
   &lt;/div>
-
-</code>
+&lt;/div></code>
 </pre>
-            </div>
+</div>
+</div>
           </div>
         </div>
         <br>
@@ -122,39 +134,45 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <button class="btn-toast-success">Click to seee <strong>Success Toast</strong></button> 
+        <button class="btn-toast-success btn btn-simple">Click to seee <strong>Success Toast</strong></button> 
         <br>
         <br>
-        <div class="bg-gray rounded example-toasts-copy">
-          <div class="row">
-            <div class="col">
-              <p class="text-center"><strong>JS init</strong></p>
+        <div class="row">
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>JS</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  const toastWarning = Toastify({  
-    node: document.getElementById('toast-text-success'),  
-    className: "warning",
-    close: true,
-    duration: 5000
-  }).showToast();
-
-</code>
+<code data-lang="html" class="copy-content">const toastWarning = Toastify({  
+  node: document.getElementById('toast-text-success'),  
+  className: "warning",
+  close: true,
+  duration: 5000
+}).showToast();</code>
 </pre>
-            </div>
-            <div class="col">
-              <p class="text-center"><strong>Text of Toast</strong></p>
+</div>
+</div>
+          </div>
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  &lt;div class="toast-text-hidden">
-    &lt;div id="toast-text-success" class="toast-text">
-      &lt;strong>Toast Success&lt;/strong>
-      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
-    &lt;/div>
+<code data-lang="html" class="copy-content">&lt;div class="toast-text-hidden">
+  &lt;div id="toast-text-success" class="toast-text">
+    &lt;strong>Toast Success&lt;/strong>
+    &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
   &lt;/div>
-
-</code>
+&lt;/div></code>
 </pre>
-            </div>
+</div>
+</div>
           </div>
         </div>
         <br>
@@ -166,39 +184,45 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
-        <button class="btn-toast-warning">Click to seee <strong>Warning Toast</strong></button>
+        <button class="btn-toast-warning btn btn-simple">Click to seee <strong>Warning Toast</strong></button>
         <br>
         <br>
-        <div class="bg-gray rounded example-toasts-copy">
-          <div class="row">
-            <div class="col">
-              <p class="text-center"><strong>JS init</strong></p>
+        <div class="row">
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>JS</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  const toastDanger = Toastify({  
-    node: document.getElementById('toast-text-warning'),  
-    className: "danger",
-    close: true,
-    duration: 5000
-  }).showToast();
-  
-</code>
+<code data-lang="html" class="copy-content">const toastDanger = Toastify({  
+  node: document.getElementById('toast-text-warning'),  
+  className: "danger",
+  close: true,
+  duration: 5000
+}).showToast();</code>
 </pre>
-            </div>
-            <div class="col">
-              <p class="text-center"><strong>Text of Toast</strong></p>
+</div>
+</div>
+          </div>
+          <div class="col">
+            <div class="example-html rounded">
+              <div class="example-html-head">
+                <div>HTML</div>
+                <button class="copy-btn" onclick="copyText(this)">Copy</button>
+              </div>
+              <div class="example-html-body">
 <pre>
-<code>
-  &lt;div class="toast-text-hidden">
-    &lt;div id="toast-text-warning" class="toast-text">
-      &lt;strong>Toast Warning&lt;/strong>
-      &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
-    &lt;/div>
+<code data-lang="html" class="copy-content">&lt;div class="toast-text-hidden">
+  &lt;div id="toast-text-warning" class="toast-text">
+    &lt;strong>Toast Warning&lt;/strong>
+    &lt;p>Lorem ipsum dolor sit amet.&lt;/p> 
   &lt;/div>
-
-</code>
+&lt;/div></code>
 </pre>
-            </div>
+</div>
+</div>
           </div>
         </div>
       </div>

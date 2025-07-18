@@ -43,6 +43,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+.example-content.bg-light-gray {
+  background-color: #EDECEC;
+}
 .example-content.example-footer,
 .example-content.example-content-small {
   min-height: auto;
@@ -89,7 +92,7 @@
 .example-box-shadow-wrap {
   width: 237px;
 }
-code {
+code:not(.copy-content) {
   margin-top: var(--spacing-s);
   padding: var(--spacing-xs);
   background-color: var(--white);
@@ -444,13 +447,15 @@ code:hover:before {
 .example-badges-row:first-child {
   font-weight: 700;
 }
-.example-badges-row div {
+.example-badges-row > div {
+  flex: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: var(--spacing-m);
 }
-.example-badges-row div:nth-child(1),
+/*.example-badges-row div:nth-child(1),
 .example-badges-row div:nth-child(2) {
   width: 127px;
 }
@@ -459,7 +464,7 @@ code:hover:before {
 }
 .example-badges-row div:nth-child(4) {
   width: 60px;
-}
+}*/
 
 .example-badges-row div.example-column,
 .example-badges-row .example-column div {
@@ -477,8 +482,7 @@ code:hover:before {
 @media (min-width: 768px) {
   .example-badges-row {
     display: flex;
-    align-items: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-l);
   }
 }
 @media (min-width: 1024px) {
@@ -616,21 +620,13 @@ code:hover:before {
   width: 241px;
 }
 
-/******* Divires *****/
-.example-dividers code,
-.example-form code {
-  background-color: var(--gray-pale);
-  box-shadow: var(--shadow-s);
-  padding: 4px 8px;
+.example-dropdown-hover .custom-options, 
+.example-dropdown-hover .multi-select-options {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
-.example-dividers code {
-  border-radius: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.example-form code {
-  border-radius: var(--border-radius-xs);
-}
+
 /****** Toggles *****/
 .example-toggles-header {
   border-bottom: 1px solid var(--gray-light);
@@ -709,22 +705,9 @@ code:hover:before {
   display: inline-block;
   padding: var(--spacing-m);
 }
-.example-buttons code,
-.example-toasts code {
-  display: inline-block;
-  background-color: var(--white);
-  border-radius: var(--border-radius-xs);
-  box-shadow: var(--shadow-s);
-  margin-top: var(--spacing-s);
-  padding: 4px 8px;
-}
+
 
 /***** Inputs *****/
-
-.example-form code {
-  display: inline-block;
-  padding-bottom: 24px;
-}
 
 @media (min-width: 769px) {
   .example-content .form-group {

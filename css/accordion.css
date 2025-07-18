@@ -1,14 +1,14 @@
 .accordion-item {
-  border-bottom: 2px solid var(--teal);
+  border-bottom: 0.125rem solid var(--teal);
 }
 .accordion-header {
   padding: var(--spacing-s);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--teal);
 }
 .accordion-content {
-  font-size: 16px;
+  font-size: var(--main-font-size);
 }
 .accordion-content,
 .accordion-sub-content {
@@ -21,8 +21,8 @@
 }
 .accordion-content h4 {
   padding-bottom: var(--spacing-s);
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 1.1875rem;
+  line-height: 1.26;
   text-transform: uppercase;
   font-weight: 700;
   color: var(--teal);

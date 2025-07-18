@@ -1,15 +1,15 @@
 .btn {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   display: inline-flex;
   gap: var(--spacing-xxs);
   align-items: center;
   justify-content: center;
   min-width: 93px;
-  height: 37px;
-  border-width: 1px;
+  height: 2.3125rem;
+  border-width: 0.0625rem;
   border-style: solid;
-  font-size: 14px;
+  font-size: var(--middle-font-size);
   font-weight: 600;
   text-decoration: none;
   border-radius: var(--border-radius-xs);
@@ -44,7 +44,7 @@
   background-color: transparent;
   border-color: var(--teal);
   color: var(--teal);
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 .btn-secondary:hover {
   background-color: var(--teal);
@@ -62,7 +62,7 @@
   background-color: transparent;
   border-color: var(--white);
   color: var(--white);
-  border-width: 2px;
+  border-width: 0.125rem;
 }
 .btn-secondary-white:hover {
   background-color: rgba(255, 255, 255, 0.15);
@@ -118,7 +118,7 @@
 }
 
 .btn-card {
-  height: 44px;
+  height: 2.75rem;
 }
 
 .btn-warning,
@@ -170,9 +170,9 @@
 .btn-icon {
   border: none;
   background-color: transparent;
-  padding: 10px;
+  padding: 0.625rem;
   min-width: inherit;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: var(--med-gray);
 }
 
@@ -181,12 +181,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   color: var(--teal);
   background-color: var(--light-grass-light);
   text-decoration: none;
@@ -197,22 +197,22 @@
 .enroll-now-btn:after {
   content: "";
   position: absolute;
-  top: 4px;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  border: 1px solid var(--teal);
+  top: var(--spacing-xxs);
+  bottom: var(--spacing-xxs);
+  left: var(--spacing-xxs);
+  right: var(--spacing-xxs);
+  border: 0.0625rem solid var(--teal);
   border-radius: 50%;
 }
 .enroll-now-btn:before {
   content: "";
   position: absolute;
-  top: 18px;
-  bottom: 18px;
-  left: 28px;
-  right: 28px;
-  border-top: 2px solid var(--teal);
-  border-bottom: 2px solid var(--teal);
+  top: 1.125rem;
+  bottom: 1.125rem;
+  left: 1.75rem;
+  right: 1.75rem;
+  border-top: 0.125rem solid var(--teal);
+  border-bottom: 0.125rem solid var(--teal);
 }
 .enroll-now-btn:hover {
   background-color: var(--white);
@@ -241,11 +241,9 @@
   color: var(--teal-dark);
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  /*padding-left: 4px;
-  padding-right: 4px;*/
+  gap: 0.625rem;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   flex-shrink: 0;
   outline: none;
 }
@@ -285,7 +283,7 @@
 .external-link:focus,
 .btn-text-only:focus {
   color: var(--teal-dark);
-  border-bottom: 1px solid var(--cadet-light);
+  border-bottom: 0.0625rem solid var(--cadet-light);
 }
 
 .inline-link:visited,
@@ -305,8 +303,8 @@
 .external-link:after,
 .internal-link:after,
 .btn-text-only:before {
-  width: 16px;
-  height: 16px;
+  width: var(--spacing-s);
+  height: var(--spacing-s);
   font-family: 'Font Awesome 6 Free';
   font-weight: 400; 
   line-height: 1;
@@ -343,7 +341,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-top: 1px solid var(--cadet-light);
+  border-top: 0.0625rem solid var(--cadet-light);
   opacity: 0;
 }
 .inline-link:after {
@@ -363,7 +361,7 @@
 .location-link {
   color: var(--med-gray-dark);
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.8125rem;
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
@@ -380,7 +378,7 @@
   content: "\f3c5";
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
-  width: 11px;
+  width: 0.6875rem;
 }
 .location-link:hover {
   color: var(--teal);
@@ -402,7 +400,7 @@
 
 @media (max-width: 768px) {
   .btn:not(.btn-simple) {
-    height: 44px;
+    height: 2.75rem;
   }
 }
 

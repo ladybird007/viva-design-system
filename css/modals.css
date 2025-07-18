@@ -28,7 +28,7 @@
   position: relative;
   width: 100%;
   background-color: var(--white);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0.25rem 0.25rem 0.9375rem rgba(0, 0, 0, 0.15);
   border-radius: var(--border-radius-s);
 }
 .modal-container.small {
@@ -46,7 +46,7 @@
   align-items: center;
   gap: var(--spacing-s);
   padding: var(--spacing-s);
-  border-bottom: 1px solid var(--gray-light)
+  border-bottom: 0.0625rem solid var(--gray-light)
 }
 .modal-content {
   padding: var(--spacing-m);

@@ -6,7 +6,7 @@
   background-color: var(--white);
   color: var(--med-gray-dark);
 }
-.hero.bg-white h1,
+.hero.bg-white h1:not(.text-teal),
 .hero.bg-white .hero-text .card-headline,
 .hero.bg-gradient h1,
 .hero.bg-gradient .hero-text .card-headline {
@@ -15,10 +15,6 @@
 .hero.bg-purple {
   background-color: var(--purple-extra-dark);
   color: var(--white);
-}
-.hero.bg-gradient {
-  background: linear-gradient(135deg, #8AF2F8, #EFFED5);
-  color: var(--med-gray-dark);
 }
 .hero.bg-cadet-pale {
   background-color: var(--cadet-pale);
@@ -36,12 +32,18 @@
   background-repeat: no-repeat;
 }
 
-.hero h1 .font-brand {
+.hero h1:not(.headline-underline) .font-brand,
+.hero h2:not(.headline-underline) .font-brand {
   display: block;
 }
+
 .hero div[class*="gap-"] {
   display: flex;
   flex-direction: column;
+}
+
+.hero-text.gap-s {
+  gap: var(--spacing-s);
 }
 
 .hero-text.text-center div[class*="gap-"] {
@@ -69,16 +71,16 @@
   position: absolute;
 }
 .hero .left-bottom {
-  left: 16px;
-  bottom: 14px;
+  left: 1rem;
+  bottom: 0.875rem;
 }
 .hero .left-top {
-  left: 16px;
-  top: 5px;
+  left: 1rem;
+  top: 0.3125rem;
 }
 .hero .right-bottom {
   right: 0;
-  bottom: -14px;
+  bottom: -0.875rem;
 }
 .hero .right-top {
   right: 0;
@@ -108,7 +110,7 @@
   align-items: center;
   padding: var(--spacing-m);
   background-color: var(--alert-disabled-pale);
-  border: 1px solid rgba(108, 117, 125, 0.15);
+  border: 0.0625rem solid rgba(108, 117, 125, 0.15);
   border-radius: var(--border-radius-xs);
 }
 .hero-enrollment-item {
@@ -122,38 +124,55 @@
 .hero-enrollment .progress {
   background-color: var(--white);
 }
-.hero-text.vertical-padding-l {
+.vertical-padding-s {
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+}
+.vertical-padding-l {
   padding-top: var(--spacing-l);
   padding-bottom: var(--spacing-l);
 }
-.hero-text.vertical-padding-xxl {
+.vertical-padding-xxl {
   padding-top: var(--spacing-xxl);
   padding-bottom: var(--spacing-xxl);
 }
 
 @media (max-width: 768px) {
+  .hero.bg-gradient {
+    background: linear-gradient(90deg, #8AF2F8, #EFFED5);
+    color: var(--med-gray-dark);
+  }
   .hero .row {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 0;
   }
   .hero-text {
-    padding-top: 40px;
+    padding-top: var(--spacing-l);
+    padding-bottom: var(--spacing-m);
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
     gap: var(--spacing-m);
+  }
+  .hero-text.in-line {
+    gap: var(--spacing-s);
+  }
+  .hero-text.in-line .btns-group {
+    margin-top: var(--spacing-l);
   }
   .hero-call-out {
     display: none;
   }
   .hero-mobile-badge {
     width: calc(100% + 2 * var(--gap));
-    padding: 11px var(--spacing-s);
+    padding: 0.6875rem var(--spacing-s);
     margin-left: calc(-1 * var(--gap));
     margin-right: calc(-1 * var(--gap));
     line-height: 1;
     color: var(--white);
     font-family: 'Fraunces', sans-serif;
     font-weight: 900;
-    font-size: 18px;
+    font-size: var(--big-font-size);
     background-color: var(--mobile-badge-bg);
     text-align: center;
   }
@@ -161,14 +180,12 @@
     background-color: var(--purple-light);
     color: var(--black);
   }
-  .hero-media {
-    margin-top: var(--spacing-m);
-  }
+
   .hero-media.img-object-fit {
     width: calc(100% + 2 * var(--gap));
     margin-left: calc(-1 * var(--gap));
     margin-right: calc(-1 * var(--gap));
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-m);
   }
   .hero-media .hero-mobile-badge {
     position: absolute;
@@ -179,7 +196,7 @@
     margin: 0;
   }
   .hero-bg + .container {
-    margin-top: -80px;
+    margin-top: -5rem;
   }
   .hero .card-simple.no-shadow .card-simple-body {
     padding: var(--spacing-s) 0;
@@ -193,6 +210,32 @@
   }
   .hero-enrollment-item {
     width: 100%;
+  }
+  .hero .headline-mobile-h1 {
+    font-size: 2rem;
+  }
+  .hero .headline-mobile-h2 {
+    font-size: 1.5rem;
+  }
+  .hero .align-items-end {
+    align-items: flex-start;
+  }
+  .hero .form-group + .btn {
+    margin-top: var(--spacing-m);
+  }
+  .hero h1:not(.headline-underline) .font-brand,
+  .hero h2:not(.headline-underline) .font-brand {
+    font-size: 1.3em;
+  }
+  .hero-media.vertical-padding-s {
+    margin: 0;
+    padding: 0;
+  }
+  .hero.bg-purple .hero-media {
+    margin-top: 0;
+  }
+  .hero-cards .card-simple {
+    margin-top: var(--spacing-s);
   }
 }
 @media (max-width: 480px) {
@@ -208,12 +251,22 @@
   }
 } 
 @media (min-width: 769px) {
+  .hero.bg-gradient {
+    background: linear-gradient(90deg, #8AF2F8, #EFFED5, #EFFED5 95%);
+    color: var(--med-gray-dark);
+  }
+  .hero-text {
+    gap: var(--spacing-xl);
+  }
   .hero-text:not(.full-width) {
     max-width: calc(392px + 2 * var(--spacing-xxl));
-    gap: var(--spacing-l);
   }
   .hero-text.text-center:not(.full-width) { 
     max-width: calc(380px + 2 * var(--spacing-xxl));
+  }
+  .hero-text.hero-text-medium,
+  .hero-text.hero-text-medium.text-center {
+    max-width: calc(424px + 2 * var(--spacing-xxl));
   }
   .hero-text.hero-text-wide,
   .hero-text.hero-text-wide.text-center {
@@ -222,6 +275,14 @@
   .hero-text.hero-text-extra-wide,
   .hero-text.hero-text-extra-wide.text-center {
     max-width: calc(504px + 2 * var(--spacing-xxl));
+  }
+  .hero-text.hero-text-extra-wide.horizontal-padding-l {
+    max-width: calc(490px + 2 * var(--spacing-l));
+  }
+  .hero-text.full-width,
+  .hero-text.horizontal-padding-l {
+    padding-left: var(--spacing-l);
+    padding-right: var(--spacing-l);
   }
   .hero-mobile-badge {
     display: none;
@@ -261,19 +322,20 @@
   .hero h1:not(.headline-underline) .font-brand {
     font-size: 1.25em;
   }
+  .hero h2:not(.headline-underline) .font-brand {
+    font-size: 1.47em;
+  }
   .hero-text {
     padding: var(--spacing-xxl);
-    /*padding-left: var(--spacing-xxl);
-    padding-right: var(--spacing-xxl);
-
-    margin-top: var(--spacing-xxl);
-    margin-bottom: var(--spacing-xxl);*/
   }
-  /*.hero-media {
-    padding: 0 var(--spacing-l);
-  }*/
+  .hero-text.gap-3xl {
+    gap: var(--spacing-3xl);
+  }
   .hero-cards {
     display: flex;
     gap: var(--spacing-s);
+  }
+  .hero .card-simple:not(.card-small) {
+    max-width: calc(400px + 2 * var(--spacing-l));
   }
 }

@@ -6,29 +6,29 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .enrollment-steps:before {
   content: "";
   position: absolute;
-  top: -4px;
-  bottom: -4px;
+  top: -0.25rem;
+  bottom: -0.25rem;
   left: 0;
-  width: 33px;
+  width: 2.0625rem;
   background-color: var(--alert-disabled-light);
   opacity: 0.44;
-  border-radius: 17px;
+  border-radius: 1.0625rem;
 }
 .enrollment-steps-icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: calc((33px - 26px) / 2);
-  width: 26px;
-  height: 26px;
+  left: calc((2.0625rem - 1.625rem) / 2);
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
   background-color: var(--white);
-  font-size: 14px;
+  font-size: var(--middle-font-size);
   font-weight: 500;
   display: inline-flex;
   justify-content: center;
@@ -54,14 +54,14 @@
 }
 
 .enrollment-steps-headline {
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 .active.headline-only .enrollment-steps-headline {
   color: var(--teal-dark);
 }
 .enrollment-steps-list {
   color: var(--med-gray);
-  font-size: 14px;
+  font-size: var(--middle-font-size);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -72,7 +72,7 @@
 }
 .enrollment-steps-headline,
 .enrollment-steps-list li {
-  padding-left: calc(33px + var(--spacing-m));
+  padding-left: calc(2.0625rem + var(--spacing-m));
   position: relative;
 }
 .enrollment-steps-list li {
@@ -83,9 +83,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: calc((33px - 10px) / 2);
-  width: 10px;
-  height: 10px;
+  left: calc((2.0625rem - 0.625rem) / 2);
+  width: 0.625rem;
+  height: 0.625rem;
   border-radius: 50%;
   background-color: var(--alert-disabled); 
 }
@@ -94,7 +94,7 @@
   background-color: var(--teal); 
 }
 .enrollment-steps-list .active {
-  font-size: 16px;
+  font-size: var(--main-font-size);
   color: var(--teal-dark);
   font-weight: 700;
 }
@@ -103,7 +103,7 @@
 .steps {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: var(--middle-font-size);
 }
 .steps-item {
   position: relative;
@@ -124,7 +124,7 @@
   padding-right: var(--spacing-xs);
 }
 .steps h5 {
-  margin-bottom: 4px;
+  margin-bottom: var(--spacing-xxs);
 }
 .steps-icon {
   width: var(--stepsIconSize);
@@ -141,19 +141,19 @@
   border-radius: 50%;
 }
 .steps-icon:before {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   background-color: var(--gray);
 }
 .steps-icon:after {
-  width: 14px;
-  height: 14px;
-  border: 3px solid var(--white);
+  width: var(--middle-font-size);
+  height: var(--middle-font-size);
+  border: 0.1875rem solid var(--white);
 }
 
 .done .steps-icon:before {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   background-color: var(--cadet);
 }
 .done .steps-icon:after {
@@ -166,13 +166,13 @@
   height: auto;
 }
 .active .steps-icon:before {
-  width: 35px;
-  height: 35px;
+  width: 2.1875rem;
+  height: 2.1875rem;
   background-color: var(--teal);
 }
 .active .steps-icon:after {
-  width: 13px;
-  height: 13px;
+  width: 0.8125rem;
+  height: 0.8125rem;
   background-color: var(--white);
 }
 

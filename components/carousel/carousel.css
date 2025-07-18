@@ -6,7 +6,7 @@
   border-radius: var(--border-radius-xs);
 }
 .simple-carousel:not(.full-width-carousel) {
-  max-width: calc(364px + 80px);
+  max-width: calc(364px + 5rem);
 }
 .preview-carousel:not(.full-width-carousel) {
   max-width: 375px;
@@ -16,8 +16,8 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--med-gray-dark);
   opacity: 0.5;
   transition: all 0.3s;
@@ -53,23 +53,23 @@
   margin-top: var(--spacing-s);
 }
 .owl-carousel .owl-dots .owl-dot {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .owl-carousel .owl-dots .owl-dot:after {
   content: '';
-  width: 8px;
-  height: 8px;
+  width: var(--spacing-xs);
+  height: var(--spacing-xs);
   border-radius: 50%;
   background: var(--gray);
   transition: all 0.3s;
 }
 .owl-carousel .owl-dots .owl-dot.active:after {
-  width: 12px;
-  height: 12px;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 .owl-carousel .owl-dots .owl-dot:hover:after,
 .owl-carousel .owl-dots .owl-dot.active:after {
@@ -90,7 +90,8 @@
   justify-content: center;
 }
 
-.testimonial-text {
+.testimonial-text,
+.testimonial-img {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,18 +100,19 @@
 
 
 
+
 @media (max-width: 1024px) {
   .owl-carousel .owl-dots .owl-dot {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .owl-carousel.preview-carousel .owl-prev {
-    right: calc(50% + 60px + var(--spacing-xs));
+    right: calc(50% + 3.75rem + var(--spacing-xs));
     bottom: 0;
   }
   .owl-carousel.preview-carousel .owl-next {
-    left: calc(50% + 60px + var(--spacing-xs));
+    left: calc(50% + 3.75rem + var(--spacing-xs));
     bottom: 0;
   }
   .testimonial-text {
@@ -119,8 +121,8 @@
 }
 @media (min-width: 1025px) {
   .owl-carousel {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .owl-carousel.preview-carousel {
     padding-left: 0;
@@ -128,12 +130,12 @@
   }
 
   .owl-carousel.preview-carousel .owl-prev {
-    right: calc(50% + 30px + var(--spacing-xs));
-    bottom: -10px;
+    right: calc(50% + 1.875rem + var(--spacing-xs));
+    bottom: -0.625rem;
   }
   .owl-carousel.preview-carousel .owl-next {
-    left: calc(50% + 30px + var(--spacing-xs));
-    bottom: -10px;
+    left: calc(50% + 1.875rem + var(--spacing-xs));
+    bottom: -0.625rem;
   }
 
   .testimonial-text {
