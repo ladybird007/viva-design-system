@@ -381,9 +381,7 @@
   .mobile-btn {
     display: none;
   }
-  .main-nav-list {
-    gap: var(--spacing-l);
-  }
+  
   .sub-nav {
     display: none;
     position: absolute;
@@ -488,6 +486,9 @@
   .main-nav-item:not(.main-nav-item-one-column):not(.main-nav-item-two-columns) .row {
     flex-wrap: wrap;
   }
+  .main-nav-list {
+    gap: var(--spacing-m);
+  }
 }
 @media (min-width: 992px) and (max-width: 1279px) {
   .main-nav-careers .main-nav-list {
@@ -532,5 +533,8 @@
   }
   .main-nav-item-two-columns .sub-nav-col {
     width: 300px;
+  }
+  .main-nav-list {
+    gap: var(--spacing-l);
   }
 }

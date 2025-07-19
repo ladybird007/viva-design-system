@@ -297,6 +297,7 @@ textarea.form-field:not(.form-field-resize) {
   color: var(--gray-dark);
   background-color: var(--gray);
   cursor: pointer;
+  text-decoration: none;
 }
 .custom-file .file-item {
   width: 100%;

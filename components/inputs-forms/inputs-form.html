@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Inputs & Form - Viva Design System</title>
 
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../bootstrap-5.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="../tooltips/toastify/toastify.min.css">
+  <link rel="stylesheet" href="../calendar/js/air-datepicker.css">
+  <link rel="stylesheet" href="../calendar/calendar.css">
+  <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
   <header class="example-header">
@@ -576,9 +579,9 @@
       <h4>Default (required)</h4>
       <br>
       <div class="form-group">
-        <label class="form-label" for="input-calendar">Label (Title Case) <span class="text-red">*</span></label>
+        <label class="form-label" for="input-single-calendar">Label (Title Case) <span class="text-red">*</span></label>
         <div class="calendar-wrap">
-          <input type="text" id="input-calendar" name="input-calendar" class="form-field" placeholder="mm/dd/yyyy" required /> 
+          <input type="text" id="input-single-calendar" name="input-single-calendar" class="form-field single-calendar" placeholder="mm/dd/yyyy" required /> 
         </div>
       </div>
       <br>
@@ -590,9 +593,9 @@
         <div class="example-html-body">
 <pre>
 <code data-lang="html" class="copy-content">&lt;div class="form-group">
-  &lt;label class="form-label" for="input-calendar">Label (Title Case) &lt;span class="text-red">*&lt;/span>&lt;/label>
+  &lt;label class="form-label" for="input-single-calendar">Label (Title Case) &lt;span class="text-red">*&lt;/span>&lt;/label>
   &lt;div class="calendar-wrap">
-    &lt;input type="text" id="input-calendar" name="input-calendar" class="form-field" placeholder="mm/dd/yyyy" required /> 
+    &lt;input type="text" id="input-single-calendar" name="input-single-calendar" class="form-field" placeholder="mm/dd/yyyy" required /> 
   &lt;/div>
 &lt;/div></code>
 </pre> 
@@ -2439,8 +2442,12 @@
   </div>
 
   <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../bootstrap-5.3.7/js/bootstrap.min.js"></script>
+  <script src="../../bootstrap-5.3.7/js/bootstrap.bundle.min.js"></script>
   <script src="../../js/copyText.js"></script>
   <script src="../dropdown/dropdown.js"></script>
+  <script src="../calendar/js/air-datepicker.js"></script>
+  <script src="../calendar/js/calendar.js"></script>
   <script src="inputs-form.js"></script>
 </body>
 </html>

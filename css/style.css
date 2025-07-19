@@ -19,7 +19,7 @@
 @import url(../components/toasts/toasts.css);
 @import url(../css/badges.css);
 @import url(../components/inputs-forms/inputs-form.css);
-@import url(../css/grid.css);
+/*@import url(../css/grid.css);*/
 @import url(../css/shadows.css);
 @import url(../css/dividers.css);
 @import url(../css/steps.css);
@@ -69,6 +69,53 @@ img {
   position: absolute;
 }
 
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.mt-l {
+  margin-top: var(--spacing-l);
+}
+
+.pb-m {
+  padding-bottom: var(--spacing-m);
+}
+
+.gap-s {
+  gap: var(--spacing-s);
+}
+.gap-gutter {
+  gap: var(--gutter);
+}
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
 @media (max-width: 1023px) {
   .tablet-hidden {
     display: none !important;
@@ -80,3 +127,20 @@ img {
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .container {
+    max-width: calc(960px + 2 * var(--gap));
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: calc(1140px + 2 * var(--gap));
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: calc(1320px + 2 * var(--gap));
+  }
+}

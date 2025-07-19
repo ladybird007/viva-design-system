@@ -170,6 +170,9 @@ code:not(.copy-content) {
   font-size: 16px;
   font-family: monospace;
 }
+code {
+  color: var(--black);
+}
 
 /****** spacing *****/
 .mt-m {
@@ -245,6 +248,13 @@ code:not(.copy-content) {
 @media (max-width: 480px) {
   .example-colors {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/***** Dividers *****/
+@media (max-width: 575px) {
+  .example-dividers .row {
+    gap: var(--gutter);
   }
 }
 
@@ -440,6 +450,9 @@ code:hover:before {
 /***** Badges *****/
 .example-badges code:first-child {
   margin-top: 0;
+}
+.example-badges-row .row > * {
+  width: auto;
 }
 .example-badges-row-bottom {
   align-items: flex-end;
@@ -966,4 +979,11 @@ code:hover:before {
 .example-tablet.card-event .tablet-hidden,
 .example-mobile.card-event .tablet-hidden {
   display: none;
+}
+
+
+button {
+  font-size: var(--middle-font-size);
+  border-width: 1px;
+  border-radius: 2px;
 }

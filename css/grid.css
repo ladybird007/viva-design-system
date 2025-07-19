@@ -6,12 +6,17 @@
 }
 
 .row {
-  display: flex;
-  gap: var(--gutter);
+  /*display: flex;
+  /*gap: var(--gutter);
+  /*flex-wrap: nowrap;*/
 }
 .row[class*="row-cols-"] {
   flex-wrap: wrap;
 }
+/*.row > * {
+  width: auto;
+  flex-shrink: unset;
+}*/
 
 .flex-center-center {
   display: flex;

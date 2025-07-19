@@ -1,3 +1,13 @@
+.accordion {
+  --bs-accordion-border-width: 0;
+  --bs-accordion-border-radius: 0;
+}
+.accordion-content .row {
+  flex-wrap: nowrap;
+}
+.accordion-content a {
+  flex-shrink: 0;
+}
 .accordion-item {
   border-bottom: 0.125rem solid var(--teal);
 }
@@ -38,4 +48,11 @@
 .accordion-sub-content .accordion-sub-content > * {
   padding-left: 0;
   padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .accordion-content .d-flex {
+    flex-direction: column;
+    gap: var(--gutter);
+  }
 }

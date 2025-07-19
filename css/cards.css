@@ -40,6 +40,9 @@
   }
 }
 
+div[class*="card-"] {
+  line-height: 1.2;
+}
 .card-simple {
   width: 100%;
   background-color: var(--white);
@@ -140,6 +143,15 @@
   letter-spacing: -0.01em;
 }
 
+@media (max-width: 480px) {
+  .card-simple .d-flex {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card-simple .d-flex .btn {
+    margin-top: 0;
+  }
+}
 @media (min-width: 769px) {
   .card-simple.card-small {
     max-width: 237px;
@@ -328,7 +340,7 @@
   top: 50%;
   border-radius: 50%;
   opacity: 0;
-  background: radial-gradient(var(--purple-light) 0%, transparent 75%, transparent 100%);
+  background: radial-gradient(var(--purple-light) 0%, transparent 75%, transparent 100%) !important;
 }
 .card-doctor-favorite-icon.full .favorite-icon {
   animation: 0.1s linear 0s forwards pulse;
@@ -633,7 +645,7 @@
   background-color: var(--gray-pale);
 }
 .card-call-out.bg-gradient {
-  background: linear-gradient(135deg, #8AF2F8, #EFFED5);
+  background: linear-gradient(135deg, #8AF2F8, #EFFED5) !important;
 }
 .card-call-out.bg-purple {
   background-color: var(--purple-extra-dark);
@@ -662,6 +674,16 @@
 .card-call-out.bg-cadet .internal-link:not(:hover):not(:focus):after {
   content: url("data:image/svg+xml;charset=UTF-8,<svg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg' version='1.1'><path d='M4.284 2.092L6.316 0.683999C6.828 1.516 7.32933 2.268 7.82 2.94C8.31067 3.60133 8.81733 4.19333 9.34 4.716C9.87333 5.23867 10.4387 5.71867 11.036 6.156V6.252C10.4387 6.68933 9.87333 7.17467 9.34 7.708C8.81733 8.23067 8.31067 8.82267 7.82 9.484C7.32933 10.1453 6.828 10.8973 6.316 11.74L4.284 10.332C4.74267 9.63867 5.21733 9.04133 5.708 8.54C6.20933 8.028 6.716 7.596 7.228 7.244C7.74 6.892 8.236 6.60933 8.716 6.396C9.196 6.18267 9.63867 6.028 10.044 5.932V6.476C9.63867 6.38 9.196 6.23067 8.716 6.028C8.236 5.81467 7.74 5.532 7.228 5.18C6.716 4.828 6.20933 4.396 5.708 3.884C5.21733 3.372 4.74267 2.77467 4.284 2.092ZM0.38 4.844H4.14C5.01467 4.844 5.84133 4.89733 6.62 5.004C7.40933 5.1 8.13467 5.228 8.796 5.388L10.14 6.204L8.796 7.02C8.13467 7.18 7.40933 7.31333 6.62 7.42C5.84133 7.516 5.01467 7.564 4.14 7.564H0.38V4.844Z' fill='%23000000'/></svg>");
 }
+/*.card-call-out .row {
+  flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
+  gap: 0;
+}
+.card-call-out .row > * {
+  padding-left: 0;
+  padding-right: 0;
+}*/
 
 @media (max-width: 1024px) {
   .testimonials .row {
@@ -765,7 +787,7 @@
   background-color: var(--light-grass-pale);
 }
 .card-action.bg-gradient {
-  background: linear-gradient(0.25turn, #015A58, #66C3A0);
+  background: linear-gradient(0.25turn, #015A58, #66C3A0) !important;
   color: var(--white);
 }
 .card-action.border-cadet {
@@ -854,7 +876,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(rgba(42, 40, 47, 0), rgba(42, 40, 47, 100%));
+  background: linear-gradient(rgba(42, 40, 47, 0), rgba(42, 40, 47, 100%)) !important;
   color: var(--white);
   justify-content: flex-end;
   gap: var(--spacing-xxs);
@@ -922,8 +944,11 @@
     font-size: 1.5rem;
     font-weight: 600;
   }
+  .col-3 .card-action .btn {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
 }
-
 
 /****** File Card *****/
 
@@ -1142,7 +1167,7 @@
   }
 }
 @media (min-width: 1023px) {
-  .card-contacth4 {
+  .card-contact h4 {
     font-size: var(--big-font-size);
   }
 }

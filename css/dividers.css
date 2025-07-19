@@ -4,6 +4,7 @@ hr {
   display: block;
   border: none;
   border-radius: 0.125rem;
+  opacity: 1;
 }
 .hr-xs {
   border-top: 0.0625rem solid var(--gray-light);

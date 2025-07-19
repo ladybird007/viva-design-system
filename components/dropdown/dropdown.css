@@ -180,7 +180,7 @@
   letter-spacing: -0.05px;
   padding-top: 0.0625rem;
 }
-.multi-select .multi-select-options .multi-select-option.multi-select-selected .multi-select-option-icon, 
+.multi-select .multi-select-options .multi-select-option.multi-select-selected:not(.radio) .multi-select-option-icon, 
 .multi-select .multi-select-options .multi-select-all.multi-select-selected .multi-select-option-icon {
   background-color: var(--teal);
 }
@@ -192,8 +192,8 @@
   display: block;
   background: url(icon/check.svg) no-repeat 50% 50%;
 }
-.multi-select .multi-select-options .multi-select-option.multi-select-selected .multi-select-option-icon {
-  background-color: var(--white);
+.multi-select .multi-select-options .multi-select-option.active .multi-select-option-icon {
+  background-color: transparent;
 }
 .multi-select .multi-select-options .multi-select-option.multi-select-selected.radio .multi-select-option-icon:after {
   position: absolute;
