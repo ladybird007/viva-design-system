@@ -19,6 +19,7 @@
   justify-content: flex-start;
   background-color: var(--gray-pale);
   border-radius: var(--border-radius-xxs);
+  overflow: visible;
 }
 .progress-bar {
   position: relative;
@@ -27,6 +28,7 @@
   border-radius: var(--border-radius-xxs);
   transition: width 0.3s;
   background-color: var(--teal);
+  overflow: visible;
 }
 .progress-value {
   font-size: var(--middle-font-size);

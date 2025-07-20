@@ -539,6 +539,9 @@ code:hover:before {
 .example-typography-mobile ol {
   line-height: 1.8;
 }
+.example-typography-item .card {
+  border: none
+}
 
 
 @media (max-width: 768px) {
@@ -719,6 +722,10 @@ code:hover:before {
   padding: var(--spacing-m);
 }
 
+
+.example-tooltips .row {
+  row-gap: var(--spacing-l);
+}
 
 /***** Inputs *****/
 
@@ -932,6 +939,9 @@ code:hover:before {
   display: block;
   box-shadow: var(--shadow-l);
   border-radius: var(--border-radius-xs);
+}
+.example-cells .table {
+  min-width: 1216px;
 }
 
 /***** Cards *****/

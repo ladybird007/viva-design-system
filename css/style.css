@@ -127,6 +127,12 @@ img {
   }
 }
 
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1199px) {
   .container {
     max-width: calc(960px + 2 * var(--gap));

@@ -50,6 +50,9 @@
 }
 .modal-content {
   padding: var(--spacing-m);
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
 }
 .modal-close + .modal-content {
   margin-top: var(--spacing-m);
@@ -72,7 +75,14 @@
   cursor: pointer;
 }
 .modal-footer {
+  border-top: none;
   padding: 0 var(--spacing-m) var(--spacing-m);
+}
+.modal-footer .btns-group {
+  width: 100%;
+}
+.modal-footer>* {
+  margin: 0;
 }
 .modal-container > .modal-close {
   position: absolute;
