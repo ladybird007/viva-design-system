@@ -90,7 +90,7 @@ $('.custom-select-trigger').on("click", function(event) {
 $("html").on('click', function(event) {
   event.stopPropagation();
   let eTarget = event.target;
-  if(eTarget.classList.contains('select-search') || eTarget.classList.contains('multi-select-search') || eTarget.classList.contains('fa-solid') || eTarget.classList.contains('multi-select-option-text') || eTarget.classList.contains('multi-select-option') || eTarget.classList.contains('multi-select-header')) {
+  if(eTarget.classList.contains('select-search') || eTarget.classList.contains('multi-select-search') || eTarget.classList.contains('fa-solid') || eTarget.classList.contains('multi-select-option-text') || eTarget.classList.contains('multi-select-option') || eTarget.classList.contains('multi-select-header') || eTarget.classList.contains('multi-select-header-placeholder') || eTarget.classList.contains('multi-select-header-option')) {
     return false;
   } else {
     $('.custom-select').removeClass("opened");

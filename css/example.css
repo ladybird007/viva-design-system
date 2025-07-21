@@ -1,6 +1,4 @@
 /***** header *****/
-
-
 .example-header {
   height: 174px;
   display: flex;
@@ -940,8 +938,39 @@ code:hover:before {
   box-shadow: var(--shadow-l);
   border-radius: var(--border-radius-xs);
 }
-.example-cells .table {
-  min-width: 1216px;
+
+@media (max-width: 1216px) {
+
+  .example-cells .table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .example-cells .table td {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+}
+.example-cells .table td {
+  vertical-align: top;
+}
+.example-cells .table td > div:not(.d-flex):first-child {
+  justify-content: center;
+
+}
+.example-cells .table td > div:first-child {
+  min-height: 40px;
+}
+.example-cells hr {
+  position: relative;
+  left: calc(-1 * var(--spacing-m));
+  width: calc(100% + 2 * var(--spacing-m));
+  height: 1px;
+  border-top: 1px solid var(--gray-light);
+  margin-top: var(--spacing-s);
 }
 
 /***** Cards *****/
